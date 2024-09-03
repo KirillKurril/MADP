@@ -1,0 +1,79 @@
+﻿@{
+	ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+	<link rel="stylesheet" href="~/css/WebLabs_BSUIR_V253504.styles.css" asp-append-version="true" />
+</head>
+<body>
+	<main class="container content">
+		<h1>Лабораторная работа 1</h1>
+		<h2>Список</h2>
+		<div class="border-bottom p-2">
+			<ol type="A">
+				<li>Элемент 1 списка</li>
+				<li>Элемент 2 списка</li>
+			</ol>
+		</div>
+		<h2 class="mt-3">Форма</h2>
+		<form class="mt-3" method="post">
+			<div class="row mb-3">
+				<div class="col-sm-10 offset-sm-2">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="check1">
+						<label class="form-check-label" for="check1">
+							Чек-бокс 1
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" id="check2">
+						<label class="form-check-label" for="check2">
+							Чек-бокс 2
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row mb-3">
+				<div class="offset-sm-2">
+					<div class="btn-group btn-group-sm" data-toggle="buttons">
+						<input class="form-check-input me-1" type="radio" name="gridRadios" id="radio1" value="option3">
+						<label class="form-check-label me-3" for="radio1">
+							Радио-1
+						</label>
+						<input class="form-check-input me-1" type="radio" name="gridRadios" id="radio2" value="option3">
+						<label class="form-check-label me-3" for="radio2">
+							Радио-2
+						</label>
+						<input class="form-check-input me-1" type="radio" name="gridRadios" id="radio3" value="option3">
+						<label class="form-check-label me-3" for="radio3">
+							Радио-3
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<label for="inputEmail3" class="col-sm-2 col-form-label">Логин</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="inputEmail3">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword3">
+				</div>
+			</div>
+
+			<button type="submit" class="btn" style="background-color: #17a2b8; color: white">Отправить</button>
+		</form>
+	</main>
+</body>
+</html>

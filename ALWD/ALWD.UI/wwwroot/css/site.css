@@ -1,0 +1,17 @@
+header, footer {
+    background-color: rgba(var(--bs-dark-rgb));
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.nav-color {
+    color: rgba(255, 255, 255, 0.5)
+}
