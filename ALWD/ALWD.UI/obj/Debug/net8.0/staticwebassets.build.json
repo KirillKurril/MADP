@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ghTyesRLodY4OoKZjjTGie4YQ7nGB7pyOcf0wMPofik=",
+  "Hash": "cYYFLTgiA1Xpf60cg1BI825zJCLeaGH5m45hu7dif9Q=",
   "Source": "ALWD.UI",
   "BasePath": "_content/ALWD.UI",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\htmlpage.html",
+      "SourceId": "ALWD.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\",
+      "BasePath": "_content/ALWD.UI",
+      "RelativePath": "htmlpage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\htmlpage.html"
     },
     {
       "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\images\\default-profile-picture.png",

@@ -18,12 +18,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\uni\MADP\ALWD\ALWD.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/uni/MADP/ALWD/ALWD.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/uni/MADP/ALWD/ALWD.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Identity/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcTG9nT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialCatalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQ2F0YWxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialLab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsTGFiLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialUserData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsVXNlckRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/Components/TotalCartPrice/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG90YWxDYXJ0UHJpY2VcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/Error.cshtml]

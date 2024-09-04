@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\htmlpage.html",
+      "PackagePath": "staticwebassets\\htmlpage.html"
+    },
+    {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\images\\default-profile-picture.png",
       "PackagePath": "staticwebassets\\images\\default-profile-picture.png"
     },
