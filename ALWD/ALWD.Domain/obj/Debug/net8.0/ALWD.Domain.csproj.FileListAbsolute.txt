@@ -1,0 +1,12 @@
+D:\uni\MADP\ALWD\ALWD.Domain\bin\Debug\net8.0\ALWD.Domain.deps.json
+D:\uni\MADP\ALWD\ALWD.Domain\bin\Debug\net8.0\ALWD.Domain.dll
+D:\uni\MADP\ALWD\ALWD.Domain\bin\Debug\net8.0\ALWD.Domain.pdb
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.AssemblyInfoInputs.cache
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.AssemblyInfo.cs
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.csproj.CoreCompileInputs.cache
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.sourcelink.json
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.dll
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\refint\ALWD.Domain.dll
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ALWD.Domain.pdb
+D:\uni\MADP\ALWD\ALWD.Domain\obj\Debug\net8.0\ref\ALWD.Domain.dll

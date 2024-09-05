@@ -6,10 +6,19 @@ namespace ADLW1.Services.CategoryService
 {
     public class MemoryCategoryService : ICategoryService
     {
-        public Task<ResponseData<List<Category>>>
-       GetCategoryListAsync()
+        private List<Category> _categories;
+
+        public MemoryCategoryService() 
+            => SetupData();
+        public Task<ResponseData<List<Category>>> GetCategoryListAsync()
         {
-            var categories = new List<Category>
+            var result = new ResponseData<List<Category>>(_categories);
+            return Task.FromResult(result); //как это работает 
+        }
+
+        public void SetupData()
+        {
+            _categories = new List<Category>
                  {
                     new Category { Id = 1, Name = "Стартеры", NormalizedName = "starters" },
                     new Category { Id = 2, Name = "Тормозные диски", NormalizedName = "brake-discs" },
@@ -22,9 +31,20 @@ namespace ADLW1.Services.CategoryService
                     new Category { Id = 9, Name = "Система охлаждения", NormalizedName = "cooling-system" },
                     new Category { Id = 10, Name = "Экстерьерные детали", NormalizedName = "exterior-parts" }
                  };
-            var result = new ResponseData<List<Category>>();
-            result.Data = categories;
-            return Task.FromResult(result); //как это работает 
+        }
+
+        public Task<Category> GetRandomCategory()
+        {
+            int categoryIndex = new Random().Next(0, _categories.Count);
+            try
+            {
+                Category category = _categories[categoryIndex];
+                return Task.FromResult(category);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                throw new Exception("Collections category is empty");
+            }
         }
     }
 

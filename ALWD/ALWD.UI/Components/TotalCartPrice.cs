@@ -6,8 +6,7 @@ namespace ALWD.UI.Components
 	{
 		public IViewComponentResult Invoke()
 		{
-			double randomNumber = new Random().NextDouble() * 100;
-			return View();// randomNumber.ToString("0.00");
+			return View();
 		}
 	}
 }

@@ -6,13 +6,14 @@ namespace ADLW1.Services.ProductService
 {
 	public class MemoryProductService : IProductService
 	{
-		List<Product> _products;
-		List<Category> _categories;
+		List<Product> _products = new();
+		List<Category> _categories = new();
 		public MemoryProductService(ICategoryService categoryService)
 		{
 			_categories = categoryService.GetCategoryListAsync()
 		   .Result
 		   .Data;
+			_products = new();
 			SetupData();
 		}
 
@@ -33,10 +34,20 @@ namespace ADLW1.Services.ProductService
 
 		public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1)
 		{
-			List<Product> products = _products.Where(p => p.Category.NormalizedName == categoryNormalizedName).ToList();
-			var listmodel = new ListModel<Product>(_products);
-			var resposeData = new ResponseData<ListModel<Product>>(listmodel);
-			return Task.FromResult(resposeData);
+			try
+			{
+				List<Product> products = _products.Where(p => p.Category.NormalizedName == categoryNormalizedName).ToList();
+				var listmodel = new ListModel<Product>(_products);
+				var responseData = new ResponseData<ListModel<Product>>(listmodel);
+				return Task.FromResult(responseData);
+			}
+			catch (Exception ex)
+			{
+				var responseData = new ResponseData<ListModel<Product>>(
+					new ListModel<Product>(), false, "Product list receiving fault");
+                return Task.FromResult(responseData);
+            }
+			
 		}
 
 		public Task UpdateProductAsync(int id, Product product, IFormFile? formFile)
@@ -46,7 +57,7 @@ namespace ADLW1.Services.ProductService
 
 		private void SetupData()
 		{
-			_productes = new List<Product>
+			_products = new List<Product>()
 		{
 			new Product { Id = 1, Name="Стартер A", Description="Описание стартера A", Price=120.00, Quantity=10, ImagePath="Images/стартер_a.jpg", ImageMimeType="image/jpeg", Category=_categories.Find(c=>c.NormalizedName.Equals("starters")) },
 			new Product { Id = 2, Name="Стартер B", Description="Описание стартера B", Price=130.00, Quantity=8, ImagePath="Images/стартер_b.jpg", ImageMimeType="image/jpeg", Category=_categories.Find(c=>c.NormalizedName.Equals("starters")) },
