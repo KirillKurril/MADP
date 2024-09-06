@@ -1,23 +1,31 @@
 ﻿using ALWD.UI.Services.CategoryService;
 using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ADLW1.Services.ProductService
 {
 	public class MemoryProductService : IProductService
 	{
-		List<Product> _products = new();
-		List<Category> _categories = new();
-		public MemoryProductService(ICategoryService categoryService)
-		{
-			_categories = categoryService.GetCategoryListAsync()
+        private List<Product> _products = new();
+        private List<Category> _categories = new();
+		private IConfiguration _config;
+        public MemoryProductService(
+									[FromServices] IConfiguration config,
+							        ICategoryService categoryService)
+        {
+            _categories = categoryService.GetCategoryListAsync()
 		   .Result
 		   .Data;
-			_products = new();
-			SetupData();
-		}
+            _config = config;
+            SetupData();
 
-		public Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
+        }
+
+
+        public int PageNo { get; }
+
+        public Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
 		{
 			throw new NotImplementedException();
 		}
@@ -32,7 +40,7 @@ namespace ADLW1.Services.ProductService
 			throw new NotImplementedException();
 		}
 
-		public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1)
+		public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo)
 		{
 			List<Product> products = new();
 
@@ -53,7 +61,16 @@ namespace ADLW1.Services.ProductService
                     return Task.FromResult(failResponseData);
                 }
             }
-            var listmodel = new ListModel<Product>(products);
+			var itemsPerPage = int.Parse(_config["ItemsPerPage"]);
+            int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
+
+            var productsOnPage = products
+                .Skip((pageNo - 1) * itemsPerPage)
+                .Take(itemsPerPage)
+                .ToList();
+
+
+            var listmodel = new ListModel<Product>(productsOnPage);
             var responseData = new ResponseData<ListModel<Product>>(listmodel);
             return Task.FromResult(responseData);
 

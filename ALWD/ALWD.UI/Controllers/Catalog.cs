@@ -14,7 +14,7 @@ namespace ALWD.UI.Controllers
 		private IProductService _productService;
 		public CatalogController(ICategoryService categoryService, IProductService productService)
 			=> (_categoryService, _productService) = (categoryService, productService);
-        public async Task<IActionResult> Index(string? category)
+        public async Task<IActionResult> Index(string? category, int page = 1)
         {
 			ViewData["CurrentSection"] = "Catalog";
 			if(string.IsNullOrEmpty(category))
@@ -28,7 +28,7 @@ namespace ALWD.UI.Controllers
 
 			var categories = await _categoryService.GetCategoryListAsync();
 
-			ResponseData<ListModel<Product>> productResponse = await _productService.GetProductListAsync(category);
+			ResponseData<ListModel<Product>> productResponse = await _productService.GetProductListAsync(category, page);
 
 			if (!productResponse.Successfull)
 				return NotFound(productResponse.ErrorMessage);
