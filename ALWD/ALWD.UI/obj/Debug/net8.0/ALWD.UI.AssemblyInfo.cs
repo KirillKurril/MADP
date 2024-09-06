@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ALWD.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1864d62821261bea1727e7bece6ebdfb12e9213c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+120a39c94804a2487d28f05cebaef2c051f533d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ALWD.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ALWD.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

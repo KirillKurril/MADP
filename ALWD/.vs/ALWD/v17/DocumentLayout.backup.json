@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\uni\\MADP\\ALWD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\shared\\components\\paginationbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\shared\\components\\paginationbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\shared\\components\\paginationbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\shared\\components\\paginationbar\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -158,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -170,8 +170,7 @@
               "RelativeToolTip": "ALWD.Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T16:15:16.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T16:15:16.964Z"
             },
             {
               "$type": "Document",
@@ -183,8 +182,7 @@
               "RelativeToolTip": "ALWD.Domain\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T16:57:31.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T16:57:31.903Z"
             },
             {
               "$type": "Document",
@@ -196,8 +194,7 @@
               "RelativeToolTip": "ALWD.UI\\ViewModels\\PaginationViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T16:40:14.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T16:40:14.122Z"
             },
             {
               "$type": "Document",
@@ -209,8 +206,7 @@
               "RelativeToolTip": "ALWD.UI\\Components\\PaginationBar.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T16:25:01.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T16:25:01.043Z"
             },
             {
               "$type": "Document",
@@ -222,31 +218,30 @@
               "RelativeToolTip": "ALWD.UI\\ViewModels\\CatalogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:28:40.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T22:28:40.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Catalog\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Catalog\\Index.cshtml",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Catalog\\Index.cshtml",
               "RelativeToolTip": "ALWD.UI\\Views\\Catalog\\Index.cshtml",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAkwGgAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwDQAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-05T22:18:09.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Default.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Shared\\Components\\PaginationBar\\Default.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Shared\\Components\\PaginationBar\\Default.cshtml",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Shared\\Components\\PaginationBar\\Default.cshtml",
               "RelativeToolTip": "ALWD.UI\\Views\\Shared\\Components\\PaginationBar\\Default.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-06T16:28:53.632Z",
               "EditorCaption": ""
@@ -261,8 +256,7 @@
               "RelativeToolTip": "ALWD.UI\\Components\\TotalCartPrice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T19:43:54.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T19:43:54.07Z"
             },
             {
               "$type": "Document",
@@ -274,8 +268,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-04T18:58:32.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T18:58:32.536Z"
             },
             {
               "$type": "Document",
@@ -287,8 +280,7 @@
               "RelativeToolTip": "ALWD.UI\\Controllers\\Catalog.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAjwBIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T20:46:36.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T20:46:36.567Z"
             },
             {
               "$type": "Document",
@@ -300,8 +292,7 @@
               "RelativeToolTip": "ALWD.UI\\Services\\CategoryService\\ICategoryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T23:28:59.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T23:28:59.803Z"
             },
             {
               "$type": "Document",
@@ -313,8 +304,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T16:51:32.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T16:51:32.658Z"
             },
             {
               "$type": "Document",
@@ -326,8 +316,7 @@
               "RelativeToolTip": "ALWD.Domain\\Models\\ProductListModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:38:50.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T22:38:50.361Z"
             },
             {
               "$type": "Document",
@@ -339,8 +328,7 @@
               "RelativeToolTip": "ALWD.UI\\Services\\CategoryService\\MemoryCetegoryService.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T23:21:46.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T23:21:46.119Z"
             },
             {
               "$type": "Document",
@@ -352,8 +340,7 @@
               "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\MemoryProductService.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAUwFMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T20:17:05.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T20:17:05.242Z"
             },
             {
               "$type": "Document",
@@ -365,8 +352,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Shared\\Components\\TotalCartPrice\\Default.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-04T18:37:36.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T18:37:36.655Z"
             },
             {
               "$type": "Document",
@@ -378,8 +364,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T20:00:12.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T20:00:12.465Z"
             },
             {
               "$type": "Document",
@@ -391,8 +376,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Menu\\PartialLab.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T20:49:15.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T20:49:15.901Z"
             },
             {
               "$type": "Document",
@@ -404,8 +388,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T21:49:48.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T21:49:48.554Z"
             },
             {
               "$type": "Document",
@@ -417,8 +400,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAAIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:15:45.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T22:15:45.666Z"
             },
             {
               "$type": "Document",
@@ -430,8 +412,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T20:49:35.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T20:49:35.682Z"
             },
             {
               "$type": "Document",
@@ -443,8 +424,7 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T21:02:22.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T21:02:22.794Z"
             },
             {
               "$type": "Document",
@@ -456,8 +436,7 @@
               "RelativeToolTip": "ALWD.Domain\\Models\\ResponseData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T15:06:19.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T15:06:19.596Z"
             },
             {
               "$type": "Document",
@@ -469,8 +448,7 @@
               "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T14:33:38.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-06T14:33:38.143Z"
             },
             {
               "$type": "Document",
@@ -482,8 +460,7 @@
               "RelativeToolTip": "ALWD.UI\\Models\\ListDemo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:36:06.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T22:36:06.377Z"
             },
             {
               "$type": "Document",
