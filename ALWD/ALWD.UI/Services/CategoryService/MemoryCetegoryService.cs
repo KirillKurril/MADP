@@ -46,6 +46,12 @@ namespace ADLW1.Services.CategoryService
                 throw new Exception("Collections category is empty");
             }
         }
+
+        public Task<Category> GetByNormilizedName(string normilizedName)
+        {
+            var category = _categories.Find(c => c.NormalizedName == normilizedName);
+            return Task.FromResult(category);
+        }
     }
 
 }

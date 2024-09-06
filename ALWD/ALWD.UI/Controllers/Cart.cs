@@ -6,6 +6,7 @@ namespace ALWD.UI.Controllers
 	{
 		public IActionResult Index()
 		{
+			ViewData["CurrentSection"] = "Cart";
 			return View();
 		}
 	}

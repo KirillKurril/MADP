@@ -7,5 +7,6 @@ namespace ALWD.UI.Services.CategoryService
     {
         public Task<ResponseData<List<Category>>> GetCategoryListAsync();
         public Task<Category> GetRandomCategory();
+        public Task<Category> GetByNormilizedName(string normilizedName);
     }
 }

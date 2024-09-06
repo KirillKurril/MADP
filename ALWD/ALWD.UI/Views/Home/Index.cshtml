@@ -1,29 +1,23 @@
-﻿@{
-	ViewBag.Title = "Index";
+﻿@model ALWD.UI.Models.ListDemo
+@{
+	ViewData["OrderedList"] = new List<string>() { "Элемент 1 списка", "Элемент 2 списка" };
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width" />
-	<title>Index</title>
-	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-	<link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
-	<link rel="stylesheet" href="~/css/WebLabs_BSUIR_V253504.styles.css" asp-append-version="true" />
-</head>
 <body>
-	<main class="container content">
-		<h1>Лабораторная работа 1</h1>
+	<main class="content container">
+		<h1>@ViewData["PageTitle"]</h1>
 		<h2>Список</h2>
 		<div class="border-bottom p-2">
 			<ol type="A">
-				<li>Элемент 1 списка</li>
-				<li>Элемент 2 списка</li>
+				@foreach (var el in ViewData["OrderedList"] as List<string>)
+				{
+					<li>@el</li>
+				}
 			</ol>
 		</div>
 		<h2 class="mt-3">Форма</h2>
 		<form class="mt-3" method="post">
+			<select asp-for="Id" asp-items="@ViewData["Items"] as SelectList"></select>
 			<div class="row mb-3">
 				<div class="col-sm-10 offset-sm-2">
 					<div class="form-check">
@@ -76,4 +70,4 @@
 		</form>
 	</main>
 </body>
-</html>
+
