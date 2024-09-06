@@ -7,13 +7,13 @@ namespace ALWD.UI.ViewModels
 {
     public class CatalogViewModel
     {
-        public CatalogViewModel(ListModel<Product> products, List<Category> categories)
+        public CatalogViewModel(ResponseData<ListModel<Product>> productResponse, List<Category> categories)
         {
-            Products = products;
+            ProductResponse = productResponse;
             Categories = categories;
         }
 
-        public ListModel<Product> Products { get; set; }
+        public ResponseData<ListModel<Product>> ProductResponse { get; set; }
         public List<Category> Categories { get; set; }
     }
 }

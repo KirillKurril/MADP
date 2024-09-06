@@ -61,7 +61,15 @@ namespace ADLW1.Services.ProductService
                     return Task.FromResult(failResponseData);
                 }
             }
-			var itemsPerPage = int.Parse(_config["ItemsPerPage"]);
+            int itemsPerPage;
+            try
+            {
+                itemsPerPage = int.Parse(_config["ItemsPerPage"]);
+            }
+            catch
+            {
+                throw new Exception("Unable to receive items per page configuration");
+            }
             int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
 
             var productsOnPage = products
@@ -72,6 +80,8 @@ namespace ADLW1.Services.ProductService
 
             var listmodel = new ListModel<Product>(productsOnPage);
             var responseData = new ResponseData<ListModel<Product>>(listmodel);
+			responseData.Data.CurrentPage = pageNo;
+			responseData.Data.TotalPages = totalPages;
             return Task.FromResult(responseData);
 
         }

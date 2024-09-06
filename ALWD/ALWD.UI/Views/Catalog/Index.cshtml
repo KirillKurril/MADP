@@ -49,24 +49,24 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Products.Items.FirstOrDefault().Id)
+                @Html.DisplayNameFor(model => model.ProductResponse.Data.Items.FirstOrDefault().Id)
             </th>
             <th>
-                    @Html.DisplayNameFor(model => model.Products.Items.FirstOrDefault().Name)
+                    @Html.DisplayNameFor(model => model.ProductResponse.Data.Items.FirstOrDefault().Name)
             </th>
             <th>
-                    @Html.DisplayNameFor(model => model.Products.Items.FirstOrDefault().Description)
+                    @Html.DisplayNameFor(model => model.ProductResponse.Data.Items.FirstOrDefault().Description)
             </th>
             <th>
-                    @Html.DisplayNameFor(model => model.Products.Items.FirstOrDefault().Price)
+                    @Html.DisplayNameFor(model => model.ProductResponse.Data.Items.FirstOrDefault().Price)
             </th>
             <th>
-                    @Html.DisplayNameFor(model => model.Products.Items.FirstOrDefault().ImagePath)
+                    @Html.DisplayNameFor(model => model.ProductResponse.Data.Items.FirstOrDefault().ImagePath)
             </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Products.Items) {
+@foreach (var item in Model.ProductResponse.Data.Items) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
@@ -96,6 +96,16 @@
             </td>
         </tr>
 }
+        <tr>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    @await Component.InvokeAsync("PaginationBar", new PaginationViewModel(
+                        Model.ProductResponse.Data.TotalPages,
+                        Model.ProductResponse.Data.CurrentPage,
+                        ViewData["currentCategoryNormilizedName"] as string))
+                </ul>
+            </nav>
+        </tr>
     </tbody>
 </table>
 </body>
