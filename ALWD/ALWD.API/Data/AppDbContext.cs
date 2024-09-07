@@ -13,10 +13,9 @@ namespace ALWD.API.Data
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<Category>()
-				.HasMany(c => c.Products)
-				.WithOne(p => p.Category)
-				.HasForeignKey(p => p.CategoryId);
+			modelBuilder.Entity<Product>()
+				.HasOne(p => p.Category)
+				.WithMany(c => c.Products);
 		}
 
 	}
