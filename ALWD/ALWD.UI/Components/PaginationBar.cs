@@ -1,5 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ALWD.UI.ViewModels;
+﻿using ALWD.Domain.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace ALWD.UI.Components
 {

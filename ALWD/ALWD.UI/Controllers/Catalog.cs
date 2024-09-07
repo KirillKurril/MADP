@@ -2,7 +2,7 @@
 using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using ALWD.UI.Services.CategoryService;
-using ALWD.UI.ViewModels;
+using ALWD.Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
