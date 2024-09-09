@@ -3,10 +3,9 @@
 	public class ListModel<T>
 	{
 		public ListModel() { }
-        public ListModel(List<T> items) => Items = items;
-		public List<T> Items { get; set; } = new();
+        public ListModel(IReadOnlyList<T> items) => Items = items;
+		public IReadOnlyList<T> Items { get; set; }
 		public int CurrentPage { get; set; } = 1;
-        public int PreviousPage { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
 	}
 }

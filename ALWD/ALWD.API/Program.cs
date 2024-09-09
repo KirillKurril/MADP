@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using ALWD.API.Data;
+using ALWD.Domain.Abstractions;
+using ALWD.Domain.Entities;
+using ALWD.API.Data.Repository;
 
 namespace ALWD.API
 {
@@ -11,12 +14,12 @@ namespace ALWD.API
 
             var connStr = builder.Configuration.GetConnectionString("Default");
             builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(connStr));
+                options.UseSqlite(connStr));
 
-            // Нет необходимости регистрировать DbInitializer, так как он статический.
-            // Убираем его из DI-контейнера.
+            builder.Services.AddScoped<IRepository<Product>, EfRepository<Product>>();
+			builder.Services.AddScoped<IRepository<Category>, EfRepository<Category>>();
 
-            builder.Services.AddControllers();
+			builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 

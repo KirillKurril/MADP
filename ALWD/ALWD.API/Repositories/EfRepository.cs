@@ -2,9 +2,8 @@
 using System.Linq.Expressions;
 using ALWD.Domain.Abstractions;
 using ALWD.Domain.Entities;
-using ALWD.API.Data;
 
-namespace Persistense.Repository
+namespace ALWD.API.Data.Repository
 {
     public class EfRepository<T> : IRepository<T> where T : DbEntity
     {

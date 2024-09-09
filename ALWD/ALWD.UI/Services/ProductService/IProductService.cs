@@ -1,7 +1,7 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 
-namespace ADLW1.Services.ProductService
+namespace ALWD.Services.ProductService
 {
 	public interface IProductService
 	{

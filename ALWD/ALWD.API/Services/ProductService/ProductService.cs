@@ -2,26 +2,30 @@
 using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using ALWD.Domain.Abstractions;
 
 namespace ADLW1.Services.ProductService
 {
-	public class ProductService : IProductService
+	public class ProductService() : IProductService
 	{
+        private readonly IRepository<Product> _repository;
         private List<Product> _products = new();
         private List<Category> _categories = new();
 		private IConfiguration _config;
-        public ProductService(
-									[FromServices] IConfiguration config,
-							        ICategoryService categoryService)
+        public int PageNo { get; }
+
+        public ProductService(IRepository<Product> repository,
+							    [FromServices] IConfiguration config,
+							    ICategoryService categoryService) : this()
         {
             _categories = categoryService.GetCategoryListAsync()
 		   .Result
 		   .Data;
+            _repository = repository;
             _config = config;
         }
+///////!!!!!!!!!!!!!!!!!! Затребовало инициализацию конструктора this()? зачем
 
-
-        public int PageNo { get; }
 
         public Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
 		{
@@ -38,25 +42,25 @@ namespace ADLW1.Services.ProductService
 			throw new NotImplementedException();
 		}
 
-		public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo)
+		public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo)
 		{
-			List<Product> products = new();
+			IReadOnlyList<Product> products;
 
             if (string.IsNullOrEmpty(categoryNormalizedName)) 
 			{
-				products = _products;
+                products = await _repository.ListAllAsync() ;
 			}
 			else
 			{
                 try
                 {
-                    products = _products.Where(p => p.Category.NormalizedName == categoryNormalizedName).ToList();
+                    products = await _repository.ListAsync(p => p.Category.NormalizedName == categoryNormalizedName);
                 }
                 catch (Exception ex)
                 {
                     var failResponseData = new ResponseData<ListModel<Product>>(
                         new ListModel<Product>(), false, "Product list receiving fault");
-                    return Task.FromResult(failResponseData);
+                    return failResponseData;
                 }
             }
             int itemsPerPage;
@@ -80,7 +84,7 @@ namespace ADLW1.Services.ProductService
             var responseData = new ResponseData<ListModel<Product>>(listmodel);
 			responseData.Data.CurrentPage = pageNo;
 			responseData.Data.TotalPages = totalPages;
-            return Task.FromResult(responseData);
+            return responseData;
 
         }
 

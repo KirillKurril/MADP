@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ALWD.API.Controllers.ImageController",
+    "Method": "GetImage",
+    "RelativePath": "api/Image/{imageName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "GetProducts",
     "RelativePath": "api/Products",
