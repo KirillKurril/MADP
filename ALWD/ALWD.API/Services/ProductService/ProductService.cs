@@ -2,25 +2,18 @@
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using ALWD.Domain.Abstractions;
-using ALWD.API.Services.CategoryService;
+
 
 namespace ALWD.API.Services.ProductService
 {
 	public class ProductService() : IProductService
 	{
         private readonly IRepository<Product> _repository;
-        private List<Product> _products = new();
-        private List<Category> _categories = new();
 		private IConfiguration _config;
-        public int PageNo { get; }
 
         public ProductService(IRepository<Product> repository,
-							    [FromServices] IConfiguration config,
-							    ICategoryService categoryService) : this()
+							    [FromServices] IConfiguration config) : this()
         {
-            _categories = categoryService.GetCategoryListAsync()
-		   .Result
-		   .Data;
             _repository = repository;
             _config = config;
         }

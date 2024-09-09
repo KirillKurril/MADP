@@ -1,14 +1,42 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ALWD.API.Services.CategoryService;
+using ALWD.Domain.Entities;
+using ALWD.Domain.Models;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace ALWD.API.Controllers
 {
-	public class CategoriesController : Controller
+	[Route("api/[controller]")]
+	[ApiController]
+	public class CategoriesController : ControllerBase
 	{
-		public IActionResult Index()
-		{
-			return View();
-		}
-	}
+		private ICategoryService _categoryService;
+		public CategoriesController(ICategoryService categoryService)
+			=> _categoryService = categoryService;
+
+		[HttpGet("{id}")]
+        public async Task<ActionResult<Category>> GetCategoryById(int id)
+        {
+            ResponseData<Category> response = await _categoryService.GetCategorytByIdAsync(id);
+
+            if (response.Data == null)
+                return NotFound();
+
+            return Ok(response);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<Category>> GetCategoriesAsync()
+        {
+            ResponseData<IReadOnlyList<Category>> response = await _categoryService.GetCategoryListAsync();
+            
+            if (response.Data == null)
+                return NotFound();
+
+            return Ok(response);
+        }
+
+
+    }
 }
 

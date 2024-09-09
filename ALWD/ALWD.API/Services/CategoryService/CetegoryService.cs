@@ -1,35 +1,36 @@
-﻿using ALWD.Domain.Entities;
+﻿using ALWD.Domain.Abstractions;
+using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using System.Collections.Generic;
 
 namespace ALWD.API.Services.CategoryService
 {
     public class CategoryService : ICategoryService
     {
-        private List<Category> _categories;
-        public Task<ResponseData<List<Category>>> GetCategoryListAsync()
+        private IRepository<Category> _repository;
+        public CategoryService(IRepository<Category> repository) 
+            => _repository = repository;
+        public async Task<ResponseData<IReadOnlyList<Category>>> GetCategoryListAsync()
         {
-            var result = new ResponseData<List<Category>>(_categories);
-            return Task.FromResult(result); //как это работает 
+            IReadOnlyList<Category> categories = await _repository.ListAllAsync();
+            ResponseData<IReadOnlyList<Category>> response  = new ResponseData<IReadOnlyList<Category>>(categories);
+            return response;
         }
 
-        public Task<Category> GetRandomCategory()
+        public async Task<ResponseData<Category>> GetByNormilizedName(string normilizedName)
         {
-            int categoryIndex = new Random().Next(0, _categories.Count);
-            try
-            {
-                Category category = _categories[categoryIndex];
-                return Task.FromResult(category);
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                throw new Exception("Collections category is empty");
-            }
+            Category category = await _repository.FirstOrDefaultAsync(
+                c  => c.NormalizedName == normilizedName);
+
+            ResponseData<Category> response = new ResponseData<Category>(category);
+            return response;
         }
 
-        public Task<Category> GetByNormilizedName(string normilizedName)
+        public async Task<ResponseData<Category>> GetCategorytByIdAsync(int id)
         {
-            var category = _categories.Find(c => c.NormalizedName == normilizedName);
-            return Task.FromResult(category);
+            Category category = await _repository.GetByIdAsync(id);
+            ResponseData<Category> response = new ResponseData<Category>(category);
+            return response;
         }
     }
 
