@@ -1,6 +1,5 @@
-﻿using ALWD.Services.CategoryService;
-using ALWD.Services.ProductService;
-using ALWD.UI.Services.CategoryService;
+﻿using ALWD.UI.Services.CategoryService;
+using ALWD.UI.Services.ProductService;
 
 namespace ALWD.UI.Extensions
 {

@@ -1,4 +1,4 @@
-﻿using ALWD.Services.ProductService;
+﻿using ALWD.UI.Services.ProductService;
 using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using ALWD.UI.Services.CategoryService;

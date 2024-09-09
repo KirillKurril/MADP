@@ -9,7 +9,8 @@ namespace ALWD.API.Data
         public DbSet<Category> Categories { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> dbContextOptions) : base(dbContextOptions)
         {
-			//Database.EnsureDeleted(); после этой строки конструктор принципиально отказывается работать, даже если эту строку запихнуть в другой метод
+			//Database.EnsureDeleted();
+			//после этой строки конструктор принципиально отказывается работать, даже если эту строку запихнуть в другой метод
 			Database.EnsureCreated();
 		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

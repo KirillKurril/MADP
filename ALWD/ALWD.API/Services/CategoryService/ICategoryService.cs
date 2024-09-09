@@ -1,7 +1,7 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 
-namespace ALWD.UI.Services.CategoryService
+namespace ALWD.API.Services.CategoryService
 {
     public interface ICategoryService
     {

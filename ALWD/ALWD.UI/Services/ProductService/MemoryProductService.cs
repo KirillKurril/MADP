@@ -3,7 +3,7 @@ using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ALWD.Services.ProductService
+namespace ALWD.UI.Services.ProductService
 {
 	public class MemoryProductService : IProductService
 	{

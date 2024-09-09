@@ -1,10 +1,9 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
-using ALWD.UI.Services.CategoryService;
 
-namespace ALWD.Services.CategoryService
+namespace ALWD.API.Services.CategoryService
 {
-    public class MemoryCategoryService : ICategoryService
+    public class CategoryService : ICategoryService
     {
         private List<Category> _categories;
         public Task<ResponseData<List<Category>>> GetCategoryListAsync()
@@ -35,3 +34,5 @@ namespace ALWD.Services.CategoryService
     }
 
 }
+
+

@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
-using ADLW1.Services.ProductService;
+using ALWD.API.Services.ProductService;
+using ALWD.Domain.Models;
 
 namespace ALWD.API.Controllers
 {
@@ -16,88 +17,42 @@ namespace ALWD.API.Controllers
             _productService = productService;
         }
 
-        // GET: api/Products
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
-        {
-            return await _context.Products.ToListAsync();
-        }
-
         // GET: api/Products/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            ResponseData<Product> response = await _productService.GetProductByIdAsync(id);
 
-            if (product == null)
-            {
+            if (response.Data == null)
                 return NotFound();
-            }
 
-            return product;
+            return Ok(response);
         }
 
-        // PUT: api/Products/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Product product)
+        [HttpGet]
+        public async Task<ActionResult<Product>> GetProductByCategoryAndPage([FromQuery] string? category, [FromQuery] int? page)
         {
-            if (id != product.Id)
-            {
-                return BadRequest();
-            }
+            ResponseData<ListModel<Product>> response;
+            if (page != null && category != null)
+                 response = await _productService.GetProductListAsync(category, page.Value);
+            
+            else if (page != null && category == null) 
+                response = await _productService.GetProductListAsync(page.Value);
+            
+            else if (page == null && category != null)
+                response = await _productService.GetProductListAsync(category);
 
-            _context.Entry(product).State = EntityState.Modified;
+            else
+                response = await _productService.GetProductListAsync();
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProductExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Products
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Product>> PostProduct(Product product)
-        {
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetProduct", new { id = product.Id }, product);
-        }
-
-        // DELETE: api/Products/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
-        {
-            var product = await _context.Products.FindAsync(id);
-            if (product == null)
-            {
+            if (response.Data == null)
                 return NotFound();
-            }
 
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
+            if(!response.Successfull)
+                return BadRequest(response.ErrorMessage);
 
-            return NoContent();
+            return Ok(response);
         }
 
-        private bool ProductExists(int id)
-        {
-            return _context.Products.Any(e => e.Id == id);
-        }
     }
 }

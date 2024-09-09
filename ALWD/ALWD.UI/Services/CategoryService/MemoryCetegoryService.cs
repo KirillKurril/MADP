@@ -1,8 +1,7 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
-using ALWD.UI.Services.CategoryService;
 
-namespace ALWD.Services.CategoryService
+namespace ALWD.UI.Services.CategoryService
 {
     public class MemoryCategoryService : ICategoryService
     {

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ALWD.API.props" />
+</Project>

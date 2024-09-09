@@ -3,6 +3,8 @@ using ALWD.API.Data;
 using ALWD.Domain.Abstractions;
 using ALWD.Domain.Entities;
 using ALWD.API.Data.Repository;
+using ALWD.API.Services.ProductService;
+using ALWD.API.Services.CategoryService;
 
 namespace ALWD.API
 {
@@ -18,6 +20,8 @@ namespace ALWD.API
 
             builder.Services.AddScoped<IRepository<Product>, EfRepository<Product>>();
 			builder.Services.AddScoped<IRepository<Category>, EfRepository<Category>>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 			builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
