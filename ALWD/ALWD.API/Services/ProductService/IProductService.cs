@@ -5,6 +5,7 @@ namespace ALWD.API.Services.ProductService
 {
 	public interface IProductService
 	{
+        public Task<ResponseData<ListModel<Product>>> GetProductsAsync(int? itemsPerPage, string? categoryNormalizedName, int? pageNo);
         public Task<ResponseData<ListModel<Product>>> GetProductListAsync();
         public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage);
         public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, int pageNo);

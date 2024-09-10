@@ -32,23 +32,7 @@ namespace ALWD.API.Controllers
         [HttpGet]
         public async Task<ActionResult<Product>> GetProductsList([FromQuery] int? itemsPerPage, [FromQuery] string? category, [FromQuery] int? page)
         {
-            ResponseData<ListModel<Product>> response;
-            if (itemsPerPage != null)
-            {
-                if (page != null && category != null)
-                    response = await _productService.GetProductListAsync(itemsPerPage.Value, category, page.Value);
-
-                else if (page != null && category == null)
-                    response = await _productService.GetProductListAsync(itemsPerPage.Value, page.Value);
-
-                else if (page == null && category != null)
-                    response = await _productService.GetProductListAsync(itemsPerPage.Value, category);
-
-                else
-                    response = await _productService.GetProductListAsync();
-            }
-            else
-                response = await _productService.GetProductListAsync();
+            ResponseData<ListModel<Product>> response = await _productService.GetProductsAsync(itemsPerPage, category, page);
 
             if (response.Data == null)
                 return NotFound();

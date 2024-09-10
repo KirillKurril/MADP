@@ -2,6 +2,7 @@
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using ALWD.Domain.Abstractions;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 
 namespace ALWD.API.Services.ProductService
@@ -30,6 +31,28 @@ namespace ALWD.API.Services.ProductService
         }
         ///////!!!!!!!!!!!!!!!!!! Затребовало инициализацию конструктора this()? зачем
 
+        public async Task<ResponseData<ListModel<Product>>> GetProductsAsync(int? itemsPerPage, string? categoryNormalizedName, int? pageNo)
+        {
+            ResponseData<ListModel<Product>> response;
+            if (itemsPerPage != null)
+            {
+                if (pageNo != null && categoryNormalizedName != null)
+                    response = await GetProductListAsync(itemsPerPage.Value, categoryNormalizedName, pageNo.Value);
+
+                else if (pageNo != null && categoryNormalizedName == null)
+                    response = await GetProductListAsync(itemsPerPage.Value, pageNo.Value);
+
+                else if (pageNo == null && categoryNormalizedName != null)
+                    response = await GetProductListAsync(itemsPerPage.Value, categoryNormalizedName);
+
+                else
+                    response = await GetProductListAsync(itemsPerPage.Value);
+            }
+            else
+                response = await GetProductListAsync();
+            
+            return response;
+        }
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
             var product = await _repository.GetByIdAsync(id);
