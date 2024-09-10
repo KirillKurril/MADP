@@ -29,7 +29,7 @@ namespace ALWD.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet]
+        [HttpGet("")]
         public async Task<ActionResult<Product>> GetProductsList([FromQuery] int? itemsPerPage, [FromQuery] string? category, [FromQuery] int? page)
         {
             ResponseData<ListModel<Product>> response;
@@ -58,16 +58,9 @@ namespace ALWD.API.Controllers
 
             return Ok(response);
         }
-        /// <summary>
-        /// ///////////////////////////////////////////////////////////////////////////////////////////
-        /// </summary>
-        /// <param name="product"></param>
-        /// <param name="formFile"></param>
-        /// <returns></returns>
-        // POST: api/Products
-        // Метод для создания продукта с возможностью загрузки файла
+
         [HttpPost]
-        public async Task<ActionResult<Product>> CreateProduct([FromForm] Product product, [FromForm] IFormFile? formFile)
+        public async Task<ActionResult<Product>> CreateProduct(Product product, IFormFile? formFile)
         {
             var response = await _productService.CreateProductAsync(product, formFile);
 
@@ -76,13 +69,12 @@ namespace ALWD.API.Controllers
                 return BadRequest(response.ErrorMessage);
             }
 
-            return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response.Data);
+            return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response);
         }
 
-        // PUT: api/Products/5
-        // Метод для обновления продукта с возможностью загрузки файла
+
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, [FromForm] Product product, [FromForm] IFormFile? formFile)
+        public async Task<IActionResult> UpdateProduct(int id, Product product, IFormFile? formFile)
         {
             var existingProductResponse = await _productService.GetProductByIdAsync(id);
 
@@ -93,7 +85,7 @@ namespace ALWD.API.Controllers
 
             await _productService.UpdateProductAsync(id, product, formFile);
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpDelete("{id}")]
@@ -108,7 +100,7 @@ namespace ALWD.API.Controllers
 
             await _productService.DeleteProductAsync(id);
 
-            return NoContent();
+            return Ok();
         }
     }
 

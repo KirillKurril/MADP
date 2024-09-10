@@ -5,6 +5,7 @@ namespace ALWD.Domain.Abstractions
 {
     public interface IRepository<T> where T : DbEntity
     {
+        Task<bool> Exists(Expression<Func<T, bool>> filter);
         Task<T> GetByIdAsync(int id, CancellationToken
         cancellationToken = default,
         params Expression<Func<T, object>>[]?

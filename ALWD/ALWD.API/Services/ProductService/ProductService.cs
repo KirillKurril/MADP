@@ -11,10 +11,12 @@ namespace ALWD.API.Services.ProductService
         private readonly IRepository<Product> _repository;
         private IConfiguration _config;
         private readonly int _maxPageSize;
+        private readonly string _imagePath;
 
         public ProductService(IRepository<Product> repository,
                                 [FromServices] IConfiguration config) : this()
         {
+            _imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
             _repository = repository;
             _config = config;
             try
@@ -28,24 +30,12 @@ namespace ALWD.API.Services.ProductService
         }
         ///////!!!!!!!!!!!!!!!!!! Затребовало инициализацию конструктора this()? зачем
 
-
-        public Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteProductAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
             var product = await _repository.GetByIdAsync(id);
             var response = new ResponseData<Product>(product);
             return response;
         }
-
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync()
         {
             IReadOnlyList<Product> products;
@@ -78,7 +68,6 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
-
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName)
         {
             IReadOnlyList<Product> products;
@@ -105,7 +94,6 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
-
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, int pageNo)
         {
             IReadOnlyList<Product> products;
@@ -167,10 +155,39 @@ namespace ALWD.API.Services.ProductService
             return responseData;
         }
 
-
-        public Task UpdateProductAsync(int id, Product product, IFormFile? formFile)
+        public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<ResponseData<Product>> UpdateProductAsync(int id, Product product, IFormFile? formFile)
+        {
+            throw new NotImplementedException();
+        }
+        public async Task<ResponseData<Product>> DeleteProductAsync(int id)
+        {
+            Product product = await _repository.GetByIdAsync(id);
+            if (product == null)
+                return new ResponseData<Product>(product, false, "product doesn't exist");
+
+            else return new ResponseData<Product>(null);
+        }
+
+        private async Task<string> SaveFileAsync(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                throw new ArgumentException("Пустой файл.");
+            }
+
+            var filePath = Path.Combine(_imagePath, file.FileName);
+
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(fileStream);
+            }
+
+            return filePath;
         }
     }
 }

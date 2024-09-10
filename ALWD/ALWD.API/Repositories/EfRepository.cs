@@ -15,6 +15,12 @@ namespace ALWD.API.Data.Repository
             _entities = context.Set<T>();
         }
 
+        public async Task<bool> Exists(Expression<Func<T, bool>> filter)
+        {
+            IQueryable<T>? query = _entities.AsQueryable();
+            bool exists = await query.AnyAsync();
+            return exists;
+        }
 		public async Task<T> GetByIdAsync(int id, CancellationToken cancellationToken = default,
 	        params Expression<Func<T, object>>[]? includesProperties)
 		{

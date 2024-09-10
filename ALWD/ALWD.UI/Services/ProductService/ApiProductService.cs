@@ -125,14 +125,11 @@ namespace ALWD.UI.Services.ProductService
         {
             var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
 
-            // Create multipart form data content for file upload
             MultipartFormDataContent multipartContent = new MultipartFormDataContent();
 
-            // Add the product data as JSON
             var productContent = JsonContent.Create(product, options: _serializerOptions);
             multipartContent.Add(productContent, "product");
 
-            // Add the file if it exists
             if (formFile != null)
             {
                 byte[] fileBytes;
@@ -147,7 +144,6 @@ namespace ALWD.UI.Services.ProductService
                 multipartContent.Add(fileContent, "formFile", formFile.FileName);
             }
 
-            // Send PUT request to update the product
             var response = await _httpClient.PutAsync(uri, multipartContent);
 
             if (!response.IsSuccessStatusCode)
