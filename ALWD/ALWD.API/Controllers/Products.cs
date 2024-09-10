@@ -8,11 +8,11 @@ namespace ALWD.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ApiProductsController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private IProductService _productService;
 
-        public ApiProductsController(IProductService productService)
+        public ProductsController(IProductService productService)
         {
             _productService = productService;
         }
@@ -29,7 +29,7 @@ namespace ALWD.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet("")]
+        [HttpGet]
         public async Task<ActionResult<Product>> GetProductsList([FromQuery] int? itemsPerPage, [FromQuery] string? category, [FromQuery] int? page)
         {
             ResponseData<ListModel<Product>> response;

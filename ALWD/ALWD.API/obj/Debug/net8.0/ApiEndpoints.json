@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "ALWD.API.Controllers.ApiCategoriesController",
+    "ContainingType": "ALWD.API.Controllers.CategoriesController",
     "Method": "GetCategoriesAsync",
-    "RelativePath": "api/ApiCategories",
+    "RelativePath": "api/Categories",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +20,9 @@
     ]
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiCategoriesController",
+    "ContainingType": "ALWD.API.Controllers.CategoriesController",
     "Method": "CreateCategory",
-    "RelativePath": "api/ApiCategories",
+    "RelativePath": "api/Categories",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiCategoriesController",
+    "ContainingType": "ALWD.API.Controllers.CategoriesController",
     "Method": "GetCategory",
-    "RelativePath": "api/ApiCategories/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiCategoriesController",
+    "ContainingType": "ALWD.API.Controllers.CategoriesController",
     "Method": "UpdateCategory",
-    "RelativePath": "api/ApiCategories/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -93,9 +93,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiCategoriesController",
+    "ContainingType": "ALWD.API.Controllers.CategoriesController",
     "Method": "DeleteCategory",
-    "RelativePath": "api/ApiCategories/{id}",
+    "RelativePath": "api/Categories/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,9 +109,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiProductsController",
+    "ContainingType": "ALWD.API.Controllers.ImageController",
+    "Method": "GetImage",
+    "RelativePath": "api/Image/{imageName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "GetProductsList",
-    "RelativePath": "api/ApiProducts",
+    "RelativePath": "api/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -145,9 +161,9 @@
     ]
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiProductsController",
+    "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "CreateProduct",
-    "RelativePath": "api/ApiProducts",
+    "RelativePath": "api/Products",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -176,9 +192,9 @@
     ]
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiProductsController",
+    "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "GetProduct",
-    "RelativePath": "api/ApiProducts/{id}",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -202,9 +218,9 @@
     ]
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiProductsController",
+    "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "UpdateProduct",
-    "RelativePath": "api/ApiProducts/{id}",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -228,9 +244,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ALWD.API.Controllers.ApiProductsController",
+    "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "DeleteProduct",
-    "RelativePath": "api/ApiProducts/{id}",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -238,22 +254,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ALWD.API.Controllers.ImageController",
-    "Method": "GetImage",
-    "RelativePath": "api/Image/{imageName}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "imageName",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],
