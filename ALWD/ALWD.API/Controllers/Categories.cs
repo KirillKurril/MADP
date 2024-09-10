@@ -8,10 +8,10 @@ namespace ALWD.API.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class CategoriesController : ControllerBase
+	public class ApiCategoriesController : ControllerBase
 	{
 		private ICategoryService _categoryService;
-		public CategoriesController(ICategoryService categoryService)
+		public ApiCategoriesController(ICategoryService categoryService)
 			=> _categoryService = categoryService;
 
 		[HttpGet("{id}")]

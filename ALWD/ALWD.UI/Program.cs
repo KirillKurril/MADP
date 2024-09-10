@@ -1,10 +1,18 @@
 using ALWD.UI.Extensions;
+using ALWD.UI.Models;
+using ALWD.UI.Services.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<UriData>();
 builder.RegisterCustomServices();
+
+builder.Services
+	.AddHttpClient<IProductService, ApiProductService>(opt =>
+	opt.BaseAddress = new Uri(UriData.ApiUri));
+
 
 
 var app = builder.Build();

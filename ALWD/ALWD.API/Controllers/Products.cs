@@ -8,11 +8,11 @@ namespace ALWD.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ApiProductsController : ControllerBase
     {
         private IProductService _productService;
 
-        public ProductsController(IProductService productService)
+        public ApiProductsController(IProductService productService)
         {
             _productService = productService;
         }
@@ -30,18 +30,23 @@ namespace ALWD.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<Product>> GetProductByCategoryAndPage([FromQuery] string? category, [FromQuery] int? page)
+        public async Task<ActionResult<Product>> GetProductsList([FromQuery] int? itemsPerPage, [FromQuery] string? category, [FromQuery] int? page)
         {
             ResponseData<ListModel<Product>> response;
-            if (page != null && category != null)
-                 response = await _productService.GetProductListAsync(category, page.Value);
-            
-            else if (page != null && category == null) 
-                response = await _productService.GetProductListAsync(page.Value);
-            
-            else if (page == null && category != null)
-                response = await _productService.GetProductListAsync(category);
+            if (itemsPerPage != null)
+            {
+                if (page != null && category != null)
+                    response = await _productService.GetProductListAsync(itemsPerPage.Value, category, page.Value);
 
+                else if (page != null && category == null)
+                    response = await _productService.GetProductListAsync(itemsPerPage.Value, page.Value);
+
+                else if (page == null && category != null)
+                    response = await _productService.GetProductListAsync(itemsPerPage.Value, category);
+
+                else
+                    response = await _productService.GetProductListAsync();
+            }
             else
                 response = await _productService.GetProductListAsync();
 
@@ -53,6 +58,59 @@ namespace ALWD.API.Controllers
 
             return Ok(response);
         }
+        /// <summary>
+        /// ///////////////////////////////////////////////////////////////////////////////////////////
+        /// </summary>
+        /// <param name="product"></param>
+        /// <param name="formFile"></param>
+        /// <returns></returns>
+        // POST: api/Products
+        // Метод для создания продукта с возможностью загрузки файла
+        [HttpPost]
+        public async Task<ActionResult<Product>> CreateProduct([FromForm] Product product, [FromForm] IFormFile? formFile)
+        {
+            var response = await _productService.CreateProductAsync(product, formFile);
 
+            if (!response.Successfull)
+            {
+                return BadRequest(response.ErrorMessage);
+            }
+
+            return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response.Data);
+        }
+
+        // PUT: api/Products/5
+        // Метод для обновления продукта с возможностью загрузки файла
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateProduct(int id, [FromForm] Product product, [FromForm] IFormFile? formFile)
+        {
+            var existingProductResponse = await _productService.GetProductByIdAsync(id);
+
+            if (existingProductResponse.Data == null)
+            {
+                return NotFound();
+            }
+
+            await _productService.UpdateProductAsync(id, product, formFile);
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteProduct(int id)
+        {
+            var existingProductResponse = await _productService.GetProductByIdAsync(id);
+
+            if (existingProductResponse.Data == null)
+            {
+                return NotFound();
+            }
+
+            await _productService.DeleteProductAsync(id);
+
+            return NoContent();
+        }
     }
+
 }
+

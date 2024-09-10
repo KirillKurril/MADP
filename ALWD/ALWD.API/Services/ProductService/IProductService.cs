@@ -5,10 +5,11 @@ namespace ALWD.API.Services.ProductService
 {
 	public interface IProductService
 	{
-		public Task<ResponseData<ListModel<Product>>> GetProductListAsync();
-        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int pageNo);
-        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string categoryNormalizedName);
-        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo);
+        public Task<ResponseData<ListModel<Product>>> GetProductListAsync();
+        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage);
+        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, int pageNo);
+        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName);
+        public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string? categoryNormalizedName, int pageNo);
         public Task<ResponseData<Product>> GetProductByIdAsync(int id);
 		public Task UpdateProductAsync(int id, Product product, IFormFile? formFile);
 		public Task DeleteProductAsync(int id);

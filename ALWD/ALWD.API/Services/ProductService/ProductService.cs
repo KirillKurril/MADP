@@ -6,55 +6,86 @@ using ALWD.Domain.Abstractions;
 
 namespace ALWD.API.Services.ProductService
 {
-	public class ProductService() : IProductService
-	{
+    public class ProductService() : IProductService
+    {
         private readonly IRepository<Product> _repository;
-		private IConfiguration _config;
+        private IConfiguration _config;
+        private readonly int _maxPageSize;
 
         public ProductService(IRepository<Product> repository,
-							    [FromServices] IConfiguration config) : this()
+                                [FromServices] IConfiguration config) : this()
         {
             _repository = repository;
             _config = config;
+            try
+            {
+                _maxPageSize = int.Parse(_config["MaxPageSize"]);
+            }
+            catch
+            {
+                throw new Exception("Unable to receive max page size configuration");
+            }
         }
-///////!!!!!!!!!!!!!!!!!! Затребовало инициализацию конструктора this()? зачем
+        ///////!!!!!!!!!!!!!!!!!! Затребовало инициализацию конструктора this()? зачем
 
 
         public Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
-		{
-			throw new NotImplementedException();
-		}
+        {
+            throw new NotImplementedException();
+        }
 
-		public Task DeleteProductAsync(int id)
-		{
-			throw new NotImplementedException();
-		}
+        public Task DeleteProductAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
 
-		public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
-		{
-			var product = await _repository.GetByIdAsync(id);
+        public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
+        {
+            var product = await _repository.GetByIdAsync(id);
             var response = new ResponseData<Product>(product);
             return response;
-		}
+        }
 
-		public async Task<ResponseData<ListModel<Product>>> GetProductListAsync()
-		{
-			IReadOnlyList<Product> products;
-            
-            products = await _repository.ListAllAsync() ;
-            
-            (int itemsPerPage, int totalPages) = GetPaginationInfo(products.Count);
+        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync()
+        {
+            IReadOnlyList<Product> products;
+
+            products = await _repository.ListAllAsync();
+
+            int itemsPerPage = products.Count;
+            int totalPages = -1;
 
             var listmodel = new ListModel<Product>(products);
             var responseData = new ResponseData<ListModel<Product>>(listmodel);
-			responseData.Data.CurrentPage = -1;
-			responseData.Data.TotalPages = totalPages;
+            responseData.Data.CurrentPage = -1;
+            responseData.Data.TotalPages = totalPages;
+            return responseData;
+        }
+        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage)
+        {
+            IReadOnlyList<Product> products;
+
+            if (itemsPerPage > _maxPageSize)
+                itemsPerPage = _maxPageSize;
+
+            products = await _repository.ListAllAsync();
+
+            int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
+
+            var listmodel = new ListModel<Product>(products);
+            var responseData = new ResponseData<ListModel<Product>>(listmodel);
+            responseData.Data.CurrentPage = -1;
+            responseData.Data.TotalPages = totalPages;
             return responseData;
         }
 
-        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string categoryNormalizedName)
+        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName)
         {
             IReadOnlyList<Product> products;
+
+            if (itemsPerPage > _maxPageSize)
+                itemsPerPage = _maxPageSize;
+
             try
             {
                 products = await _repository.ListAsync(p => p.Category.NormalizedName == categoryNormalizedName);
@@ -66,7 +97,7 @@ namespace ALWD.API.Services.ProductService
                 return failResponseData;
             }
 
-            (int itemsPerPage, int totalPages) = GetPaginationInfo(products.Count);
+            int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
 
             var listmodel = new ListModel<Product>(products);
             var responseData = new ResponseData<ListModel<Product>>(listmodel);
@@ -75,12 +106,16 @@ namespace ALWD.API.Services.ProductService
             return responseData;
         }
 
-        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int pageNo)
+        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, int pageNo)
         {
             IReadOnlyList<Product> products;
+
+            if (itemsPerPage > _maxPageSize)
+                itemsPerPage = _maxPageSize;
+
             products = await _repository.ListAllAsync();
 
-            (int itemsPerPage, int totalPages) = GetPaginationInfo(products.Count);
+            int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
 
             if (pageNo > totalPages)
                 return new ResponseData<ListModel<Product>>(null, false, "Incorrect page number");
@@ -97,8 +132,11 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
-        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string categoryNormalizedName, int pageNo)
+        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName, int pageNo)
         {
+            if (itemsPerPage > _maxPageSize)
+                itemsPerPage = _maxPageSize;
+
             IReadOnlyList<Product> products;
             try
             {
@@ -111,7 +149,7 @@ namespace ALWD.API.Services.ProductService
                 return failResponseData;
             }
 
-            (int itemsPerPage, int totalPages) = GetPaginationInfo(products.Count);
+            int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
 
             if (pageNo > totalPages)
                 return new ResponseData<ListModel<Product>>(null, false, "Incorrect page number");
@@ -131,27 +169,8 @@ namespace ALWD.API.Services.ProductService
 
 
         public Task UpdateProductAsync(int id, Product product, IFormFile? formFile)
-		{
-			throw new NotImplementedException();
-		}
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns>(items per page, total pages)</returns>
-        private (int, int) GetPaginationInfo(int productsCount)
         {
-            int itemsPerPage;
-            try
-            {
-                itemsPerPage = int.Parse(_config["ItemsPerPage"]);
-            }
-            catch
-            {
-                throw new Exception("Unable to receive items per page configuration");
-            }
-            int totalPages = (int)Math.Ceiling((double)productsCount / itemsPerPage);
-            return (itemsPerPage, totalPages);
+            throw new NotImplementedException();
         }
-	}
+    }
 }
