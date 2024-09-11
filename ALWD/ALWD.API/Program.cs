@@ -29,7 +29,13 @@ namespace ALWD.API
 
             var app = builder.Build();
 
-            var scope = app.Services.CreateScope();
+
+            using var scope = app.Services.CreateScope();
+            var context =
+            scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
+
             DbInitializer.SeedData(app);
             // Асинхронная инициализация базы данных
 

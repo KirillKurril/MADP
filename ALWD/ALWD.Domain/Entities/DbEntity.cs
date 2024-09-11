@@ -5,6 +5,6 @@ namespace ALWD.Domain.Entities
 	public class DbEntity
 	{
 		[Key]
-		public int Id { get; set; } = 1;
+		public int Id { get; set; }
 	}
 }
