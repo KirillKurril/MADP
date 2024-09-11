@@ -91,7 +91,12 @@ namespace ALWD.UI.Services.ProductService
 			throw new NotImplementedException();
 		}
 
-			private void SetupData()
+        Task IProductService.CreateProductAsync(Product product, IFormFile? formFile)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void SetupData()
 			{
 				_products = new List<Product>
 			{

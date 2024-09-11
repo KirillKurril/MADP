@@ -1,6 +1,8 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using Microsoft.AspNetCore.WebUtilities;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
@@ -28,26 +30,21 @@ namespace ALWD.UI.Services.ProductService
 
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1)
         {
-            var urlString = new StringBuilder($"{_httpClient.BaseAddress.AbsoluteUri}Productes/");
+            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}/Productes";
 
+            Dictionary<string, string> parameters = new();
+            
             if (!_itemsPerPage.Equals("3"))
-            {
-                urlString.Append(QueryString.Create("pageSize", _itemsPerPage));
-            }
+                parameters.Add("itemsPerPage", _itemsPerPage);
 
             if (categoryNormalizedName != null)
-            {
-                urlString.Append($"{categoryNormalizedName}/");
-            }
+                parameters.Add("category", categoryNormalizedName);
 
-            if (pageNo > 1)
-            {
-                urlString.Append($"page{pageNo}");
-            };
-
+            parameters.Add("page", pageNo.ToString());
+            string urlWithQuery = QueryHelpers.AddQueryString(baseUri, parameters);
 
             var response = await _httpClient.GetAsync(
-            new Uri(urlString.ToString()));
+            new Uri(urlWithQuery));
 
             if (response.IsSuccessStatusCode)
             {
@@ -68,23 +65,38 @@ namespace ALWD.UI.Services.ProductService
             return new ResponseData<ListModel<Product>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
         }
 
-        public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
-        {
-            var uri = new Uri(_httpClient.BaseAddress.AbsoluteUri + "Productes");
+        //public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
+        //{
+        //    var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}/Productes";
 
-            var response = await _httpClient.PostAsJsonAsync(
-            uri,
-            product,
-            _serializerOptions);
-            if (response.IsSuccessStatusCode)
-            {
-                var data = await response.Content.ReadFromJsonAsync<ResponseData<Product>>(_serializerOptions);
-                return data;
-            }
-            _logger.LogError($"-----> object not created. Error: {response.StatusCode.ToString()}");
+        //    using var content = new MultipartFormDataContent();
 
-            return new ResponseData<Product>(null, false, $"Объект не добавлен. Error: {response.StatusCode.ToString()}");
-        }
+        //    var productJson = JsonSerializer.Serialize(product, _serializerOptions);
+        //    var productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
+
+        //    content.Add(productContent, "product");
+
+        //    if (formFile != null)
+        //    {
+        //        using var stream = formFile.OpenReadStream();
+        //        var fileContent = new StreamContent(stream);
+        //        fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
+
+        //        content.Add(fileContent, "formFile", formFile.FileName);
+        //    }
+
+        //    var response = await _httpClient.PostAsync(baseUri, content);
+
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        var data = await response.Content.ReadFromJsonAsync<ResponseData<Product>>(_serializerOptions);
+        //        return data;
+        //    }
+
+        //    _logger.LogError($"-----> object not created. Error: {response.StatusCode}");
+
+        //    return new ResponseData<Product>(null, false, $"Объект не добавлен. Error: {response.StatusCode}");
+        //}
         public async Task DeleteProductAsync(int id)
         {
             var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
@@ -145,6 +157,38 @@ namespace ALWD.UI.Services.ProductService
             }
 
             var response = await _httpClient.PutAsync(uri, multipartContent);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                _logger.LogError($"-----> Unable to update product. Error: {response.StatusCode.ToString()}");
+                throw new HttpRequestException($"Error updating product: {response.StatusCode}");
+            }
+        }
+
+        public async Task CreateProductAsync(Product product, IFormFile? formFile)
+        {
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes");
+
+            MultipartFormDataContent multipartContent = new MultipartFormDataContent();
+
+            var productContent = JsonContent.Create(product, options: _serializerOptions);
+            multipartContent.Add(productContent, "product");
+
+            if (formFile != null)
+            {
+                byte[] fileBytes;
+                using (var ms = new MemoryStream())
+                {
+                    await formFile.CopyToAsync(ms);
+                    fileBytes = ms.ToArray();
+                }
+
+                var fileContent = new ByteArrayContent(fileBytes);
+                fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
+                multipartContent.Add(fileContent, "formFile", formFile.FileName);
+            }
+
+            HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
 
             if (!response.IsSuccessStatusCode)
             {
