@@ -13,11 +13,14 @@ namespace ALWD.API.Services.ProductService
         private IConfiguration _config;
         private readonly int _maxPageSize;
         private readonly string _imagePath;
+        private string _apiUri;
 
         public ProductService(IRepository<Product> repository,
-                                [FromServices] IConfiguration config) : this()
+                                [FromServices] IConfiguration config,
+                                WebApplication app) : this()
         {
-            _imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+            _imagePath = Path.Combine(app.Environment.ContentRootPath, "images");
+            _apiUri = app.Configuration.GetValue<string>("ImageUri") ?? "not founded";
             _repository = repository;
             _config = config;
             try
@@ -180,12 +183,38 @@ namespace ALWD.API.Services.ProductService
 
         public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (product == null)
+                {
+                    throw new ArgumentNullException(nameof(product));
+                }
+                product.ImagePath = await SaveFileAsync(formFile);
+                await _repository.AddAsync(product);
+                return new ResponseData<Product>(product);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while creating the product.", ex);
+            }
         }
 
         public async Task<ResponseData<Product>> UpdateProductAsync(int id, Product product, IFormFile? formFile)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (product == null)
+                {
+                    throw new ArgumentNullException(nameof(product));
+                }
+                product.ImagePath = await SaveFileAsync(formFile);
+                await _repository.UpdateAsync(product);
+                return new ResponseData<Product>(null);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while creating the product.", ex);
+            }
         }
         public async Task<ResponseData<Product>> DeleteProductAsync(int id)
         {
@@ -209,8 +238,8 @@ namespace ALWD.API.Services.ProductService
             {
                 await file.CopyToAsync(fileStream);
             }
-
-            return filePath;
+            string imageUri = Path.Combine(_apiUri, file.FileName);
+            return imageUri;
         }
     }
 }
