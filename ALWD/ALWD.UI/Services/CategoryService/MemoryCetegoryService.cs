@@ -51,6 +51,31 @@ namespace ALWD.UI.Services.CategoryService
             var category = _categories.Find(c => c.NormalizedName == normilizedName);
             return Task.FromResult(category);
         }
+
+        Task<ResponseData<IReadOnlyList<Category>>> ICategoryService.GetCategoryListAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResponseData<Category>> GetCategoryByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResponseData<Category>> CreateCategoryAsync(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResponseData<Category>> UpdateCategoryAsync(int id, Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResponseData<bool>> DeleteCategoryAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ALWD.API.Services.ProductService
 {
-    public class ProductService() : IProductService
+    public class ProductService : IProductService
     {
         private readonly IRepository<Product> _repository;
         private IConfiguration _config;
@@ -17,12 +17,12 @@ namespace ALWD.API.Services.ProductService
 
         public ProductService(IRepository<Product> repository,
                                 [FromServices] IConfiguration config,
-                                WebApplication app) : this()
+                                IWebHostEnvironment env)
         {
-            _imagePath = Path.Combine(app.Environment.ContentRootPath, "images");
-            _apiUri = app.Configuration.GetValue<string>("ImageUri") ?? "not founded";
             _repository = repository;
             _config = config;
+            _imagePath = Path.Combine(env.ContentRootPath, "images");
+            _apiUri = _config["ImageUri"];
             try
             {
                 _maxPageSize = int.Parse(_config["MaxPageSize"]);

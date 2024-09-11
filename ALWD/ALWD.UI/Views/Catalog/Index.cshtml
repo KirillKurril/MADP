@@ -29,7 +29,7 @@
                                    asp-action="Index"
                                    asp-route-category=@null>Все</a>
                             </li>
-                            @foreach (var item in Model.Categories)
+                            @foreach (var item in Model.Categories.Data)
                             {
                                 <li>
                                     <a class="dropdown-item"

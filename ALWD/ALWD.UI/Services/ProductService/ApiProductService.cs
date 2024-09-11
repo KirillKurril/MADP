@@ -30,12 +30,11 @@ namespace ALWD.UI.Services.ProductService
 
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1)
         {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}/Productes";
+            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
 
             Dictionary<string, string> parameters = new();
-            
-            if (!_itemsPerPage.Equals("3"))
-                parameters.Add("itemsPerPage", _itemsPerPage);
+
+            parameters.Add("itemsPerPage", _itemsPerPage);
 
             if (categoryNormalizedName != null)
                 parameters.Add("category", categoryNormalizedName);
@@ -97,22 +96,10 @@ namespace ALWD.UI.Services.ProductService
 
         //    return new ResponseData<Product>(null, false, $"Объект не добавлен. Error: {response.StatusCode}");
         //}
-        public async Task DeleteProductAsync(int id)
-        {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
-
-            var response = await _httpClient.DeleteAsync(uri);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to delete product. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error deleting product: {response.StatusCode}");
-            }
-        }
 
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}");
 
             var response = await _httpClient.GetAsync(uri);
 
@@ -131,6 +118,38 @@ namespace ALWD.UI.Services.ProductService
 
             _logger.LogError($"-----> Product not found. Error: {response.StatusCode.ToString()}");
             return new ResponseData<Product>(null, false, $"Product not found. Error: {response.StatusCode.ToString()}");
+        }
+
+        public async Task CreateProductAsync(Product product, IFormFile? formFile)
+        {
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products");
+
+            MultipartFormDataContent multipartContent = new MultipartFormDataContent();
+
+            var productContent = JsonContent.Create(product, options: _serializerOptions);
+            multipartContent.Add(productContent, "product");
+
+            if (formFile != null)
+            {
+                byte[] fileBytes;
+                using (var ms = new MemoryStream())
+                {
+                    await formFile.CopyToAsync(ms);
+                    fileBytes = ms.ToArray();
+                }
+
+                var fileContent = new ByteArrayContent(fileBytes);
+                fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
+                multipartContent.Add(fileContent, "formFile", formFile.FileName);
+            }
+
+            HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                _logger.LogError($"-----> Unable to update product. Error: {response.StatusCode.ToString()}");
+                throw new HttpRequestException($"Error updating product: {response.StatusCode}");
+            }
         }
 
         public async Task UpdateProductAsync(int id, Product product, IFormFile? formFile)
@@ -164,37 +183,19 @@ namespace ALWD.UI.Services.ProductService
                 throw new HttpRequestException($"Error updating product: {response.StatusCode}");
             }
         }
-
-        public async Task CreateProductAsync(Product product, IFormFile? formFile)
+        public async Task DeleteProductAsync(int id)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes");
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
 
-            MultipartFormDataContent multipartContent = new MultipartFormDataContent();
-
-            var productContent = JsonContent.Create(product, options: _serializerOptions);
-            multipartContent.Add(productContent, "product");
-
-            if (formFile != null)
-            {
-                byte[] fileBytes;
-                using (var ms = new MemoryStream())
-                {
-                    await formFile.CopyToAsync(ms);
-                    fileBytes = ms.ToArray();
-                }
-
-                var fileContent = new ByteArrayContent(fileBytes);
-                fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
-                multipartContent.Add(fileContent, "formFile", formFile.FileName);
-            }
-
-            HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
+            var response = await _httpClient.DeleteAsync(uri);
 
             if (!response.IsSuccessStatusCode)
             {
-                _logger.LogError($"-----> Unable to update product. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error updating product: {response.StatusCode}");
+                _logger.LogError($"-----> Unable to delete product. Error: {response.StatusCode.ToString()}");
+                throw new HttpRequestException($"Error deleting product: {response.StatusCode}");
             }
         }
+
+
     }
 }

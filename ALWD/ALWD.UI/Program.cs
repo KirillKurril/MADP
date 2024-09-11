@@ -1,5 +1,6 @@
 using ALWD.UI.Extensions;
 using ALWD.UI.Models;
+using ALWD.UI.Services.CategoryService;
 using ALWD.UI.Services.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,9 +10,15 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<UriData>();
 builder.RegisterCustomServices();
 
+var apiUri = builder.Configuration.GetSection("UriData:ApiUri").Value;
+
 builder.Services
 	.AddHttpClient<IProductService, ApiProductService>(opt =>
-	opt.BaseAddress = new Uri(UriData.ApiUri));
+	opt.BaseAddress = new Uri(apiUri));
+
+builder.Services
+    .AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
+    opt.BaseAddress = new Uri(apiUri));
 
 
 
@@ -41,3 +48,4 @@ app.MapControllerRoute(
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+

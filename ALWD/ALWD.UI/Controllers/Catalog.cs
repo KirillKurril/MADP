@@ -23,17 +23,16 @@ namespace ALWD.UI.Controllers
 			
 			else
 			{
-				var categoryFull = await _categoryService.GetByNormilizedName(category);
-                ViewData["currentCategory"] = categoryFull.Name;
+                ViewData["currentCategory"] = category;
             }
 
 			var categories = await _categoryService.GetCategoryListAsync();
 
-			ResponseData<ListModel<Product>> productResponse = await _productService.GetProductListAsync(category, page );
+			ResponseData<ListModel<Product>> productResponse = await _productService.GetProductListAsync(category, page);
 			if (!productResponse.Successfull)
 				return NotFound(productResponse.ErrorMessage);
 
-			var viewModel = new CatalogViewModel(productResponse, categories.Data);
+			var viewModel = new CatalogViewModel(productResponse, categories);
 			return View(viewModel);
 		}
 	}

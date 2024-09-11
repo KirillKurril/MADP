@@ -11,11 +11,8 @@ namespace ALWD.API.Controllers
     public class ProductsController : ControllerBase
     {
         private IProductService _productService;
-
         public ProductsController(IProductService productService)
-        {
-            _productService = productService;
-        }
+            => _productService = productService;
 
         // GET: api/Products/5
         [HttpGet("{id}")]
