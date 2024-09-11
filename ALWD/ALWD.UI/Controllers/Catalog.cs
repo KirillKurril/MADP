@@ -5,6 +5,7 @@ using ALWD.UI.Services.CategoryService;
 using ALWD.Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 
 namespace ALWD.UI.Controllers
 {
@@ -16,19 +17,21 @@ namespace ALWD.UI.Controllers
 			=> (_categoryService, _productService) = (categoryService, productService);
         public async Task<IActionResult> Index(string? category, int page = 1)
         {
-			ViewData["currentCategoryNormilizedName"] = category;
 			ViewData["CurrentSection"] = "Catalog";
+
+			Category selectedCategory = new();
 			if(string.IsNullOrEmpty(category))
                 ViewData["currentCategory"] = "Все";
 			
 			else
 			{
-                ViewData["currentCategory"] = category;
+                selectedCategory = JsonConvert.DeserializeObject<Category>(category);
+                ViewData["currentCategory"] = selectedCategory.Name;
             }
+            ViewData["currentCategoryNormilizedName"] = selectedCategory.NormalizedName;
+            var categories = await _categoryService.GetCategoryListAsync();
 
-			var categories = await _categoryService.GetCategoryListAsync();
-
-			ResponseData<ListModel<Product>> productResponse = await _productService.GetProductListAsync(category, page);
+			ResponseData<ListModel<Product>> productResponse = await _productService.GetProductListAsync(selectedCategory.NormalizedName, page);
 			if (!productResponse.Successfull)
 				return NotFound(productResponse.ErrorMessage);
 

@@ -35,7 +35,7 @@
                                     <a class="dropdown-item"
                                        asp-controller="Catalog"
                                        asp-action="Index"
-                                       asp-route-category="@item.NormalizedName">
+                                       asp-route-category="@Newtonsoft.Json.JsonConvert.SerializeObject(item)">
                                         @item.Name
                                     </a>
                                 </li>
