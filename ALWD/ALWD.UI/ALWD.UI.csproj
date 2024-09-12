@@ -8,10 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="FontAwesome" Version="4.7.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ALWD.API\ALWD.API.csproj" />
     <ProjectReference Include="..\ALWD.Domain\ALWD.Domain.csproj" />
   </ItemGroup>
 
