@@ -41,8 +41,15 @@ namespace ALWD.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Product>> CreateProduct(Product product, IFormFile? formFile)
+        public async Task<ActionResult<Product>> CreateProduct([FromForm] Product product, [FromForm] IFormFile? formFile)
         {
+            Console.WriteLine("запрос принят на обработку");
+            if (!ModelState.IsValid)
+            {
+                Console.WriteLine("модель инвалид");
+                return BadRequest(ModelState);
+            }
+
             var response = await _productService.CreateProductAsync(product, formFile);
 
             if (!response.Successfull)
@@ -50,7 +57,7 @@ namespace ALWD.API.Controllers
                 return BadRequest(response.ErrorMessage);
             }
 
-            return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response);
+            return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response.Data);
         }
 
 

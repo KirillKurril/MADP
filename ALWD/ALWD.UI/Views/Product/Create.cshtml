@@ -1,0 +1,31 @@
+﻿@model ALWD.Domain.Entities.Product
+
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Description)
+        @Html.EditorFor(m => m.Description)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Price)
+        @Html.EditorFor(m => m.Price)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Quantity)
+        @Html.EditorFor(m => m.Quantity)
+    </div>
+    <div>
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+    </div>
+    <div>
+        <label for="CategoryId">Category:</label>
+        @Html.DropDownListFor(m => m.CategoryId, ViewBag.CategoryList as SelectList, "Select a category", new { @class = "form-control" })
+    </div>
+    <input type="submit" value="Add Product" />
+}

@@ -9,7 +9,22 @@
 </head>
 <body>
     <p>
-        <a asp-action="Create">Create New</a>
+        <a asp-controller="Product" asp-action="ShowCreatePage">Create product</a>
+    </p>
+    <p>
+        <a asp-controller="Product" asp-action="ShowUpdatePage">Update product</a>
+    </p>
+    <p>
+        <a asp-controller="Product" asp-action="ShowDeletePage">Delete product</a>
+    </p>
+    <p>
+        <a asp-controller="Category" asp-action="ShowCreatePage">Create category</a>
+    </p>
+    <p>
+        <a asp-controller="Category" asp-action="ShowUpdatePage">Update category</a>
+    </p>
+    <p>
+        <a asp-controller="Category" asp-action="ShowDeletePage">Delete category</a>
     </p>
     <p>
             <div class="col-2 border-2">
