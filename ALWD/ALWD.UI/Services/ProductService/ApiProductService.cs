@@ -29,7 +29,7 @@ namespace ALWD.UI.Services.ProductService
             _logger = logger;
         }
 
-        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName, int pageNo = 1)
+        public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName = null, int pageNo = 1)
         {
             var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
 
@@ -64,40 +64,6 @@ namespace ALWD.UI.Services.ProductService
             _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode.ToString()}");
             return new ResponseData<ListModel<Product>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
         }
-
-        //public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
-        //{
-        //    var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}/Productes";
-
-        //    using var content = new MultipartFormDataContent();
-
-        //    var productJson = JsonSerializer.Serialize(product, _serializerOptions);
-        //    var productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
-
-        //    content.Add(productContent, "product");
-
-        //    if (formFile != null)
-        //    {
-        //        using var stream = formFile.OpenReadStream();
-        //        var fileContent = new StreamContent(stream);
-        //        fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
-
-        //        content.Add(fileContent, "formFile", formFile.FileName);
-        //    }
-
-        //    var response = await _httpClient.PostAsync(baseUri, content);
-
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        var data = await response.Content.ReadFromJsonAsync<ResponseData<Product>>(_serializerOptions);
-        //        return data;
-        //    }
-
-        //    _logger.LogError($"-----> object not created. Error: {response.StatusCode}");
-
-        //    return new ResponseData<Product>(null, false, $"Объект не добавлен. Error: {response.StatusCode}");
-        //}
-
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
             var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}");
@@ -127,12 +93,10 @@ namespace ALWD.UI.Services.ProductService
 
             var multipartContent = new MultipartFormDataContent();
 
-            // Преобразуем объект продукта в JSON и добавляем в форму
             var productJson = JsonConvert.SerializeObject(product);
             var productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
             multipartContent.Add(productContent, "product");
 
-            // Добавляем файл, если он существует
             if (formFile != null)
             {
                 await using var ms = new MemoryStream();
@@ -144,7 +108,6 @@ namespace ALWD.UI.Services.ProductService
                 multipartContent.Add(fileContent, "formFile", formFile.FileName);
             }
 
-            // Отправка данных на API
             HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
 
             if (!response.IsSuccessStatusCode)
@@ -154,9 +117,9 @@ namespace ALWD.UI.Services.ProductService
             }
         }
 
-        public async Task UpdateProductAsync(int id, Product product, IFormFile? formFile)
+        public async Task UpdateProductAsync(Product product, IFormFile? formFile)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{product.Id}");
 
             MultipartFormDataContent multipartContent = new MultipartFormDataContent();
 
@@ -194,10 +157,8 @@ namespace ALWD.UI.Services.ProductService
             if (!response.IsSuccessStatusCode)
             {
                 _logger.LogError($"-----> Unable to delete product. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error deleting product: {response.StatusCode}");
+                throw new HttpRequestException($"Error deletion product: {response.StatusCode}");
             }
         }
-
-
     }
 }

@@ -25,7 +25,7 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return NotFound();
             }
 
-            var product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _productService.GetProductByIdAsync(id.Value);
 
             if (product == null)
             {
@@ -33,7 +33,7 @@ namespace ALWD.UI.Admin.Pages.ProductPages
             }
             else
             {
-                Product = product;
+                Product = product.Data;
             }
             return Page();
         }
@@ -45,15 +45,17 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return NotFound();
             }
 
-            var product = await _context.Products.FindAsync(id);
-            if (product != null)
+            try
             {
-                Product = product;
-                _context.Products.Remove(Product);
-                await _context.SaveChangesAsync();
+                await _productService.DeleteProductAsync(id.Value);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
             }
 
             return RedirectToPage("./Index");
+
         }
     }
 }

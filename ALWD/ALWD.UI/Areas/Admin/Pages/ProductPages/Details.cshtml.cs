@@ -24,14 +24,15 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return NotFound();
             }
 
-            var product = await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _productService.GetProductByIdAsync(id.Value);
+
             if (product == null)
             {
                 return NotFound();
             }
             else
             {
-                Product = product;
+                Product = product.Data;
             }
             return Page();
         }

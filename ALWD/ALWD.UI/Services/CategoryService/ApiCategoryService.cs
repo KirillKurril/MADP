@@ -68,54 +68,51 @@ namespace ALWD.UI.Services.CategoryService
             return new ResponseData<IReadOnlyList<Category>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
         }
 
-        public async Task<ResponseData<Category>> CreateCategoryAsync(Category category)
+        public async Task CreateCategoryAsync(Category category)
         {
             var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories";
 
             var response = await _httpClient.PostAsJsonAsync(baseUri, category, _serializerOptions);
 
-            if (response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
-                var data = await response.Content.ReadFromJsonAsync<ResponseData<Category>>();
-                return data;
+                _logger.LogError($"-----> Unable to create category. Error: {response.StatusCode.ToString()}");
+                throw new HttpRequestException($"Error creating category: {response.StatusCode}");
             }
 
-            _logger.LogError($"-----> Category not created. Error: {response.StatusCode}");
-
-            return new ResponseData<Category>(null, false, $"Category not created. Error: {response.StatusCode}");
+            _logger.LogError($"-----> Category created. successfilly: {response.StatusCode}");
         }
 
-        public async Task<ResponseData<Category>> UpdateCategoryAsync(int id, Category category)
+        public async Task UpdateCategoryAsync(Category category)
         {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{id}";
+            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{category.Id}";
 
             var response = await _httpClient.PutAsJsonAsync(baseUri, category, _serializerOptions);
 
-            if (response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
-                var data = await response.Content.ReadFromJsonAsync<ResponseData<Category>>();
-                return data;
+                _logger.LogError($"-----> Unable to update category. Error: {response.StatusCode.ToString()}");
+                throw new HttpRequestException($"Error updating category: {response.StatusCode}");
             }
 
-            _logger.LogError($"-----> Category with ID {id} not updated. Error: {response.StatusCode}");
+            _logger.LogError($"-----> Category with ID updateded successfully: {response.StatusCode}");
 
-            return new ResponseData<Category>(null, false, $"Category with ID {id} not updated. Error: {response.StatusCode}");
         }
 
-        public async Task<ResponseData<bool>> DeleteCategoryAsync(int id)
+        public async Task DeleteCategoryAsync(int id)
         {
             var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}/Categories/{id}";
 
             var response = await _httpClient.DeleteAsync(baseUri);
 
-            if (response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
-                return new ResponseData<bool>(true, true, null); // Успешное удаление
+                _logger.LogError($"-----> Unable to delete category. Error: {response.StatusCode.ToString()}");
+                throw new HttpRequestException($"Error deleting category: {response.StatusCode}");
             }
 
-            _logger.LogError($"-----> Category with ID {id} not deleted. Error: {response.StatusCode}");
+            _logger.LogError($"-----> Category with ID {id} deleted successfully. Error: {response.StatusCode}");
 
-            return new ResponseData<bool>(false, false, $"Category with ID {id} not deleted. Error: {response.StatusCode}");
         }
     }
 }

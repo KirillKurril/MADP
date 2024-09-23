@@ -4,20 +4,26 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
+using ALWD.API.Services.CategoryService;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
     public class EditModel : PageModel
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
 
-        public EditModel(IProductService service)
+        public EditModel(IProductService productService, ICategoryService categoryService)
         {
-            _productService = service;
+            _productService = productService;
+            _categoryService = categoryService;
         }
 
         [BindProperty]
         public Product Product { get; set; } = default!;
+
+        [BindProperty]
+        public IFormFile? ProductImage { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -26,13 +32,15 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return NotFound();
             }
 
-            var product =  await _context.Products.FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _productService.GetProductByIdAsync(id.Value);
             if (product == null)
             {
                 return NotFound();
             }
-            Product = product;
-           ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+            Product = product.Data;
+
+            var categoryList = await _categoryService.GetCategoryListAsync();
+            ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name");
             return Page();
         }
 
@@ -45,30 +53,28 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return Page();
             }
 
-            _context.Attach(Product).State = EntityState.Modified;
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
+            Product.ImageMimeType = ProductImage.ContentType;
             try
             {
-                await _context.SaveChangesAsync();
+                await _productService.UpdateProductAsync(Product, ProductImage);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!ProductExists(Product.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound(ex.Message);
             }
 
             return RedirectToPage("./Index");
         }
 
-        private bool ProductExists(int id)
+        private async Task<bool> ProductExists(int id)
         {
-            return _context.Products.Any(e => e.Id == id);
+            var response = await _productService.GetProductByIdAsync(id);
+            return response.Data != null;
         }
     }
 }

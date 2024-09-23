@@ -3,26 +3,33 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
+using ALWD.API.Services.CategoryService;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
     public class CreateModel : PageModel
     {
         private readonly IProductService _productService;
-
-        public CreateModel(IProductService service)
-        {
-            _productService = service;
-        }
-
-        public IActionResult OnGet()
-        {
-        ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
-            return Page();
-        }
+        private readonly ICategoryService _categoryService;
 
         [BindProperty]
         public Product Product { get; set; } = default!;
+
+        [BindProperty]
+        public IFormFile? ProductImage { get; set; }
+
+        public CreateModel(IProductService productService, ICategoryService categoryService)
+        {
+            _productService = productService;
+            _categoryService = categoryService;
+        }
+
+        public async Task<IActionResult> OnGet()
+        {
+            var categoryList = await _categoryService.GetCategoryListAsync();
+            ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name");
+            return Page();
+        }
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -32,8 +39,15 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return Page();
             }
 
-            _context.Products.Add(Product);
-            await _context.SaveChangesAsync();
+            Product.ImageMimeType = ProductImage.ContentType;
+            try
+            {
+                await _productService.CreateProductAsync(Product, ProductImage);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
 
             return RedirectToPage("./Index");
         }

@@ -76,6 +76,21 @@ namespace ALWD.UI.Services.CategoryService
         {
             throw new NotImplementedException();
         }
+
+        Task ICategoryService.CreateCategoryAsync(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateCategoryAsync(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task ICategoryService.DeleteCategoryAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
@@ -16,10 +17,18 @@ namespace ALWD.UI.Admin.Pages.ProductPages
 
         public IList<Product> Product { get;set; } = default!;
 
-        public async Task OnGetAsync()
+        public async Task<IActionResult> OnGetAsync()
         {
-            Product = await _context.Products
-                .Include(p => p.Category).ToListAsync();
+            try
+            {
+                var response = await _productService.GetProductListAsync();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            return RedirectToPage("./Index");
         }
     }
 }

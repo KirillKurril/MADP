@@ -514,5 +514,3 @@ E:\Uni\MADP\ALWD\ALWD.API\obj\Debug\net8.0\ALWD.API.pdb
 E:\Uni\MADP\ALWD\ALWD.API\obj\Debug\net8.0\ALWD.API.genruntimeconfig.cache
 E:\Uni\MADP\ALWD\ALWD.API\obj\Debug\net8.0\ref\ALWD.API.dll
 D:\uni\MADP\ALWD\ALWD.API\bin\Debug\net8.0\ALWD.API.staticwebassets.runtime.json
-D:\uni\MADP\ALWD\ALWD.API\obj\Debug\net8.0\ALWD.API.RazorAssemblyInfo.cache
-D:\uni\MADP\ALWD\ALWD.API\obj\Debug\net8.0\ALWD.API.RazorAssemblyInfo.cs

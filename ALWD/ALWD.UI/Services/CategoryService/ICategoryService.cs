@@ -7,8 +7,8 @@ namespace ALWD.UI.Services.CategoryService
     {
         Task<ResponseData<IReadOnlyList<Category>>> GetCategoryListAsync();
         Task<ResponseData<Category>> GetCategoryByIdAsync(int id);
-        Task<ResponseData<Category>> CreateCategoryAsync(Category category);
-        Task<ResponseData<Category>> UpdateCategoryAsync(int id, Category category);
-        Task<ResponseData<bool>> DeleteCategoryAsync(int id);
+        Task CreateCategoryAsync(Category category);
+        Task UpdateCategoryAsync(Category category);
+        Task DeleteCategoryAsync(int id);
     }
 }

@@ -22,17 +22,20 @@ namespace ALWD.UI.Admin.Pages.CategoryPages
         [BindProperty]
         public Category Category { get; set; } = default!;
 
-        // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-
-            _context.Categories.Add(Category);
-            await _context.SaveChangesAsync();
-
+            try
+            {
+             await _categoryService.CreateCategoryAsync(Category);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
             return RedirectToPage("./Index");
         }
     }

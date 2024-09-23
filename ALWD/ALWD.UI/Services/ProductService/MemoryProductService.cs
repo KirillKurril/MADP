@@ -95,6 +95,21 @@ namespace ALWD.UI.Services.ProductService
             throw new NotImplementedException();
         }
 
+        Task IProductService.DeleteProductAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<ResponseData<Product>> IProductService.GetProductByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<ResponseData<ListModel<Product>>> IProductService.GetProductListAsync(string? categoryNormalizedName, int pageNo)
+        {
+            throw new NotImplementedException();
+        }
+
         private async void SetupData()
 			{
 				var categoriesResponse = await _categoryService.GetCategoryListAsync();
@@ -133,5 +148,10 @@ namespace ALWD.UI.Services.ProductService
 		};
 
 			}
-		}
+
+        Task IProductService.UpdateProductAsync(Product product, IFormFile? formFile)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

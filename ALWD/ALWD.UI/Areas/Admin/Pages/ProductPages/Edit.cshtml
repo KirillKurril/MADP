@@ -34,14 +34,9 @@
                 <span asp-validation-for="Product.Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Product.ImagePath" class="control-label"></label>
-                <input asp-for="Product.ImagePath" class="form-control" />
-                <span asp-validation-for="Product.ImagePath" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Product.ImageMimeType" class="control-label"></label>
-                <input asp-for="Product.ImageMimeType" class="form-control" />
-                <span asp-validation-for="Product.ImageMimeType" class="text-danger"></span>
+                <label>Upload image</label>
+                <input type="file" asp-for="ProductImage" class="form-control" />
+                <span asp-validation-for="ProductImage" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Product.CategoryId" class="control-label"></label>

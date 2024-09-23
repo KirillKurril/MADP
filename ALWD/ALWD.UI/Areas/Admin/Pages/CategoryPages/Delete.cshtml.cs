@@ -39,15 +39,15 @@ namespace ALWD.UI.Admin.Pages.CategoryPages
         {
             if (id == null)
             {
-                return NotFound();
+                return BadRequest();
             }
-
-            var category = await _context.Categories.FindAsync(id);
-            if (category != null)
+            try
             {
-                Category = category;
-                _context.Categories.Remove(Category);
-                await _context.SaveChangesAsync();
+                await _categoryService.DeleteCategoryAsync(id.Value);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
             }
 
             return RedirectToPage("./Index");
