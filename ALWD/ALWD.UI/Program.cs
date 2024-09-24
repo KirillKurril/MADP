@@ -2,12 +2,15 @@ using ALWD.UI.Extensions;
 using ALWD.UI.Models;
 using ALWD.UI.Services.CategoryService;
 using ALWD.UI.Services.ProductService;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<UriData>();
+builder.Services.AddRazorPages();
 builder.RegisterCustomServices();
 
 var apiUri = builder.Configuration.GetSection("UriData:ApiUri").Value;
@@ -34,7 +37,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.MapRazorPages();
 app.UseRouting();
 
 app.UseAuthorization();
@@ -46,6 +49,15 @@ app.MapControllerRoute(
 app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapRazorPages();
+
+// Перенаправление всех запросов к области Admin на Index
+app.MapGet("/Admin", async context =>
+{
+	context.Response.Redirect("/Admin/Index");
+});
+
 
 app.Run();
 

@@ -20,18 +20,22 @@
 				<a class="navbar-brand" href="#">WebLabsV25350042</a>
 				<div class="navbar-nav">
 
-					<a class="nav-item nav-link @(currentSection == "MainMenu" ? "active" : "")"
-					   asp-area="" asp-controller="Home" asp-action="Index">
+					<a class="nav-item nav-link"
+					   asp-area=""
+					   asp-controller="Home"
+					   asp-action="Index">
 						<partial name="~/Views/Menu/PartialLab.cshtml" />
 					</a>
 
-					<a class="nav-item nav-link @(currentSection == "Catalog" ? "active" : "")"
-					   asp-area="" asp-controller="Catalog" asp-action="Index">
+					<a class="nav-item nav-link"
+					   asp-area=""
+					   asp-controller="Catalog"
+					   asp-action="Index">
 						<partial name="~/Views/Menu/PartialCatalog.cshtml" ) />
 					</a>
 
-					<a class="nav-item nav-link @(currentSection == "AdminMenu" ? "active" : "")"
-					   asp-area="Admin" asp-controller="Home" asp-action="Index">
+					<a class="nav-item nav-link"
+					   asp-area="Admin">
 						<partial name="~/Views/Menu/PartialAdmin.cshtml" ) />
 					</a>
 				</div>
@@ -63,7 +67,7 @@
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
 	<script async>
-
+		@RenderSection("Scripts", required: false)
 	</script>
 </body>
 </html>

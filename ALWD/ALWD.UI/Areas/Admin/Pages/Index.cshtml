@@ -1,0 +1,15 @@
+﻿@page
+@model ALWD.UI.Areas.Admin.Pages.IndexModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h1>Admin Dashboard</h1>
+
+<p>Welcome to the admin panel!</p>
+
+<ul>
+    <li><a asp-area="Admin" asp-page="./CategoryPages/Index">Manage Categories</a></li>
+    <li><a asp-area="Admin" asp-page="./ProductPages/Index">Manage Products</a></li>
+</ul>
+

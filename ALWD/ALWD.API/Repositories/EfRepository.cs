@@ -69,7 +69,19 @@ namespace ALWD.API.Data.Repository
 
         public async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
         {
-            _context.Entry(entity).State = EntityState.Modified;
+			// Проверяем, существует ли запись в контексте, чтобы избежать создания новой записи
+			var trackedEntity = await _context.Set<T>().FindAsync(new object[] { entity.Id }, cancellationToken);
+
+			if (trackedEntity == null)
+			{
+				throw new InvalidOperationException("Entity not found in the database.");
+			}
+
+			// Обновляем состояние сущности
+			_context.Entry(trackedEntity).CurrentValues.SetValues(entity);
+			_context.Entry(trackedEntity).State = EntityState.Modified;
+
+			// Сохраняем изменения
 			await _context.SaveChangesAsync(cancellationToken);
 		}
 

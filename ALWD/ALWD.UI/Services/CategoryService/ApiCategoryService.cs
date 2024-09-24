@@ -91,8 +91,10 @@ namespace ALWD.UI.Services.CategoryService
 
             if (!response.IsSuccessStatusCode)
             {
-                _logger.LogError($"-----> Unable to update category. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error updating category: {response.StatusCode}");
+				var errorMessage = await response.Content.ReadAsStringAsync();
+
+				_logger.LogError($"-----> Unable to update category. Error: {response.StatusCode.ToString()} | {errorMessage}");
+                throw new HttpRequestException($"Error updating category: {response.StatusCode} | {errorMessage}");
             }
 
             _logger.LogError($"-----> Category with ID updateded successfully: {response.StatusCode}");
@@ -101,7 +103,7 @@ namespace ALWD.UI.Services.CategoryService
 
         public async Task DeleteCategoryAsync(int id)
         {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}/Categories/{id}";
+            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{id}";
 
             var response = await _httpClient.DeleteAsync(baseUri);
 

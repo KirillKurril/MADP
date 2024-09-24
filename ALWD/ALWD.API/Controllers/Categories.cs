@@ -54,12 +54,18 @@ namespace ALWD.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCategory(int id, Category category)
         {
-            var response = await _categoryService.UpdateCategoryAsync(id, category);
-            
-            if (!response.Successfull)
+            try
             {
-                return BadRequest(response.ErrorMessage);
-            }
+				var response = await _categoryService.UpdateCategoryAsync(id, category);
+				if (!response.Successfull)
+				{
+					return BadRequest(response.ErrorMessage);
+				}
+			}
+			catch (Exception ex)
+            {
+				return StatusCode(500, ex.Message);
+			}
 
             return Ok();
         }
