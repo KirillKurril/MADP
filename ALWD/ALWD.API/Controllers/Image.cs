@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ALWD.API.Services.FileService;
 
 namespace ALWD.API.Controllers
 {
@@ -6,7 +7,13 @@ namespace ALWD.API.Controllers
 	[ApiController]
 	public class ImageController : ControllerBase
 	{
+		private readonly IFileService _fileService;
 		private readonly string _imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+
+		public ImageController(IFileService fileService)
+		{
+			_fileService = fileService;
+		}
 
 		[HttpGet("{imageName}")]
 		public IActionResult GetImage(string imageName)

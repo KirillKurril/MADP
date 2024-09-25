@@ -7,6 +7,7 @@ namespace ALWD.API.Data
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+		public DbSet<FileModel> FileModels { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> dbContextOptions) : base(dbContextOptions)
         {
 			Database.EnsureCreated();
@@ -16,6 +17,7 @@ namespace ALWD.API.Data
 			modelBuilder.Entity<Product>()
 				.HasOne(p => p.Category)
 				.WithMany(c => c.Products);
+
 		}
 	}
 }

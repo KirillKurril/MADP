@@ -10,7 +10,7 @@ namespace ALWD.Domain.Models
             Successfull = successfull;
             ErrorMessage = errorMessage;
         }
-        public T Data { get; set; }
+        public T? Data { get; set; }
 		public bool Successfull { get; set; } = true;
 		public string? ErrorMessage { get; set; }
 	}

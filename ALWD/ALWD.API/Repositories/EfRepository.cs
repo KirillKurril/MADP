@@ -21,22 +21,44 @@ namespace ALWD.API.Data.Repository
             bool exists = await query.AnyAsync();
             return exists;
         }
-		public async Task<T> GetByIdAsync(int id, CancellationToken cancellationToken = default,
-	        params Expression<Func<T, object>>[]? includesProperties)
-		{
-			IQueryable<T> query = _entities.AsQueryable();
+        public async Task<bool> Exists(int id)
+        {
+            try
+            {
+                await GetByIdAsync(id);
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+        public async Task<T> GetByIdAsync(int id, CancellationToken cancellationToken = default,
+            params Expression<Func<T, object>>[]? includesProperties)
+        {
+            IQueryable<T> query = _entities.AsQueryable();
 
-			if (includesProperties?.Any() == true)
-			{
-				foreach (Expression<Func<T, object>> included in includesProperties)
-				{
-					query = query.Include(included);
-				}
-			}
+            if (includesProperties?.Any() == true)
+            {
+                foreach (Expression<Func<T, object>> included in includesProperties)
+                {
+                    query = query.Include(included);
+                }
+            }
 
-			return await query.SingleAsync(i => i.Id == id, cancellationToken);
-		}
-		public async Task<IReadOnlyList<T>> ListAllAsync(CancellationToken cancellationToken = default)
+            T entity;
+            try
+            {
+                entity = await query.SingleAsync(i => i.Id == id, cancellationToken);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{typeof(T)} with id {id} doesn't exist, method: GetByTdAsync, class: EfRepository");
+            }
+            return entity;
+
+        }
+        public async Task<IReadOnlyList<T>> ListAllAsync(CancellationToken cancellationToken = default)
         {
             IQueryable<T>? query = _entities.AsQueryable();
 
@@ -69,27 +91,24 @@ namespace ALWD.API.Data.Repository
 
         public async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
         {
-			// Проверяем, существует ли запись в контексте, чтобы избежать создания новой записи
-			var trackedEntity = await _context.Set<T>().FindAsync(new object[] { entity.Id }, cancellationToken);
+            var trackedEntity = await _context.Set<T>().FindAsync(new object[] { entity.Id }, cancellationToken);
 
-			if (trackedEntity == null)
-			{
-				throw new InvalidOperationException("Entity not found in the database.");
-			}
+            if (trackedEntity == null)
+            {
+                throw new InvalidOperationException("Entity not found in the database.");
+            }
 
-			// Обновляем состояние сущности
-			_context.Entry(trackedEntity).CurrentValues.SetValues(entity);
-			_context.Entry(trackedEntity).State = EntityState.Modified;
+            _context.Entry(trackedEntity).CurrentValues.SetValues(entity);
+            _context.Entry(trackedEntity).State = EntityState.Modified;
 
-			// Сохраняем изменения
-			await _context.SaveChangesAsync(cancellationToken);
-		}
+            await _context.SaveChangesAsync(cancellationToken);
+        }
 
         public async Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
         {
             _context.Remove(entity);
-			await _context.SaveChangesAsync(cancellationToken);
-		}
+            await _context.SaveChangesAsync(cancellationToken);
+        }
 
         public async Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> filter, CancellationToken cancellationToken = default)
         {
