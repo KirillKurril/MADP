@@ -15,9 +15,7 @@ namespace ALWD.API.Services.ProductService
         private readonly string _imagePath;
         private string _apiUri;
 
-        public ProductService(IRepository<Product> repository,
-                                [FromServices] IConfiguration config,
-                                IWebHostEnvironment env)
+        public ProductService(IRepository<Product> repository, [FromServices] IConfiguration config, IWebHostEnvironment env)
         {
             _repository = repository;
             _config = config;
@@ -32,8 +30,7 @@ namespace ALWD.API.Services.ProductService
                 throw new Exception("Unable to receive max page size configuration");
             }
         }
-        ///////!!!!!!!!!!!!!!!!!! Затребовало инициализацию конструктора this()? зачем
-
+        
         public async Task<ResponseData<ListModel<Product>>> GetProductsAsync(int? itemsPerPage, string? categoryNormalizedName, int? pageNo)
         {
             ResponseData<ListModel<Product>> response;
@@ -56,12 +53,14 @@ namespace ALWD.API.Services.ProductService
             
             return response;
         }
+        
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
             var product = await _repository.GetByIdAsync(id);
             var response = new ResponseData<Product>(product);
             return response;
         }
+        
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync()
         {
             IReadOnlyList<Product> products;
@@ -77,6 +76,7 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
+        
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage)
         {
             IReadOnlyList<Product> products;
@@ -94,6 +94,7 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
+        
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName)
         {
             IReadOnlyList<Product> products;
@@ -120,6 +121,7 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
+        
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, int pageNo)
         {
             IReadOnlyList<Product> products;
@@ -146,6 +148,7 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
+        
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName, int pageNo)
         {
             if (itemsPerPage > _maxPageSize)
@@ -180,7 +183,7 @@ namespace ALWD.API.Services.ProductService
             responseData.Data.TotalPages = totalPages;
             return responseData;
         }
-
+        
         public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
         {
             try
@@ -199,30 +202,51 @@ namespace ALWD.API.Services.ProductService
             }
         }
 
-        public async Task<ResponseData<Product>> UpdateProductAsync(int id, Product product, IFormFile? formFile)
+        public async Task<ResponseData<Product>> UpdateProductAsync(Product product, IFormFile? formFile)
         {
-            try
+			bool exists = await _repository.Exists(p => p.Id == product.Id);
+			if (!exists)
+				return new ResponseData<Product>(null, false, "product doesn't exist");
+
+			try
             {
-                if (product == null)
-                {
-                    throw new ArgumentNullException(nameof(product));
-                }
                 product.ImagePath = await SaveFileAsync(formFile);
                 await _repository.UpdateAsync(product);
-                return new ResponseData<Product>(null);
             }
             catch (Exception ex)
             {
-                throw new Exception("An error occurred while creating the product.", ex);
+                throw new Exception($"An error occurred while updating the product on product service: {ex.Message}");
             }
-        }
+
+			return new ResponseData<Product>(null);
+
+		}
+		
         public async Task<ResponseData<Product>> DeleteProductAsync(int id)
         {
-            Product product = await _repository.GetByIdAsync(id);
-            if (product == null)
-                return new ResponseData<Product>(product, false, "product doesn't exist");
+            Product product;
+            try
+            {
+                product = await _repository.GetByIdAsync(id);
+            }
+			catch (Exception ex)
+			{
+				throw new Exception($"An error occurred while attempting to retrieve the entity to be deleted from the database: {ex.Message}");
+			}
 
-            else return new ResponseData<Product>(null);
+			if (product == null)
+                return new ResponseData<Product>(null, false, "product doesn't exist");
+
+            try
+            {
+                await _repository.DeleteAsync(product);
+            }
+			catch (Exception ex)
+			{
+				throw new Exception($"An error occurred while deleting the product on product service: {ex.Message}");
+			}
+
+			return new ResponseData<Product>(null);
         }
 
         private async Task<string> SaveFileAsync(IFormFile file)

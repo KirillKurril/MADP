@@ -17,35 +17,63 @@ namespace ALWD.API.Controllers
 		[HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
-            ResponseData<Category> response = await _categoryService.GetCategoryByIdAsync(id);
+            ResponseData<Category> response;
+            try
+            {
+                response = await _categoryService.GetCategoryByIdAsync(id);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
-            if (response.Data == null)
+			if (response.Data == null)
                 return NotFound();
 
-            return Ok(response);
+			if (!response.Successfull)
+				return BadRequest(response.ErrorMessage);
+
+			return Ok(response);
         }
 
         [HttpGet]
         public async Task<ActionResult<Category>> GetCategoriesAsync()
         {
-            ResponseData<IReadOnlyList<Category>> response = await _categoryService.GetCategoryListAsync();
+            ResponseData<IReadOnlyList<Category>> response;
+            try
+            {
+                response = await _categoryService.GetCategoryListAsync();
+			}
+            catch (Exception ex) 
+            {
+				return StatusCode(500, ex.Message);
+			}
             
             if (response.Data == null)
                 return NotFound();
 
-            return Ok(response);
+			if (!response.Successfull)
+				return BadRequest(response.ErrorMessage);
+
+			return Ok(response);
         }
 
 
         [HttpPost]
         public async Task<ActionResult<Category>> CreateCategory(Category category)
         {
-            var response = await _categoryService.CreateCategoryAsync(category);
-
-            if (!response.Successfull)
+            ResponseData<Category> response;
+            try
             {
+				response = await _categoryService.CreateCategoryAsync(category);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
+
+			if (!response.Successfull)
                 return BadRequest(response.ErrorMessage);
-            }
 
             return CreatedAtAction(nameof(GetCategory), new { id = response.Data.Id }, response);
         }
@@ -54,31 +82,37 @@ namespace ALWD.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCategory(int id, Category category)
         {
+            ResponseData<Category> response;
             try
             {
-				var response = await _categoryService.UpdateCategoryAsync(id, category);
-				if (!response.Successfull)
-				{
-					return BadRequest(response.ErrorMessage);
-				}
+				response = await _categoryService.UpdateCategoryAsync(id, category);
 			}
 			catch (Exception ex)
             {
 				return StatusCode(500, ex.Message);
 			}
 
-            return Ok();
+			if (!response.Successfull)
+				return BadRequest(response.ErrorMessage);
+
+			return Ok();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            var response = await _categoryService.DeleteCategoryAsync(id);
+            ResponseData<Category> response;
+            try
+            {
+				response = await _categoryService.DeleteCategoryAsync(id);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
             if (!response.Successfull)
-            {
                 return BadRequest(response.ErrorMessage);
-            }
 
             return Ok();
         }

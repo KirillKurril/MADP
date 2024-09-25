@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.API.Services.ProductService;
 using ALWD.Domain.Models;
@@ -14,24 +13,43 @@ namespace ALWD.API.Controllers
         public ProductsController(IProductService productService)
             => _productService = productService;
 
-        // GET: api/Products/5
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            ResponseData<Product> response = await _productService.GetProductByIdAsync(id);
+            ResponseData<Product> response;
+            try
+            {
+                response = await _productService.GetProductByIdAsync(id);
+			}
+            catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
-            if (response.Data == null)
+			if (response.Data == null)
                 return NotFound();
 
-            return Ok(response);
+			if (!response.Successfull)
+				return BadRequest(response.ErrorMessage);
+
+			return Ok(response);
         }
 
         [HttpGet]
         public async Task<ActionResult<Product>> GetProductsList([FromQuery] int? itemsPerPage, [FromQuery] string? category, [FromQuery] int? page)
         {
-            ResponseData<ListModel<Product>> response = await _productService.GetProductsAsync(itemsPerPage, category, page);
+            ResponseData<ListModel<Product>> response;
+            try
+            {
+                response = await _productService.GetProductsAsync(itemsPerPage, category, page);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
-            if (response.Data == null)
+			if (response.Data == null)
                 return NotFound();
 
             if(!response.Successfull)
@@ -43,52 +61,62 @@ namespace ALWD.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct([FromForm] Product product, [FromForm] IFormFile? formFile)
         {
-            Console.WriteLine("запрос принят на обработку");
-            if (!ModelState.IsValid)
-            {
-                Console.WriteLine("модель инвалид");
-                return BadRequest(ModelState);
-            }
+            ResponseData<Product> response;
 
-            var response = await _productService.CreateProductAsync(product, formFile);
+            try
+            {
+                response = await _productService.CreateProductAsync(product, formFile);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
             if (!response.Successfull)
-            {
                 return BadRequest(response.ErrorMessage);
-            }
 
-            return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response.Data);
+            //return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response.Data);
+            return Ok();
         }
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, Product product, IFormFile? formFile)
+        public async Task<IActionResult> UpdateProduct(Product product, IFormFile? formFile)
         {
-            var existingProductResponse = await _productService.GetProductByIdAsync(id);
+            ResponseData<Product> response;
+			try
+			{
+				response = await _productService.UpdateProductAsync(product, formFile);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
-            if (existingProductResponse.Data == null)
-            {
-                return NotFound();
-            }
+			if (!response.Successfull)
+				return BadRequest(response.ErrorMessage);
 
-            await _productService.UpdateProductAsync(id, product, formFile);
 
-            return Ok();
+			return Ok();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            var existingProductResponse = await _productService.GetProductByIdAsync(id);
-
-            if (existingProductResponse.Data == null)
+			ResponseData<Product> response;
+            try
             {
-                return NotFound();
+                response = await _productService.DeleteProductAsync(id);
             }
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
 
-            await _productService.DeleteProductAsync(id);
+			if (!response.Successfull)
+				return BadRequest(response.ErrorMessage);
 
-            return Ok();
+			return Ok();
         }
     }
 

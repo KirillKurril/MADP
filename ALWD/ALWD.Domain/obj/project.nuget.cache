@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d3WepJSNge0=",
+  "dgSpecHash": "2FyUGWA59EE=",
   "success": true,
-  "projectFilePath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj",
+  "projectFilePath": "E:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kamid\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Джузеппе\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

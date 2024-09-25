@@ -7026,19 +7026,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kamid\\.nuget\\packages\\": {}
+    "C:\\Users\\Джузеппе\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
+      "projectUniqueName": "E:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
       "projectName": "ALWD.UI",
-      "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
-      "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
-      "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\obj\\",
+      "projectPath": "E:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
+      "packagesPath": "C:\\Users\\Джузеппе\\.nuget\\packages\\",
+      "outputPath": "E:\\Uni\\MADP\\ALWD\\ALWD.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Джузеппе\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7053,11 +7058,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
-              "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
+            "E:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
+              "projectPath": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
             },
-            "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
-              "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
+            "E:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+              "projectPath": "E:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
             }
           }
         }

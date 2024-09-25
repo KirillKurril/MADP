@@ -53,11 +53,6 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return Page();
             }
 
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
             Product.ImageMimeType = ProductImage.ContentType;
             try
             {
