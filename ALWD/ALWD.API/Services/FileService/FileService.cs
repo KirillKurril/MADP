@@ -8,6 +8,7 @@ namespace ALWD.API.Services.FileService
 	{
 		private readonly IWebHostEnvironment _env;
 		private readonly IRepository<FileModel> _repository;
+		private readonly string _filesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
 
 		public FileService(IWebHostEnvironment env, IRepository<FileModel> repository)
 		{
@@ -32,10 +33,37 @@ namespace ALWD.API.Services.FileService
 
 		public async Task<ResponseData<FileModel>> GetFileAsync(int id)
 		{
-			throw new NotImplementedException();
+			FileModel fileModel;
+			try
+			{
+				fileModel = await _repository.GetByIdAsync(id);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<FileModel>(null, false, ex.Message);
+			}
+			return new ResponseData<FileModel>(fileModel);
 		}
 
-		public async Task<ResponseData<(byte[], string)>> GetFileAsByteStreamAsync(int id)
+		public async Task<ResponseData<int>> GetIdByNameAsync(string fileName)
+		{
+			IReadOnlyList<FileModel> fileCollection;
+
+			try
+			{
+				fileCollection = await _repository.ListAsync(f => f.Name == fileName);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<int>(0, false, ex.Message);
+			}
+
+			if (fileCollection.Count == 0)
+				return new ResponseData<int>(0, false, $"file with requested name {fileName} doesn't found");
+
+			return new ResponseData<int>(fileCollection.ElementAt(0).Id);
+		}
+		public async Task<ResponseData<byte[]>> GetFileAsByteStreamAsync(int id)
 		{
 			FileModel fileModel;
 
@@ -45,21 +73,21 @@ namespace ALWD.API.Services.FileService
 			}
 			catch(Exception ex)
 			{
-				return new ResponseData<(byte[], string)>((null, null), false, ex.Message);
+				return new ResponseData<byte[]>(null, false, ex.Message);
 			}
 			
 			byte[] file;
-			
+			string filePath = string.Join("\\", _filesPath, "images", fileModel.Name);
 			try
 			{
-				file = File.ReadAllBytes(fileModel.Path);
+				file = File.ReadAllBytes(filePath);
 			}
 			catch (Exception ex)
 			{
-				return new ResponseData<(byte[], string)>((null, null), false, "Failure of reading file in fileservice");
+				return new ResponseData<byte[]>(null, false, "Failure of reading file. class : FileSerivce, method: GetFileAsByteStreamAsync");
 			}
 
-			return new ResponseData<(byte[], string)>((file, fileModel.MimeType), true);
+			return new ResponseData<byte[]>(file, true);
 		}
 
 		public async Task<ResponseData<FileModel>> UpdateFileAsync(int id, IFormFile file)

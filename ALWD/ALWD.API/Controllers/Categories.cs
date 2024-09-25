@@ -27,11 +27,11 @@ namespace ALWD.API.Controllers
 				return StatusCode(500, ex.Message);
 			}
 
-			if (response.Data == null)
-                return NotFound();
-
 			if (!response.Successfull)
 				return BadRequest(response.ErrorMessage);
+
+			if (response.Data == null)
+                return NotFound();
 
 			return Ok(response);
         }
@@ -48,12 +48,12 @@ namespace ALWD.API.Controllers
             {
 				return StatusCode(500, ex.Message);
 			}
-            
-            if (response.Data == null)
-                return NotFound();
 
 			if (!response.Successfull)
 				return BadRequest(response.ErrorMessage);
+
+			if (response.Data == null)
+				return NotFound();
 
 			return Ok(response);
         }

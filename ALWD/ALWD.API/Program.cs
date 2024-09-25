@@ -6,6 +6,7 @@ using ALWD.API.Data.Repository;
 using ALWD.API.Services.ProductService;
 using ALWD.API.Services.CategoryService;
 using ALWD.API.Services.FileService;
+using System.Text.Json.Serialization;
 
 namespace ALWD.API
 {
@@ -40,6 +41,11 @@ namespace ALWD.API
 			builder.Services.AddControllers();
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
+			//builder.Services.AddControllersWithViews()
+			//	.AddJsonOptions(options =>
+			//	{
+			//		options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+			//	});
 		}
 
 		private static async Task InitializeDatabase(WebApplication app)

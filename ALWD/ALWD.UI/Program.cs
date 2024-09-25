@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using ALWD.UI.Extensions;
 using ALWD.UI.Models;
 using ALWD.UI.Services.CategoryService;
@@ -22,6 +23,12 @@ builder.Services
 builder.Services
     .AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
     opt.BaseAddress = new Uri(apiUri));
+
+//builder.Services.AddControllersWithViews()
+//	.AddJsonOptions(options =>
+//	{
+//		options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+//	});
 
 
 

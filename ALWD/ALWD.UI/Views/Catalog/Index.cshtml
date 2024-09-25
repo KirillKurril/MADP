@@ -1,4 +1,4 @@
-@model ALWD.Domain.ViewModels.CatalogViewModel
+п»ї@model ALWD.Domain.ViewModels.CatalogViewModel
 
 <!DOCTYPE html>
 
@@ -8,27 +8,9 @@
     <title>Catalog</title>
 </head>
 <body>
-@*     <p>
-        <a asp-controller="Product" asp-action="ShowCreatePage">Create product</a>
-    </p>
-    <p>
-        <a asp-controller="Product" asp-action="ShowUpdatePage">Update product</a>
-    </p>
-    <p>
-        <a asp-controller="Product" asp-action="ShowDeletePage">Delete product</a>
-    </p>
-    <p>
-        <a asp-controller="Category" asp-action="ShowCreatePage">Create category</a>
-    </p>
-    <p>
-        <a asp-controller="Category" asp-action="ShowUpdatePage">Update category</a>
-    </p>
-    <p>
-        <a asp-controller="Category" asp-action="ShowDeletePage">Delete category</a>
-    </p> *@
     <p>
             <div class="col-2 border-2">
-                <ul class="nav ">
+                <ul class="nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle"
                            data-bs-toggle="dropdown"
@@ -42,7 +24,7 @@
                                 <a class="dropdown-item"
                                    asp-controller="Catalog"
                                    asp-action="Index"
-                                   asp-route-category=@null>Все</a>
+                                   asp-route-category=@null>пїЅпїЅпїЅ</a>
                             </li>
                             @foreach (var item in Model.Categories.Data)
                             {
@@ -65,7 +47,7 @@
         @foreach (var item in Model.ProductResponse.Data.Items)
         {
             <div class="card m-2" style="width: 18rem;">
-                <img src="@item.ImagePath" class="card-img-top" style="height: 18rem; object-fit: cover;" alt="@item.Name">
+                <img src="@item.Image.URL" class="card-img-top" style="height: 18rem; object-fit: cover;" alt="@item.Name">
                 <div class="card-body">
                     <h5 class="card-title">@item.Name</h5>
                     <p class="card-text">@item.Description</p>

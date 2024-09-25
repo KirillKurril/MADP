@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ALWD.UI.Services.ProductService
 {
@@ -24,7 +25,8 @@ namespace ALWD.UI.Services.ProductService
             _itemsPerPage = configuration.GetSection("ItemsPerPage").Value;
             _serializerOptions = new JsonSerializerOptions()
             {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+				ReferenceHandler = ReferenceHandler.Preserve,
+				PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
             _logger = logger;
         }
@@ -45,6 +47,8 @@ namespace ALWD.UI.Services.ProductService
 
             var response = await _httpClient.GetAsync(
             new Uri(urlWithQuery));
+
+            Console.WriteLine(response);
 
             if (response.IsSuccessStatusCode)
             {

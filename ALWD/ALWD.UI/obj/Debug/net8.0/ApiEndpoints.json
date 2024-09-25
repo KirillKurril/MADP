@@ -189,16 +189,6 @@
         "IsRequired": false
       },
       {
-        "Name": "ImagePath",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ImageMimeType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "CategoryId",
         "Type": "System.Int32",
         "IsRequired": false
@@ -211,11 +201,6 @@
       {
         "Name": "Category.NormalizedName",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Category.Products",
-        "Type": "System.Collections.Generic.List\u00601[[ALWD.Domain.Entities.Product, ALWD.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
       },
       {
@@ -234,7 +219,7 @@
         "IsRequired": false
       },
       {
-        "Name": "Image.Path",
+        "Name": "Image.URL",
         "Type": "System.String",
         "IsRequired": false
       },

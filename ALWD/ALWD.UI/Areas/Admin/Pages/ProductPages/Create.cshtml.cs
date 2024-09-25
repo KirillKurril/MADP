@@ -39,7 +39,7 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return Page();
             }
 
-            Product.ImageMimeType = ProductImage.ContentType;
+            Product.Image.MimeType = ProductImage.ContentType;
             try
             {
                 await _productService.CreateProductAsync(Product, ProductImage);

@@ -17,8 +17,6 @@ namespace ALWD.UI.Controllers
 			=> (_categoryService, _productService) = (categoryService, productService);
         public async Task<IActionResult> Index(string? category, int page = 1)
         {
-			ViewData["CurrentSection"] = "Catalog";
-
 			Category selectedCategory = new();
 			if(string.IsNullOrEmpty(category))
                 ViewData["currentCategory"] = "Все";

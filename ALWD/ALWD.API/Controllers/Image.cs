@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ALWD.API.Services.FileService;
+using ALWD.Domain.Entities;
+using ALWD.Domain.Models;
 
 namespace ALWD.API.Controllers
 {
@@ -16,32 +18,56 @@ namespace ALWD.API.Controllers
 		}
 
 		[HttpGet("{imageName}")]
-		public IActionResult GetImage(string imageName)
+		public async Task<IActionResult> GetImage(string imageName)
 		{
-			var filePath = Path.Combine(_imagesPath, imageName);
-
-			if (!System.IO.File.Exists(filePath))
+			ResponseData<int> fileIdResponse;
+			try
 			{
-				return NotFound();
+				fileIdResponse = await _fileService.GetIdByNameAsync(imageName);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
 			}
 
-			var mimeType = GetMimeType(filePath);
-			var fileBytes = System.IO.File.ReadAllBytes(filePath);
+			if (!fileIdResponse.Successfull)
+				return BadRequest(fileIdResponse.ErrorMessage);
 
-			return File(fileBytes, mimeType);
-		}
 
-		private string GetMimeType(string filePath)
-		{
-			var extension = Path.GetExtension(filePath).ToLowerInvariant();
-			return extension switch
+			ResponseData<byte[]> fileResponse;
+			try
 			{
-				".jpg" => "image/jpeg",
-				".jpeg" => "image/jpeg",
-				".png" => "image/png",
-				".gif" => "image/gif",
-				_ => "application/octet-stream",
-			};
+				fileResponse = await _fileService.GetFileAsByteStreamAsync(fileIdResponse.Data);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
+
+			if (!fileResponse.Successfull)
+				return BadRequest(fileResponse.ErrorMessage);
+
+			if (fileResponse.Data == null)
+				return NotFound();
+
+			ResponseData<FileModel> fileModelInfo;
+
+			try
+			{
+				fileModelInfo = await _fileService.GetFileAsync(fileIdResponse.Data);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, ex.Message);
+			}
+
+			if (!fileModelInfo.Successfull)
+				return BadRequest(fileModelInfo.ErrorMessage);
+
+			if (fileModelInfo.Data == null)
+				return NotFound();
+
+			return File(fileResponse.Data, fileModelInfo.Data.MimeType);
 		}
 	}
 }

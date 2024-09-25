@@ -18,33 +18,5 @@ namespace ALWD.UI.Controllers
             _productService = productService;
             _categoryService = categoryService;
         }
-        public async Task<IActionResult> ShowCreatePage()
-        {
-            var categoryResponse = await _categoryService.GetCategoryListAsync();
-            IReadOnlyList<Category> categories = categoryResponse.Data;
-            ViewBag.CategoryList = new SelectList(categories, "Id", "Name");
-            return View("Create");
-        }
-        public IActionResult ShowUpdatePage()
-        {
-            return View("Update");
-        }
-        public IActionResult ShowDeletePage()
-        {
-            return View("Delete");
-        }
-
-        [HttpPost]
-        public async Task<ActionResult> Create(Product product, IFormFile image)
-        {
-            if (ModelState.IsValid)
-            {
-                await _productService.CreateProductAsync(product, image);
-
-                return RedirectToAction("Details", product);
-            }
-
-            return View(product);
-        }
     }
 }

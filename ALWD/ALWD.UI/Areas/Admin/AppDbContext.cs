@@ -15,7 +15,7 @@ namespace ALWD.UI.Admin.Data
 		{
 			modelBuilder.Entity<Product>()
 				.HasOne(p => p.Category)
-				.WithMany(c => c.Products);
+				.WithMany();
 		}
 	}
 }

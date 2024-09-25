@@ -16,7 +16,11 @@ namespace ALWD.API.Data
 		{
 			modelBuilder.Entity<Product>()
 				.HasOne(p => p.Category)
-				.WithMany(c => c.Products);
+				.WithMany();
+
+			modelBuilder.Entity<Product>()
+				.HasOne(p => p.Image)
+				.WithMany();
 
 		}
 	}
