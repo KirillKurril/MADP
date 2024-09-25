@@ -2,7 +2,6 @@
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
-using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
@@ -68,6 +67,7 @@ namespace ALWD.UI.Services.ProductService
             _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode.ToString()}");
             return new ResponseData<ListModel<Product>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
         }
+        
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
             var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}");
@@ -93,37 +93,38 @@ namespace ALWD.UI.Services.ProductService
 
         public async Task CreateProductAsync(Product product, IFormFile? formFile)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress}Products");
+            var uri = new Uri($"{_httpClient.BaseAddress}Product");
 
             var multipartContent = new MultipartFormDataContent();
 
-            var productJson = JsonConvert.SerializeObject(product);
-            var productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
+            string productJson = JsonConvert.SerializeObject(product);
+            HttpContent productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
             multipartContent.Add(productContent, "product");
 
             if (formFile != null)
             {
                 await using var ms = new MemoryStream();
                 await formFile.CopyToAsync(ms);
-                var fileBytes = ms.ToArray();
+                byte[] fileBytes = ms.ToArray();
 
-                var fileContent = new ByteArrayContent(fileBytes);
+                ByteArrayContent fileContent = new ByteArrayContent(fileBytes);
                 fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
-                multipartContent.Add(fileContent, "formFile", formFile.FileName);
+                multipartContent.Add(fileContent, "file", formFile.FileName);
             }
 
+            _logger.LogInformation($"Requesting URL: {uri}");
             HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
 
             if (!response.IsSuccessStatusCode)
             {
-                _logger.LogError($"-----> Unable to create product. Error: {response.StatusCode}");
-                throw new HttpRequestException($"Error creating product: {response.StatusCode}");
+                _logger.LogError($"-----> Unable to create product. Error: {response.Content}");
+                throw new HttpRequestException($"Error creating product: {response.Content}");
             }
         }
 
         public async Task UpdateProductAsync(Product product, IFormFile? formFile)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{product.Id}");
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Product/{product.Id}");
 
             MultipartFormDataContent multipartContent = new MultipartFormDataContent();
 
@@ -152,9 +153,10 @@ namespace ALWD.UI.Services.ProductService
                 throw new HttpRequestException($"Error updating product: {response.StatusCode}");
             }
         }
+        
         public async Task DeleteProductAsync(int id)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Productes/{id}");
+            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Product/{id}");
 
             var response = await _httpClient.DeleteAsync(uri);
 

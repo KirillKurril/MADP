@@ -8,65 +8,98 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="./Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Quantity)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Image.URL)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Image.MimeType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Product[0].Category)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Product) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image.URL)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image.MimeType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category.Name)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+ <table class="table">
+     <thead>
+         <tr>
+             <th>
+                 @Html.DisplayNameFor(model => model.Products.Items[0].Name)
+             </th>
+             <th>
+                 @Html.DisplayNameFor(model => model.Products.Items[0].Description)
+             </th>
+             <th>
+                 @Html.DisplayNameFor(model => model.Products.Items[0].Price)
+             </th>
+             <th>
+                 @Html.DisplayNameFor(model => model.Products.Items[0].Quantity)
+             </th>
+             <th>
+                 Image
+             </th>
+             <th>
+                 @Html.DisplayNameFor(model => model.Products.Items[0].Category)
+             </th>
+             <th></th>
+         </tr>
+     </thead>
+     <tbody>
+ @foreach (var product in Model.Products.Items) {
+         <tr>
+             <td>
+                    @Html.DisplayFor(modelItem => product.Name)
+             </td>
+             <td>
+                    @Html.DisplayFor(modelItem => product.Description)
+             </td>
+             <td>
+                    @Html.DisplayFor(modelItem => product.Price)
+             </td>
+             <td>
+                    @Html.DisplayFor(modelItem => product.Quantity)
+             </td>
+             <td>
+                 <img src="@product.Image.URL" alt="Product Image" style="max-width: 100px; max-height: 100px;" />
+             </td>
+             <td>
+                    @Html.DisplayFor(modelItem => product.Category.Name)
+             </td>
+             <td>
+                    <a asp-page="./Edit" asp-route-id="@product.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@product.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@product.Id">Delete</a>
+             </td>
+         </tr>
+ }
+     </tbody>
+ </table>
+
+
+<div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link"
+                   asp-page="./Index"
+                   asp-route-category=@null
+                   asp-route-pageNo="@(Model.Products.CurrentPage > 1 ? Model.Products.CurrentPage - 1 : Model.Products.CurrentPage)">
+                   Previous
+                </a>
+            </li>
+            @if (Model.Products.TotalPages > 1)
+            {
+                for (int i = 1; i <= Model.Products.TotalPages; i++)
+                {
+                    <li class="page-item @(Model.Products.CurrentPage == i ? "active" : "")">
+                        <a class="page-link"
+                           asp-page="./Index"
+                           asp-route-category=@null
+                           asp-route-pageNo="@i">
+                            @i
+                        </a>
+                    </li>
+                }
+            }
+            <li class="page-item">
+                <a class="page-link"
+                   asp-page="./Index"
+                   asp-route-category=@null
+                   asp-route-pageNo="@(Model.Products.CurrentPage < Model.Products.TotalPages ? Model.Products.CurrentPage + 1 : Model.Products.CurrentPage)">
+                   Next
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+

@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
-using ALWD.API.Services.CategoryService;
+using ALWD.UI.Services.CategoryService;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {

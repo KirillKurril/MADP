@@ -39,13 +39,8 @@ namespace ALWD.API
 			builder.Services.AddScoped<IFileService, FileService>();
 
 			builder.Services.AddControllers();
-			builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
-			//builder.Services.AddControllersWithViews()
-			//	.AddJsonOptions(options =>
-			//	{
-			//		options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-			//	});
 		}
 
 		private static async Task InitializeDatabase(WebApplication app)

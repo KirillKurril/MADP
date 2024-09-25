@@ -2,7 +2,6 @@
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using ALWD.Domain.Abstractions;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
 
 namespace ALWD.API.Services.ProductService

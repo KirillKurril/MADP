@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
-using ALWD.API.Services.CategoryService;
+using ALWD.UI.Services.CategoryService;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
@@ -38,8 +38,6 @@ namespace ALWD.UI.Admin.Pages.ProductPages
             {
                 return Page();
             }
-
-            Product.Image.MimeType = ProductImage.ContentType;
             try
             {
                 await _productService.CreateProductAsync(Product, ProductImage);
