@@ -23,8 +23,9 @@ namespace ALWD.Domain.Validation.Models
         public int CategoryId { get; set; }
 
         [DataType(DataType.Upload)]
-        [MaxFileSize(5 * 1024 * 1024, ErrorMessage = "Размер файла не должен превышать 5MB.")]
+        [MaxFileSize(15 * 1024 * 1024, ErrorMessage = "Размер файла не должен превышать 5MB.")]
         [AllowedExtensions(new string[]{ ".jpg", ".png", ".jpeg" }, ErrorMessage = "Разрешены только файлы с расширениями .jpg, .jpeg и .png.")]
+        [AllowedMimeType(new string[] { "image/jpeg", "image/png" }, ErrorMessage = "Разрешены только файлы с медиатипом image/jpeg и image/png")]
         public IFormFile? Image { get; set; }
 
 

@@ -28,6 +28,11 @@
     <ProjectReference Include="..\ALWD.Domain\ALWD.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\audio\" />
+    <Folder Include="wwwroot\video\" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

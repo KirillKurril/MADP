@@ -13,14 +13,25 @@ public class MaxFileSize : ValidationAttribute
 
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)
     {
-        if (value is IFormFile file)
+        if (value is IFormFile fileAsFileForm)
         {
-            if (file.Length > _maxFileSize)
+            if (fileAsFileForm.Length > _maxFileSize)
             {
                 return new ValidationResult(ErrorMessage ?? $"Maximum allowed file size is {_maxFileSize} bytes.");
             }
         }
+		else if (value is byte[] fileAsBytes)
+		{
+			if (fileAsBytes.LongLength > _maxFileSize)
+			{
+				return new ValidationResult(ErrorMessage ?? $"Maximum allowed file size is {_maxFileSize} bytes.");
+			}
+		}
+		else
+		{
+			return new ValidationResult("Invalid attribute type.");
+		}
 
-        return ValidationResult.Success;
+		return ValidationResult.Success;
     }
 }

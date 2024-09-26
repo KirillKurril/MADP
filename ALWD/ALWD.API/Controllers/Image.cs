@@ -10,7 +10,6 @@ namespace ALWD.API.Controllers
 	public class ImageController : ControllerBase
 	{
 		private readonly IFileService _fileService;
-		private readonly string _imagesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
 
 		public ImageController(IFileService fileService)
 		{

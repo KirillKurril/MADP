@@ -88,38 +88,70 @@ namespace ALWD.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(CreateProductDTO dto)
         {
-            CreateProductDTO ddto = dto;
-            //if (file == null || file.Length == 0)
-            //{
-            //    return BadRequest("File not provided.");
-            //}
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            
+            Product product = new Product()
+            {
+                Name = dto.ProductName,
+                Description = dto.ProductDescription,
+                Price = dto.ProductPrice,
+                Quantity = dto.ProductQuantity,
+                CategoryId = dto.ProductCategoryId,
+            };
 
-            //// Ваш сервис для создания продукта
-            //ResponseData<Product> response;
-            //try
-            //{
-            //    response = await _productService.CreateProductAsync(product, file);
-            //}
-            //catch (Exception ex)
-            //{
-            //    return StatusCode(500, ex.Message);
-            //}
+            IFormFile image = new ALWD.Domain.DTOs.FormFile(
+                new MemoryStream(dto.ImageContent),
+                "productImage",
+                dto.ImageName,
+                dto.ImageMimeType);
+            
+            ResponseData<Product> response;
+            try
+            {
+                response = await _productService.CreateProductAsync(product, image);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
 
-            //if (!response.Successfull)
-            //    return BadRequest(response.ErrorMessage);
+            if (!response.Successfull)
+                return BadRequest(response.ErrorMessage);
 
-            //return Ok(response.Data);
-            return Ok(ddto);
+            return Ok(response.Data);
         }
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(Product product, IFormFile? formFile)
+        public async Task<IActionResult> UpdateProduct(CreateProductDTO dto)
         {
-            ResponseData<Product> response;
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
+			Product product = new Product()
+			{
+				Name = dto.ProductName,
+				Description = dto.ProductDescription,
+				Price = dto.ProductPrice,
+				Quantity = dto.ProductQuantity,
+				CategoryId = dto.ProductCategoryId,
+			};
+
+			IFormFile image = new ALWD.Domain.DTOs.FormFile(
+				new MemoryStream(dto.ImageContent),
+				"productImage",
+				dto.ImageName,
+				dto.ImageMimeType);
+
+			ResponseData<Product> response;
 			try
 			{
-				response = await _productService.UpdateProductAsync(product, formFile);
+				response = await _productService.UpdateProductAsync(product, image);
 			}
 			catch (Exception ex)
 			{

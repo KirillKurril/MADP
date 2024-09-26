@@ -23,7 +23,19 @@ public class AllowedExtensions : ValidationAttribute
                 return new ValidationResult(ErrorMessage ?? $"File extension not allowed. Allowed extensions: {string.Join(", ", _extensions)}");
             }
         }
+		else if (value is string fileName)
+		{
+			var extension = Path.GetExtension(fileName);
+			if (!_extensions.Contains(extension.ToLower()))
+			{
+				return new ValidationResult(ErrorMessage ?? $"File extension not allowed. Allowed extensions: {string.Join(", ", _extensions)}");
+			}
+		}
+		else
+		{
+			return new ValidationResult("Invalid attribute type.");
+		}
 
-        return ValidationResult.Success;
+		return ValidationResult.Success;
     }
 }

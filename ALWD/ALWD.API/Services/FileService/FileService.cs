@@ -1,32 +1,24 @@
 ﻿using ALWD.Domain.Abstractions;
 using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ALWD.API.Services.FileService
 {
 	public class FileService : IFileService
 	{
-		private readonly IWebHostEnvironment _env;
 		private readonly IRepository<FileModel> _repository;
-		private readonly string _filesPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+		private readonly string _filesPath;
+		private readonly string _filesUri;
 
-		public FileService(IWebHostEnvironment env, IRepository<FileModel> repository)
+		public FileService(IWebHostEnvironment env, IRepository<FileModel> repository, [FromServices] IConfiguration config)
 		{
-			_env = env;
 			_repository = repository;
-		}
-
-		public async Task<bool> DeleteFileAsync(int id)
-		{
-			throw new NotImplementedException();
+			_filesPath = env.WebRootPath;
+			_filesUri = config["APIUri"];
 		}
 
 		public async Task<ResponseData<FileModel>> DownloadFileAsync(int id)
-		{
-			throw new NotImplementedException();
-		}
-
-		public async Task<bool> FileExistsAsync(int id)
 		{
 			throw new NotImplementedException();
 		}
@@ -63,6 +55,7 @@ namespace ALWD.API.Services.FileService
 
 			return new ResponseData<int>(fileCollection.ElementAt(0).Id);
 		}
+		
 		public async Task<ResponseData<byte[]>> GetFileAsByteStreamAsync(int id)
 		{
 			FileModel fileModel;
@@ -90,14 +83,129 @@ namespace ALWD.API.Services.FileService
 			return new ResponseData<byte[]>(file, true);
 		}
 
+		public async Task<ResponseData<FileModel>> CreateFileAsync(IFormFile file)
+		{
+			if (file == null)
+				return new ResponseData<FileModel>(null, false, "class FileService, method CreateFileAsync: FormFile is null");
+			
+			if(file.Length == 0)
+				return new ResponseData<FileModel>(null, false, "class FileService, method CreateFileAsync: FormFile is empty");
+
+			if (string.IsNullOrEmpty(file.FileName))
+				return new ResponseData<FileModel>(null, false, "class FileService, method CreateFileAsync: File name is empty");
+
+			if(string.IsNullOrEmpty(file.ContentType))
+				return new ResponseData<FileModel>(null, false, "class FileService, method CreateFileAsync: File media type is empty");
+
+
+			FileModel fileModel = new FileModel()
+			{
+				MimeType = file.ContentType,
+				Name = file.Name
+			};
+
+			int lastDotIndex = fileModel.Name.LastIndexOf('.');
+			string nameWithoutExtension = fileModel.Name.Substring(0, lastDotIndex);
+			string extension = fileModel.Name.Substring(lastDotIndex);
+			string timestamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
+			
+			fileModel.Name = $"{nameWithoutExtension}-{timestamp}{extension}";
+
+			string fileDirectory = fileModel.MimeType.Split('/')[0];
+
+			string filePath = string.Join('/', _filesPath, fileDirectory, fileModel.Name);
+
+			fileModel.Path = filePath;
+
+			string controllerName = char.ToUpper(fileDirectory[0]) + fileDirectory.Substring(1);
+			fileModel.URL = $"{_filesUri}/{controllerName}/{fileModel.Name}";
+
+			try
+			{
+				await _repository.AddAsync(fileModel);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<FileModel>(null, false, $"class FileService, method CreateFileAsync: File writing to DB exception: {ex.Message}");
+			}
+
+			try
+			{
+				using (var stream = new FileStream(filePath, FileMode.Create))
+				{
+					await file.CopyToAsync(stream);
+				}
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<FileModel>(null, false, "class FileService, method CreateFileAsync: File writing failure");
+			}
+
+			return new ResponseData<FileModel>(fileModel); 
+		}
+		
 		public async Task<ResponseData<FileModel>> UpdateFileAsync(int id, IFormFile file)
 		{
-			throw new NotImplementedException();
-		}
+			bool exist = await _repository.Exists(id);
+			if (!exist)
+				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile with id {id} doesn't exists");
 
-		public async Task<ResponseData<FileModel>> UploadFileAsync(IFormFile file)
+			ResponseData<bool> deleteResponse;
+			try
+			{
+				deleteResponse = await DeleteFileAsync(id);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile with id {id} removing failure: {ex.Message}");
+			}
+
+			if (!deleteResponse.Successfull)
+				return new ResponseData<FileModel>(null, false, deleteResponse.ErrorMessage);
+
+			ResponseData<FileModel> createResponse;
+			try
+			{
+				createResponse = await CreateFileAsync(file);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile with id {id} creation failure: {ex.Message}");
+			}
+
+			if (!deleteResponse.Successfull)
+				return new ResponseData<FileModel>(null, false, deleteResponse.ErrorMessage);
+
+			return createResponse;
+		}
+		
+		public async Task<ResponseData<bool>> DeleteFileAsync(int id)
 		{
-			throw new NotImplementedException();
+			bool exist = await _repository.Exists(id);
+			if (!exist)
+				return new ResponseData<bool>(false, false, $"class FileService, method DeleteFileAsync: FormFile with id {id} doesn't exists");
+
+			FileModel fileModel = GetFileAsync(id).Result.Data;
+
+			try
+			{
+				await _repository.DeleteAsync(fileModel);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<bool>(false, false, $"class FileService, method DeleteFileAsync: FormFile with id {id} removing from DB failure: {ex.Message}");
+			}
+
+			try
+			{
+				File.Delete(fileModel.Path);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<bool>(false, false, $"class FileService, method DeleteFileAsync: FormFile with id {id} removing from disk failure: {ex.Message}");
+			}
+
+			return new ResponseData<bool>(true);
 		}
 	}
 }

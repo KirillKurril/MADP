@@ -12,14 +12,12 @@ namespace ALWD.API.Services.ProductService
         private IConfiguration _config;
         private readonly int _maxPageSize;
         private readonly string _imagePath;
-        private string _apiUri;
 
         public ProductService(IRepository<Product> repository, [FromServices] IConfiguration config, IWebHostEnvironment env)
         {
             _repository = repository;
             _config = config;
             _imagePath = Path.Combine(env.ContentRootPath, "images");
-            _apiUri = _config["ImageUri"];
             try
             {
                 _maxPageSize = int.Parse(_config["MaxPageSize"]);
@@ -229,84 +227,17 @@ namespace ALWD.API.Services.ProductService
         
         public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
         {
-            try
-            {
-                if (product == null)
-                {
-                    throw new ArgumentNullException(nameof(product));
-                }
-                product.Image.URL = await SaveFileAsync(formFile);
-                await _repository.AddAsync(product);
-                return new ResponseData<Product>(product);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("An error occurred while creating the product.", ex);
-            }
-        }
+			throw new NotImplementedException();
+		}
 
         public async Task<ResponseData<Product>> UpdateProductAsync(Product product, IFormFile? formFile)
         {
-			bool exists = await _repository.Exists(p => p.Id == product.Id);
-			if (!exists)
-				return new ResponseData<Product>(null, false, "product doesn't exist");
-
-			try
-            {
-                product.Image.URL = await SaveFileAsync(formFile);
-                await _repository.UpdateAsync(product);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"An error occurred while updating the product on product service: {ex.Message}");
-            }
-
-			return new ResponseData<Product>(null);
-
+			throw new NotImplementedException();
 		}
 		
         public async Task<ResponseData<Product>> DeleteProductAsync(int id)
         {
-            Product product;
-            try
-            {
-                product = await _repository.GetByIdAsync(id);
-            }
-			catch (Exception ex)
-			{
-				throw new Exception($"An error occurred while attempting to retrieve the entity to be deleted from the database: {ex.Message}");
-			}
-
-			if (product == null)
-                return new ResponseData<Product>(null, false, "product doesn't exist");
-
-            try
-            {
-                await _repository.DeleteAsync(product);
-            }
-			catch (Exception ex)
-			{
-				throw new Exception($"An error occurred while deleting the product on product service: {ex.Message}");
-			}
-
-			return new ResponseData<Product>(null);
-        }
-
-        private async Task<string> SaveFileAsync(IFormFile file)
-        {
-            if (file == null || file.Length == 0)
-            {
-                throw new ArgumentException("Пустой файл.");
-            }
-
-            var filePath = Path.Combine(_imagePath, file.FileName);
-
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
-            {
-                await file.CopyToAsync(fileStream);
-            }
-            string imageUri = Path.Combine(_apiUri, file.FileName);
-            return imageUri;
-        }
+			throw new NotImplementedException();
+		}
     }
 }
