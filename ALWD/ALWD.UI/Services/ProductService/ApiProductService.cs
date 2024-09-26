@@ -1,11 +1,14 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using ALWD.Domain.Validation.Models;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using ALWD.Domain.DTOs;
+using Microsoft.AspNetCore.Http;
 
 namespace ALWD.UI.Services.ProductService
 {
@@ -92,28 +95,66 @@ namespace ALWD.UI.Services.ProductService
         }
 
         public async Task CreateProductAsync(Product product, IFormFile? formFile)
+          {
+              var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Product";
+
+              var multipartContent = new MultipartFormDataContent();
+
+              string productJson = JsonConvert.SerializeObject(product);
+              HttpContent productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
+              multipartContent.Add(productContent, "product");
+
+              if (formFile != null)
+              {
+                  await using var ms = new MemoryStream();
+                  await formFile.CopyToAsync(ms);
+                  byte[] fileBytes = ms.ToArray();
+
+                  ByteArrayContent fileContent = new ByteArrayContent(fileBytes);
+                  fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
+                  multipartContent.Add(fileContent, "file", formFile.FileName);
+              }
+
+              _logger.LogInformation($"Requesting URL: {uri}");
+              HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
+
+              if (!response.IsSuccessStatusCode)
+              {
+                  _logger.LogError($"-----> Unable to create product. Error: {response.Content}");
+                  throw new HttpRequestException($"Error creating product: {response.Content}");
+              }
+          }
+
+        public async Task CreateProductAsync(ProductValidationModel model)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress}Product");
+            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
 
-            var multipartContent = new MultipartFormDataContent();
+            CreateProductDTO dto = new CreateProductDTO()
+            {
+                ProductName = model.Name,
+                ProductDescription = model.Description,
+                ProductPrice = model.Price,
+                ProductQuantity = model.Quantity,
+                ProductCategoryId = model.CategoryId,
+                ImageName = model.Image.FileName,
+                ImageMimeType = model.Image.ContentType,
+            };
 
-            string productJson = JsonConvert.SerializeObject(product);
-            HttpContent productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
-            multipartContent.Add(productContent, "product");
-
-            if (formFile != null)
+            if (model.Image != null)
             {
                 await using var ms = new MemoryStream();
-                await formFile.CopyToAsync(ms);
-                byte[] fileBytes = ms.ToArray();
-
-                ByteArrayContent fileContent = new ByteArrayContent(fileBytes);
-                fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
-                multipartContent.Add(fileContent, "file", formFile.FileName);
+                await model.Image.CopyToAsync(ms);
+                dto.ImageContent = ms.ToArray();
             }
 
-            _logger.LogInformation($"Requesting URL: {uri}");
-            HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
+            //string json = JsonConvert.SerializeObject(dto);
+            //HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            //_logger.LogError(uri.ToString());
+            //HttpResponseMessage response = await _httpClient.PostAsync(uri, content);
+            
+
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
 
             if (!response.IsSuccessStatusCode)
             {
@@ -122,9 +163,14 @@ namespace ALWD.UI.Services.ProductService
             }
         }
 
+        public Task UpdateProductAsync(ProductValidationModel model)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task UpdateProductAsync(Product product, IFormFile? formFile)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Product/{product.Id}");
+            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products/{product.Id}";
 
             MultipartFormDataContent multipartContent = new MultipartFormDataContent();
 
@@ -156,7 +202,7 @@ namespace ALWD.UI.Services.ProductService
         
         public async Task DeleteProductAsync(int id)
         {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Product/{id}");
+            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}";
 
             var response = await _httpClient.DeleteAsync(uri);
 

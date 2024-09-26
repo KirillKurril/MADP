@@ -2,6 +2,7 @@
 using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using ALWD.Domain.Validation.Models;
 
 namespace ALWD.UI.Services.ProductService
 {
@@ -29,7 +30,12 @@ namespace ALWD.UI.Services.ProductService
 			throw new NotImplementedException();
 		}
 
-		public Task DeleteProductAsync(int id)
+        public Task CreateProductAsync(ProductValidationModel model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteProductAsync(int id)
 		{
 			throw new NotImplementedException();
 		}
@@ -89,6 +95,11 @@ namespace ALWD.UI.Services.ProductService
 		{
 			throw new NotImplementedException();
 		}
+
+        public Task UpdateProductAsync(ProductValidationModel model)
+        {
+            throw new NotImplementedException();
+        }
 
         Task IProductService.CreateProductAsync(Product product, IFormFile? formFile)
         {

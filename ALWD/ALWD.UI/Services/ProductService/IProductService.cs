@@ -1,5 +1,6 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using ALWD.Domain.Validation.Models;
 
 namespace ALWD.UI.Services.ProductService
 {
@@ -7,9 +8,11 @@ namespace ALWD.UI.Services.ProductService
 	{
 		public Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName = null, int pageNo = 1);
 		public Task<ResponseData<Product>> GetProductByIdAsync(int id);
-		public Task UpdateProductAsync(Product product, IFormFile? formFile);
-		public Task DeleteProductAsync(int id);
-		public Task CreateProductAsync(Product product, IFormFile? formFile);
+        public Task CreateProductAsync(Product product, IFormFile? formFile);
+        public Task CreateProductAsync(ProductValidationModel model);
+        public Task UpdateProductAsync(Product product, IFormFile? formFile);
+        public Task UpdateProductAsync(ProductValidationModel model);
+        public Task DeleteProductAsync(int id);
 	}
 
 }

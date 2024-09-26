@@ -2,6 +2,7 @@
 using ALWD.Domain.Entities;
 using ALWD.API.Services.ProductService;
 using ALWD.Domain.Models;
+using ALWD.Domain.DTOs;
 
 namespace ALWD.API.Controllers
 {
@@ -58,52 +59,58 @@ namespace ALWD.API.Controllers
 			return Ok(response);
         }
 
+        /*  [HttpPost]
+          [Consumes("multipart/form-data")]
+          public async Task<ActionResult<Product>> CreateProduct([FromForm] Product product, [FromForm] IFormFile? file)
+          {
+              if (file == null || file.Length == 0)
+              {
+                  return BadRequest("File not provided.");
+              }
+
+              // Ваш сервис для создания продукта
+              ResponseData<Product> response;
+              try
+              {
+                  response = await _productService.CreateProductAsync(product, file);
+              }
+              catch (Exception ex)
+              {
+                  return StatusCode(500, ex.Message);
+              }
+
+              if (!response.Successfull)
+                  return BadRequest(response.ErrorMessage);
+
+              return Ok(response.Data);
+          }*/
+
         [HttpPost]
-        [Consumes("multipart/form-data")]
-        public async Task<ActionResult<Product>> CreateProduct([FromForm] Product product, [FromForm] IFormFile? file)
+        public async Task<ActionResult<Product>> CreateProduct(CreateProductDTO dto)
         {
-            if (file == null || file.Length == 0)
-            {
-                return BadRequest("File not provided.");
-            }
+            CreateProductDTO ddto = dto;
+            //if (file == null || file.Length == 0)
+            //{
+            //    return BadRequest("File not provided.");
+            //}
 
-            // Ваш сервис для создания продукта
-            ResponseData<Product> response;
-            try
-            {
-                response = await _productService.CreateProductAsync(product, file);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
+            //// Ваш сервис для создания продукта
+            //ResponseData<Product> response;
+            //try
+            //{
+            //    response = await _productService.CreateProductAsync(product, file);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return StatusCode(500, ex.Message);
+            //}
 
-            if (!response.Successfull)
-                return BadRequest(response.ErrorMessage);
+            //if (!response.Successfull)
+            //    return BadRequest(response.ErrorMessage);
 
-            return Ok(response.Data);
+            //return Ok(response.Data);
+            return Ok(ddto);
         }
-
-        /*        [HttpPost]
-                public async Task<ActionResult<Product>> CreateProduct(Product product, IFormFile? file)
-                {
-                    ResponseData<Product> response;
-
-                    try
-                    {
-                        response = await _productService.CreateProductAsync(product, file);
-                    }
-                    catch (Exception ex)
-                    {
-                        return StatusCode(500, ex.Message);
-                    }
-
-                    if (!response.Successfull)
-                        return BadRequest(response.ErrorMessage);
-
-                    //return CreatedAtAction(nameof(GetProduct), new { id = response.Data.Id }, response.Data);
-                    return Ok();
-                }*/
 
 
         [HttpPut("{id}")]

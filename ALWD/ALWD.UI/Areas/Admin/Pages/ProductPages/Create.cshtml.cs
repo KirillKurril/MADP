@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
 using ALWD.UI.Services.CategoryService;
+using ALWD.Domain.Validation.Models;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
@@ -13,10 +14,7 @@ namespace ALWD.UI.Admin.Pages.ProductPages
         private readonly ICategoryService _categoryService;
 
         [BindProperty]
-        public Product Product { get; set; } = default!;
-
-        [BindProperty]
-        public IFormFile? ProductImage { get; set; }
+        public ProductValidationModel Model { get; set; }
 
         public CreateModel(IProductService productService, ICategoryService categoryService)
         {
@@ -36,11 +34,13 @@ namespace ALWD.UI.Admin.Pages.ProductPages
         {
             if (!ModelState.IsValid)
             {
+                var categoryList = await _categoryService.GetCategoryListAsync();
+                ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name");
                 return Page();
             }
             try
             {
-                await _productService.CreateProductAsync(Product, ProductImage);
+                await _productService.CreateProductAsync(Model);
             }
             catch (Exception ex)
             {
