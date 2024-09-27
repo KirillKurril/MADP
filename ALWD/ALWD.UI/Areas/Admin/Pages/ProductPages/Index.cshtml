@@ -8,28 +8,28 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="./Create">Create New</a>
+    <a asp-page="./Create" class="btn btn-primary my-2">Create New</a>
 </p>
  <table class="table">
      <thead>
          <tr>
              <th>
-                 @Html.DisplayNameFor(model => model.Products.Items[0].Name)
+                 Название
              </th>
              <th>
-                 @Html.DisplayNameFor(model => model.Products.Items[0].Description)
+                 Описание
              </th>
              <th>
-                 @Html.DisplayNameFor(model => model.Products.Items[0].Price)
+                 Цена
              </th>
              <th>
-                 @Html.DisplayNameFor(model => model.Products.Items[0].Quantity)
+                 Количество
              </th>
              <th>
-                 Image
+                 Изображение
              </th>
              <th>
-                 @Html.DisplayNameFor(model => model.Products.Items[0].Category)
+                 Категория
              </th>
              <th></th>
          </tr>
@@ -50,15 +50,15 @@
                     @Html.DisplayFor(modelItem => product.Quantity)
              </td>
              <td>
-                 <img src="@product.Image.URL" alt="Product Image" style="max-width: 100px; max-height: 250px;" />
+                 <img src="@product.Image.URL" alt="Product Image" style="max-width: 250px; max-height: 250px;" />
              </td>
              <td>
                     @Html.DisplayFor(modelItem => product.Category.Name)
              </td>
              <td>
-                    <a asp-page="./Edit" asp-route-id="@product.Id">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@product.Id">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@product.Id">Delete</a>
+                    <a asp-page="./Edit" asp-route-id="@product.Id" class="btn btn-success">Edit</a>  
+                    <a asp-page="./Details" asp-route-id="@product.Id" class="btn btn-primary my-2">Details</a>  
+                    <a asp-page="./Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>  
              </td>
          </tr>
  }

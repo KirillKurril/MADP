@@ -8,7 +8,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create" class="btn btn-primary my-2">Create New</a>
 </p>
 <table class="table">
     @if (Model.CategoryList != null && Model.CategoryList.Any())
@@ -16,10 +16,10 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.CategoryList[0].Name)
+                    Название 
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.CategoryList[0].NormalizedName)
+                    Нормализованное название
                 </th>
                 <th></th>
             </tr>
@@ -35,9 +35,9 @@
                         @Html.DisplayFor(modelItem => item.NormalizedName)
                     </td>
                     <td>
-                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a> 
+                        <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-primary my-2">Details</a> 
+                        <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             }
