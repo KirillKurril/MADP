@@ -292,7 +292,9 @@ namespace ALWD.API.Services.ProductService
             Product product;
             try
             {
-                product = await _repository.GetByIdAsync(id);
+                product = await _repository.GetByIdAsync(id,
+                                                         default,
+                                                         p => p.Image);
             }
 			catch (Exception ex)
 			{

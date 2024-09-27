@@ -194,8 +194,7 @@ namespace ALWD.UI.Services.ProductService
                 ProductPrice = model.Price,
                 ProductQuantity = model.Quantity,
                 ProductCategoryId = model.CategoryId,
-                ImageName = model.Image.FileName,
-                ImageMimeType = model.Image.ContentType,
+
                 ProductId = model.Id,
             };
 
@@ -204,6 +203,8 @@ namespace ALWD.UI.Services.ProductService
                 await using var ms = new MemoryStream();
                 await model.Image.CopyToAsync(ms);
                 dto.ImageContent = ms.ToArray();
+                dto.ImageName = model.Image.FileName;
+                dto.ImageMimeType = model.Image.ContentType;
             }
 
             HttpResponseMessage response = await _httpClient.PutAsJsonAsync(uri, dto, _serializerOptions);

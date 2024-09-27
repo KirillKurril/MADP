@@ -157,8 +157,9 @@ namespace ALWD.API.Controllers
                 Price = dto.ProductPrice,
                 Quantity = dto.ProductQuantity,
                 CategoryId = dto.ProductCategoryId,
-                Image = prevProductResponse.Data.Image
-            };
+                Image = prevProductResponse?.Data.Image,
+                FileModelId = prevProductResponse?.Data.FileModelId,
+            };  
 
             IFormFile? image;
             if (dto.ImageContent == null) 

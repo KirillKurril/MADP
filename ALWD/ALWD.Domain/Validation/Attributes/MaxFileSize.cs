@@ -27,7 +27,11 @@ public class MaxFileSize : ValidationAttribute
 				return new ValidationResult(ErrorMessage ?? $"Maximum allowed file size is {_maxFileSize} bytes.");
 			}
 		}
-		else
+        else if (value is null)
+        {
+            return ValidationResult.Success;
+        }
+        else
 		{
 			return new ValidationResult("Invalid attribute type.");
 		}

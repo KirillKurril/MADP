@@ -28,6 +28,10 @@ public class AllowedMimeType : ValidationAttribute
 				return new ValidationResult(ErrorMessage ?? $"MIME-тип файла не поддерживается. Разрешённые типы: {string.Join(", ", _mimeTypes)}");
 			}
 		}
+		else if(value is null)
+		{
+            return ValidationResult.Success;
+        }
 		else
 		{
 			return new ValidationResult("Invalid attribute type.");
