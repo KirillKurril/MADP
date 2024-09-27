@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\uni\\MADP\\ALWD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\categoryservice\\cetegoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\categoryservice\\cetegoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\productservice\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +15,32 @@
       "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\categoryservice\\cetegoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\categoryservice\\cetegoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\validation\\attributes\\allowedmimetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\validation\\attributes\\allowedmimetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,50 +102,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ALWD.API\\appsettings.json",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
-              "RelativeToolTip": "ALWD.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-26T22:31:25.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Data\\DbInitializer.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "ALWD.API\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowDkAAACFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T22:21:43.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CetegoryService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
               "RelativeToolTip": "ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAIAwwDoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T21:38:34.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "IFileService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\FileService\\IFileService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\FileService\\IFileService.cs",
@@ -153,51 +127,50 @@
               "RelativeToolTip": "ALWD.API\\Services\\FileService\\IFileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T21:36:55.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T21:36:55.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FileService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\FileService\\FileService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\FileService\\FileService.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\FileService\\FileService.cs",
               "RelativeToolTip": "ALWD.API\\Services\\FileService\\FileService.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAADwv5AAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T21:35:36.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\ProductService\\ProductService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\ProductService\\ProductService.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\ProductService\\ProductService.cs",
               "RelativeToolTip": "ALWD.API\\Services\\ProductService\\ProductService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAA3wO8AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAADwBAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T21:35:06.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Products.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Products.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
               "RelativeToolTip": "ALWD.API\\Controllers\\Products.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAUwIQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAD4v60AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T16:14:19.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Categories.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Categories.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Categories.cs",
@@ -205,12 +178,11 @@
               "RelativeToolTip": "ALWD.API\\Controllers\\Categories.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAwwEMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T16:18:12.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T16:18:12.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\appsettings.json",
               "RelativeDocumentMoniker": "ALWD.UI\\appsettings.json",
@@ -218,38 +190,61 @@
               "RelativeToolTip": "ALWD.UI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-26T22:31:42.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T22:31:42.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\ProductService\\IProductService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\ProductService\\IProductService.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\ProductService\\IProductService.cs",
               "RelativeToolTip": "ALWD.API\\Services\\ProductService\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T21:33:25.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "ApiProductService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
               "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAqwJAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAqwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T15:42:28.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Data\\DbInitializer.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "ALWD.API\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowDkAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:21:43.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ALWD.API\\appsettings.json",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
+              "RelativeToolTip": "ALWD.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-26T22:31:25.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "FormFile.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\FormFile.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\DTOs\\FormFile.cs",
@@ -257,12 +252,11 @@
               "RelativeToolTip": "ALWD.Domain\\DTOs\\FormFile.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T21:17:30.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T21:17:30.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AllowedMimeType.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Validation\\Attributes\\AllowedMimeType.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\Validation\\Attributes\\AllowedMimeType.cs",
@@ -270,8 +264,7 @@
               "RelativeToolTip": "ALWD.Domain\\Validation\\Attributes\\AllowedMimeType.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T20:15:42.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T20:15:42.237Z"
             },
             {
               "$type": "Document",
@@ -283,8 +276,7 @@
               "RelativeToolTip": "ALWD.Domain\\DTOs\\CreateProductDTO.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T19:44:00.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T19:44:00.42Z"
             },
             {
               "$type": "Document",
@@ -296,8 +288,7 @@
               "RelativeToolTip": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Create.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAIBJwAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T15:30:57.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:30:57.016Z"
             },
             {
               "$type": "Document",
@@ -309,8 +300,7 @@
               "RelativeToolTip": "ALWD.Domain\\Validation\\Attributes\\AllowedExtensions.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAywCQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T15:28:46.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:28:46.351Z"
             },
             {
               "$type": "Document",
@@ -322,8 +312,7 @@
               "RelativeToolTip": "ALWD.Domain\\Validation\\Models\\ProductValidationModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T15:01:14.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:01:14.228Z"
             },
             {
               "$type": "Document",
@@ -335,8 +324,7 @@
               "RelativeToolTip": "ALWD.Domain\\Validation\\Attributes\\MaxFileSize.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T15:19:27.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:19:27.908Z"
             },
             {
               "$type": "Document",
@@ -348,8 +336,7 @@
               "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\MemoryProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T16:19:04.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T16:19:04.028Z"
             },
             {
               "$type": "Document",
@@ -361,8 +348,7 @@
               "RelativeToolTip": "ALWD.UI\\Services\\CategoryService\\ApiCategoryService.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAwwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T16:30:54.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T16:30:54.625Z"
             },
             {
               "$type": "Document",
@@ -374,8 +360,7 @@
               "RelativeToolTip": "ALWD.Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T16:49:30.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T16:49:30.718Z"
             },
             {
               "$type": "Document",
@@ -387,8 +372,7 @@
               "RelativeToolTip": "ALWD.Domain\\Validation\\Models\\CategoryValidationModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T15:18:29.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:18:29.076Z"
             },
             {
               "$type": "Document",
@@ -400,8 +384,7 @@
               "RelativeToolTip": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Create.cshtml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAIA4wCoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T15:08:46.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:08:46.641Z"
             }
           ]
         }

@@ -168,7 +168,7 @@ namespace ALWD.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-			ResponseData<Product> response;
+			ResponseData<bool> response;
             try
             {
                 response = await _productService.DeleteProductAsync(id);

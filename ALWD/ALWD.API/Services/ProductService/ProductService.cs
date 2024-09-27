@@ -2,6 +2,7 @@
 using ALWD.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using ALWD.Domain.Abstractions;
+using ALWD.API.Services.FileService;
 
 
 namespace ALWD.API.Services.ProductService
@@ -12,9 +13,11 @@ namespace ALWD.API.Services.ProductService
         private IConfiguration _config;
         private readonly int _maxPageSize;
         private readonly string _imagePath;
+        private readonly IFileService _fileService;
 
-        public ProductService(IRepository<Product> repository, [FromServices] IConfiguration config, IWebHostEnvironment env)
+        public ProductService(IRepository<Product> repository, [FromServices] IConfiguration config, IWebHostEnvironment env, IFileService fileService)
         {
+            _fileService = fileService;
             _repository = repository;
             _config = config;
             _imagePath = Path.Combine(env.ContentRootPath, "images");
@@ -227,17 +230,99 @@ namespace ALWD.API.Services.ProductService
         
         public async Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile)
         {
-			throw new NotImplementedException();
-		}
+			ResponseData<FileModel> fileModelResponce;
+            try
+            {
+				fileModelResponce = await _fileService.CreateFileAsync(formFile);
+            }
+            catch (Exception ex)
+            {
+                return new ResponseData<Product>(null, false, $"class: ProductService, method: CreateProductAsync: {ex.Message}");
+            }
+
+            if (!fileModelResponce.Successfull) 
+                return new ResponseData<Product>(null, false, fileModelResponce.ErrorMessage);
+
+            product.Image = fileModelResponce.Data;
+
+			try
+			{
+				await _repository.AddAsync(product);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<Product>(null, false, $"class: ProductService, method: CreateProductAsync: {ex.Message}");
+			}
+
+            return new ResponseData<Product>(product);
+        }
 
         public async Task<ResponseData<Product>> UpdateProductAsync(Product product, IFormFile? formFile)
         {
-			throw new NotImplementedException();
+			ResponseData<FileModel> fileModelResponce;
+			try
+			{
+				fileModelResponce = await _fileService.UpdateFileAsync(product.Image.Id, formFile);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<Product>(null, false, $"class: ProductService, method: UpdateProductAsync: {ex.Message}");
+			}
+
+			if (!fileModelResponce.Successfull)
+				return new ResponseData<Product>(null, false, fileModelResponce.ErrorMessage);
+
+			product.Image = fileModelResponce.Data;
+
+			try
+			{
+				await _repository.UpdateAsync(product);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<Product>(null, false, $"class: ProductService, method: UpdateProductAsync: {ex.Message}");
+			}
+
+			return new ResponseData<Product>(product);
 		}
 		
-        public async Task<ResponseData<Product>> DeleteProductAsync(int id)
+        public async Task<ResponseData<bool>> DeleteProductAsync(int id)
         {
-			throw new NotImplementedException();
+            Product product;
+            try
+            {
+                product = await _repository.GetByIdAsync(id);
+            }
+			catch (Exception ex)
+			{
+				return new ResponseData<bool>(false, false, $"class: ProductService, method: DeleteProductAsync: receiving product: {ex.Message}");
+			}
+
+			ResponseData<bool> fileModelResponce;
+			try
+			{
+				fileModelResponce = await _fileService.DeleteFileAsync(product.Image.Id);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<bool>(false, false, $"class: ProductService, method: DeleteProductAsync: removing file model: {ex.Message}");
+			}
+
+			if (!fileModelResponce.Successfull)
+				return new ResponseData<bool>(false, false, fileModelResponce.ErrorMessage);
+
+			product.Image = null;
+
+			try
+			{
+				await _repository.DeleteAsync(product);
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<bool>(false, false, $"class: ProductService, method: CreateProductAsync: removing product: {ex.Message}");
+			}
+
+			return new ResponseData<bool>(true);
 		}
     }
 }

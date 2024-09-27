@@ -14,7 +14,7 @@ namespace ALWD.API.Services.ProductService
         public Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string? categoryNormalizedName, int pageNo);
 		public Task<ResponseData<Product>> CreateProductAsync(Product product, IFormFile? formFile);
 		public Task<ResponseData<Product>> UpdateProductAsync(Product product, IFormFile? formFile);
-		public Task<ResponseData<Product>> DeleteProductAsync(int id);
+		public Task<ResponseData<bool>> DeleteProductAsync(int id);
 	}
 
 }
