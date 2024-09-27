@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.CategoryService;
+using ALWD.Domain.Validation.Models;
+using ALWD.Domain.Models;
 
 namespace ALWD.UI.Admin.Pages.CategoryPages
 {
@@ -20,7 +22,7 @@ namespace ALWD.UI.Admin.Pages.CategoryPages
         }
 
         [BindProperty]
-        public Category Category { get; set; } = default!;
+        public CategoryCreateValidationModel Model { get; set; }
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -28,15 +30,21 @@ namespace ALWD.UI.Admin.Pages.CategoryPages
             {
                 return Page();
             }
+
+            ResponseData<int> createdIdResponse;
             try
             {
-             await _categoryService.CreateCategoryAsync(Category);
+                createdIdResponse = await _categoryService.CreateCategoryAsync(Model);
             }
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
-            return RedirectToPage("./Index");
+
+            if (!createdIdResponse.Successfull)
+                return NotFound(createdIdResponse.ErrorMessage);
+
+            return RedirectToPage("./Details", new { id = createdIdResponse.Data });
         }
     }
 }

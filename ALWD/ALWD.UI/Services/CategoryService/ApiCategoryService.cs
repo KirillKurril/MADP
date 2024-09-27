@@ -1,5 +1,6 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
+using ALWD.Domain.Validation.Models;
 using ALWD.UI.Services.ProductService;
 using System.Text.Json;
 
@@ -68,9 +69,15 @@ namespace ALWD.UI.Services.CategoryService
             return new ResponseData<IReadOnlyList<Category>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
         }
 
-        public async Task CreateCategoryAsync(Category category)
+        public async Task<ResponseData<int>> CreateCategoryAsync(CategoryCreateValidationModel model)
         {
             var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories";
+
+            Category category = new Category()
+            {
+                Name = model.Name,
+                NormalizedName = model.NormalizedName,
+            };
 
             var response = await _httpClient.PostAsJsonAsync(baseUri, category, _serializerOptions);
 
@@ -80,12 +87,29 @@ namespace ALWD.UI.Services.CategoryService
                 throw new HttpRequestException($"Error creating category: {response.StatusCode}");
             }
 
-            _logger.LogError($"-----> Category created. successfilly: {response.StatusCode}");
+            int createdId;
+            try
+            {
+                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"-----> Reading JSON failure. ApiCategoryService/CreateCategoryAsync(): {ex.Message}");
+                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiCategoryService/CreateCategoryAsync(): {ex.Message}");
+            }
+            return new ResponseData<int>(createdId);
         }
 
-        public async Task UpdateCategoryAsync(Category category)
+        public async Task<ResponseData<int>> UpdateCategoryAsync(CategoryEditValidationModel model)
         {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{category.Id}";
+            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{model.Id}";
+
+            Category category = new Category()
+            {
+                Id = model.Id,
+                Name = model.Name,
+                NormalizedName = model.NormalizedName,
+            };
 
             var response = await _httpClient.PutAsJsonAsync(baseUri, category, _serializerOptions);
 
@@ -97,7 +121,17 @@ namespace ALWD.UI.Services.CategoryService
                 throw new HttpRequestException($"Error updating category: {response.StatusCode} | {errorMessage}");
             }
 
-            _logger.LogError($"-----> Category with ID updateded successfully: {response.StatusCode}");
+            int updatedId;
+            try
+            {
+                updatedId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"-----> Reading JSON failure. ApiCategoryService/UpdateCategoryAsync(): {ex.Message}");
+                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiCategoryService/UpdateCategoryAsync(): {ex.Message}");
+            }
+            return new ResponseData<int>(updatedId);
 
         }
 

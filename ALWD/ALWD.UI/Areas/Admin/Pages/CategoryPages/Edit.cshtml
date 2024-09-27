@@ -14,16 +14,16 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group mb-3">
-                <label asp-for="Category.Name" class="control-label"></label>
-                <input asp-for="Category.Name" class="form-control" />
-                <span asp-validation-for="Category.Name" class="text-danger"></span>
+                <label asp-for="Model.Name" class="control-label"></label>
+                <input asp-for="Model.Name" class="form-control" />
+                <span asp-validation-for="Model.Name" class="text-danger"></span>
             </div>
             <div class="form-group mb-3">
-                <label asp-for="Category.NormalizedName" class="control-label"></label>
-                <input asp-for="Category.NormalizedName" class="form-control" />
-                <span asp-validation-for="Category.NormalizedName" class="text-danger"></span>
+                <label asp-for="Model.NormalizedName" class="control-label"></label>
+                <input asp-for="Model.NormalizedName" class="form-control" />
+                <span asp-validation-for="Model.NormalizedName" class="text-danger"></span>
             </div>
-            <input type="hidden" asp-for="Category.Id" />
+            <input type="hidden" asp-for="Model.Id" />
             <div class="form-group mb-3">
                 <input type="submit" value="Save" class="btn btn-success"/>
             </div>

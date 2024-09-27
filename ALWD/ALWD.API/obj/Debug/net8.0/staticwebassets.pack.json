@@ -53,6 +53,14 @@
       "PackagePath": "staticwebassets\\image\\свеча_b.jpg"
     },
     {
+      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
+      "PackagePath": "staticwebassets\\image\\стартер_a.jpg"
+    },
+    {
+      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
+      "PackagePath": "staticwebassets\\image\\стартер_b.jpg"
+    },
+    {
       "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
       "PackagePath": "staticwebassets\\image\\тормозной_диск_a.jpg"
     },

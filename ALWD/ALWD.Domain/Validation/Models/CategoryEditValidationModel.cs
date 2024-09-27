@@ -1,8 +1,11 @@
-﻿
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ALWD.Domain.Validation.Models
 {
-    internal class CategoryEditValidationModel
+    public class CategoryEditValidationModel : CategoryCreateValidationModel
     {
+        [Required(ErrorMessage = "Id property is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "Id must be positive integer")]
+        public int Id { get; set; }
     }
 }

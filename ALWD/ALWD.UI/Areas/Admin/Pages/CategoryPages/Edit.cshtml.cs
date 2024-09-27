@@ -2,15 +2,17 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.CategoryService;
+using ALWD.Domain.Models;
+using ALWD.Domain.Validation.Models;
 
 namespace ALWD.UI.Admin.Pages.CategoryPages
 {
     public class EditModel : PageModel
     {
+        private readonly ICategoryService _categoryService;
 
         [BindProperty]
-        public Category Category { get; set; } = default!;
-        private readonly ICategoryService _categoryService;
+        public CategoryEditValidationModel Model { get; set; }
 
         public EditModel(ICategoryService service)
         {
@@ -25,12 +27,31 @@ namespace ALWD.UI.Admin.Pages.CategoryPages
                 return NotFound();
             }
 
-            var response =  await _categoryService.GetCategoryByIdAsync(id.Value);
+            ResponseData<Category> response;
+            try
+            {
+                response = await _categoryService.GetCategoryByIdAsync(id.Value);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+            
+            if(!response.Successfull)
+                return NotFound(response.ErrorMessage);
+
             if (response.Data == null)
             {
                 return NotFound();
             }
-            Category = response.Data;
+            Model = new CategoryEditValidationModel()
+            {
+                Id = response.Data.Id,
+                Name = response.Data.Name,
+                NormalizedName = response.Data.NormalizedName
+            };
+
+            
             return Page();
         }
 
@@ -41,16 +62,20 @@ namespace ALWD.UI.Admin.Pages.CategoryPages
                 return Page();
             }
 
+            ResponseData<int> updatedIdResponse;
             try
             {
-                await _categoryService.UpdateCategoryAsync(Category);
+                updatedIdResponse = await _categoryService.UpdateCategoryAsync(Model);
             }
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
 
-            return RedirectToPage("./Index");
+            if (!updatedIdResponse.Successfull)
+                return NotFound(updatedIdResponse.ErrorMessage);
+
+            return RedirectToPage("./Details", new { id = updatedIdResponse.Data });
         }
 
         private async Task<bool> CategoryExists(int id)

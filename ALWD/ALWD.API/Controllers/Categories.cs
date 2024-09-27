@@ -75,7 +75,7 @@ namespace ALWD.API.Controllers
 			if (!response.Successfull)
                 return BadRequest(response.ErrorMessage);
 
-            return CreatedAtAction(nameof(GetCategory), new { id = response.Data.Id }, response);
+            return Ok(response.Data.Id);
         }
 
 
@@ -95,7 +95,7 @@ namespace ALWD.API.Controllers
 			if (!response.Successfull)
 				return BadRequest(response.ErrorMessage);
 
-			return Ok();
+			return Ok(response.Data.Id);
         }
 
         [HttpDelete("{id}")]

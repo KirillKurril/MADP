@@ -5,7 +5,7 @@ namespace ALWD.Domain.Validation.Models
     public class ProductCreateValidationModel
     {
         [Required(ErrorMessage = "Поле названия обязательное для заполнения")]
-        [StringLength(100, ErrorMessage = "Название должно быть не более 100 символов.")]
+        [MaxStringLength(100, ErrorMessage = "Название должно быть не более 100 символов.")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Поле названия обязательное для заполнения")]
