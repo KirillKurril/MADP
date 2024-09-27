@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
+using ALWD.Domain.Models;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
@@ -15,6 +16,7 @@ namespace ALWD.UI.Admin.Pages.ProductPages
             _productService = service;
         }
 
+        [BindProperty]
         public Product Product { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
@@ -24,11 +26,19 @@ namespace ALWD.UI.Admin.Pages.ProductPages
                 return NotFound();
             }
 
-            var product = await _productService.GetProductByIdAsync(id.Value);
+            ResponseData<Product> product;
+            try
+            {
+                product = await _productService.GetProductByIdAsync(id.Value);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
 
             if (product == null)
             {
-                return NotFound();
+                return NotFound($"Product with id {id} can't be found");
             }
             else
             {

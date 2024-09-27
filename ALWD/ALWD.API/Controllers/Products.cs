@@ -29,7 +29,7 @@ namespace ALWD.API.Controllers
 			}
 
 			if (!response.Successfull)
-				return BadRequest(response.ErrorMessage);
+                return StatusCode(500, response.ErrorMessage);
 
 			if (response.Data == null)
                 return NotFound();
@@ -50,10 +50,10 @@ namespace ALWD.API.Controllers
 				return StatusCode(500, ex.Message);
 			}
 
-			if (!response.Successfull)
-				return BadRequest(response.ErrorMessage);
+            if (!response.Successfull)
+                return StatusCode(500, response.ErrorMessage);
 
-			if (response.Data == null)
+            if (response.Data == null)
 				return NotFound();
 
 			return Ok(response);
@@ -119,36 +119,57 @@ namespace ALWD.API.Controllers
             }
 
             if (!response.Successfull)
-                return BadRequest(response.ErrorMessage);
+                return StatusCode(500, response.ErrorMessage);
 
-            return Ok(response.Data);
+            return Ok(response.Data.Id);
         }
 
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(CreateProductDTO dto)
+        [HttpPut]
+        public async Task<IActionResult> UpdateProduct(UpdateProductDTO dto)
         {
 			if (!ModelState.IsValid)
 			{
 				return BadRequest(ModelState);
 			}
 
-			Product product = new Product()
-			{
-				Name = dto.ProductName,
-				Description = dto.ProductDescription,
-				Price = dto.ProductPrice,
-				Quantity = dto.ProductQuantity,
-				CategoryId = dto.ProductCategoryId,
-			};
+            ResponseData<Product> prevProductResponse;
+            try
+            {
+                prevProductResponse = await _productService.GetProductByIdAsync(dto.ProductId);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
 
-			IFormFile image = new ALWD.Domain.DTOs.FormFile(
-				new MemoryStream(dto.ImageContent),
-				"productImage",
-				dto.ImageName,
-				dto.ImageMimeType);
+            if (!prevProductResponse.Successfull)
+                return StatusCode(500, prevProductResponse.ErrorMessage);
 
-			ResponseData<Product> response;
+            if (prevProductResponse.Data == null)
+                return NotFound();
+
+            Product product = new Product()
+            {
+                Id = dto.ProductId,
+                Name = dto.ProductName,
+                Description = dto.ProductDescription,
+                Price = dto.ProductPrice,
+                Quantity = dto.ProductQuantity,
+                CategoryId = dto.ProductCategoryId,
+                Image = prevProductResponse.Data.Image
+            };
+
+            IFormFile? image;
+            if (dto.ImageContent == null) 
+                image = null;
+            else
+                image = new Domain.DTOs.FormFile(new MemoryStream(dto.ImageContent),
+                                                "productImage",
+                                                dto.ImageName,
+                                                dto.ImageMimeType);
+
+            ResponseData<Product> response;
 			try
 			{
 				response = await _productService.UpdateProductAsync(product, image);
@@ -158,11 +179,11 @@ namespace ALWD.API.Controllers
 				return StatusCode(500, ex.Message);
 			}
 
-			if (!response.Successfull)
-				return BadRequest(response.ErrorMessage);
+            if (!response.Successfull)
+                return StatusCode(500, response.ErrorMessage);
 
 
-			return Ok();
+            return Ok(response.Data.Id);
         }
 
         [HttpDelete("{id}")]
@@ -178,10 +199,10 @@ namespace ALWD.API.Controllers
 				return StatusCode(500, ex.Message);
 			}
 
-			if (!response.Successfull)
-				return BadRequest(response.ErrorMessage);
+            if (!response.Successfull)
+                return StatusCode(500, response.ErrorMessage);
 
-			return Ok();
+            return Ok();
         }
     }
 

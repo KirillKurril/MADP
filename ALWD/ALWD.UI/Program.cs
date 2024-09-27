@@ -1,70 +1,65 @@
-using System.Text.Json.Serialization;
-using ALWD.UI.Extensions;
 using ALWD.UI.Models;
 using ALWD.UI.Services.CategoryService;
 using ALWD.UI.Services.ProductService;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<UriData>();
-builder.Services.AddRazorPages();
-builder.RegisterCustomServices();
-
-var apiUri = builder.Configuration.GetSection("UriData:ApiUri").Value;
-
-builder.Services
-	.AddHttpClient<IProductService, ApiProductService>(opt =>
-	opt.BaseAddress = new Uri(apiUri));
-
-builder.Services
-    .AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
-    opt.BaseAddress = new Uri(apiUri));
-
-//builder.Services.AddControllersWithViews()
-//	.AddJsonOptions(options =>
-//	{
-//		options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
-//	});
-
-
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+public class Program
 {
-	app.UseExceptionHandler("/Home/Error");
-	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-	app.UseHsts();
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+        ConfigureServices(builder.Services);
+        var app = builder.Build();
+
+        ConfigureMiddleware(app);
+        ConfigureEndpoints(app);
+
+        app.Run();
+    }
+
+    private static void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllersWithViews();
+        services.AddSingleton<UriData>();
+        services.AddRazorPages();
+
+        var apiUri = services.BuildServiceProvider().GetService<IConfiguration>().GetSection("UriData:ApiUri").Value;
+
+        services.AddHttpClient<IProductService, ApiProductService>(opt =>
+            opt.BaseAddress = new Uri(apiUri));
+
+        services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
+            opt.BaseAddress = new Uri(apiUri));
+    }
+
+    private static void ConfigureMiddleware(WebApplication app)
+    {
+        if (!app.Environment.IsDevelopment())
+        {
+            app.UseExceptionHandler("/Home/Error");
+            app.UseHsts();
+        }
+
+        app.UseHttpsRedirection();
+        app.UseStaticFiles();
+        app.UseRouting();
+        app.UseAuthorization();
+    }
+
+    private static void ConfigureEndpoints(WebApplication app)
+    {
+        app.MapRazorPages();
+
+        app.MapControllerRoute(
+            name: "areas",
+            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+        app.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Home}/{action=Index}/{id?}");
+
+        app.MapGet("/Admin", async context =>
+        {
+            context.Response.Redirect("/Admin/Index");
+        });
+    }
 }
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.MapRazorPages();
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-	name: "areas",
-	pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-	name: "default",
-	pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapRazorPages();
-
-// Перенаправление всех запросов к области Admin на Index
-app.MapGet("/Admin", async context =>
-{
-	context.Response.Redirect("/Admin/Index");
-});
-
-
-app.Run();
-

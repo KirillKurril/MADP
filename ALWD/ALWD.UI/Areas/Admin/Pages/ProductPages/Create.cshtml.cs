@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
 using ALWD.UI.Services.CategoryService;
 using ALWD.Domain.Validation.Models;
+using ALWD.Domain.Models;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
@@ -14,7 +14,7 @@ namespace ALWD.UI.Admin.Pages.ProductPages
         private readonly ICategoryService _categoryService;
 
         [BindProperty]
-        public ProductValidationModel Model { get; set; }
+        public ProductCreateValidationModel Model { get; set; }
 
         public CreateModel(IProductService productService, ICategoryService categoryService)
         {
@@ -32,22 +32,28 @@ namespace ALWD.UI.Admin.Pages.ProductPages
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
+            
             if (!ModelState.IsValid)
             {
                 var categoryList = await _categoryService.GetCategoryListAsync();
                 ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name");
                 return Page();
             }
+            ResponseData<int> createdIdResponse;
             try
             {
-                await _productService.CreateProductAsync(Model);
+                createdIdResponse = await _productService.CreateProductAsync(Model);
             }
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
 
-            return RedirectToPage("./Index");
+            if (!createdIdResponse.Successfull)
+                return NotFound(createdIdResponse.ErrorMessage);
+
+            return RedirectToPage("./Details", new { id = createdIdResponse.Data });
+
         }
     }
 }

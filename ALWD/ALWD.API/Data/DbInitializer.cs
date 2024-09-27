@@ -7,7 +7,7 @@ namespace ALWD.API.Data
     {
         public static async Task SeedData(WebApplication app)
         {
-			var baseUri = app.Configuration.GetValue<string>("ImageUri") ?? "not founded";
+			var baseUri = app.Configuration.GetValue<string>("APIUri") ?? "not founded";
 			var rootPath = app.Environment.WebRootPath;
 
 			using var scope = app.Services.CreateScope();
@@ -36,26 +36,26 @@ namespace ALWD.API.Data
 
 			var fileModels = new List<FileModel>
 			{
-				new FileModel{Name="стартер_a.jpg", URL = baseUri + "/Image/стартер_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/стартер_a.jpg"},
-				new FileModel{Name="стартер_b.jpg", URL = baseUri + "/Image/стартер_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/стартер_b.jpg"},
-				new FileModel{Name="тормозной_диск_a.jpg", URL = baseUri + "/Image/тормозной_диск_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/тормозной_диск_a.jpg"},
-				new FileModel{Name="тормозной_диск_b.jpg", URL = baseUri + "/Image/тормозной_диск_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/тормозной_диск_b.jpg"},
-				new FileModel{Name="фильтр_a.jpg", URL = baseUri + "/Image/фильтр_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/фильтр_a.jpg"},
-				new FileModel{Name="фильтр_b.jpg", URL = baseUri + "/Image/фильтр_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/фильтр_b.jpg"},
-				new FileModel{Name="свеча_a.jpg", URL = baseUri + "/Image/свеча_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/свеча_a.jpg"},
-				new FileModel{Name="свеча_b.jpg", URL = baseUri + "/Image/свеча_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/свеча_b.jpg"},
-				new FileModel{Name="амортизатор_a.jpg", URL = baseUri + "/Image/амортизатор_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/амортизатор_a.jpg"},
-				new FileModel{Name="амортизатор_b.jpg", URL = baseUri + "/Image/амортизатор_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/амортизатор_b.jpg"},
-				new FileModel{Name="масло_a.jpg", URL = baseUri + "/Image/масло_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/масло_a.jpg"},
-				new FileModel{Name="масло_b.jpg", URL = baseUri + "/Image/масло_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/масло_b.jpg"},
-				new FileModel{Name="шина_a.jpg", URL = baseUri + "/Image/шина_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/шина_a.jpg"},
-				new FileModel{Name="шина_b.jpg", URL = baseUri + "/Image/шина_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/шина_b.jpg"},
-				new FileModel{Name="аксессуар_a.jpg", URL = baseUri + "/Image/аксессуар_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/аксессуар_a.jpg"},
-				new FileModel{Name="аксессуар_b.jpg", URL = baseUri + "/Image/аксессуар_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/аксессуар_b.jpg"},
-				new FileModel{Name="радиатор_a.jpg", URL = baseUri + "/Image/радиатор_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/радиатор_a.jpg"},
-				new FileModel{Name="радиатор_b.jpg", URL = baseUri + "/Image/радиатор_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/радиатор_b.jpg"},
-				new FileModel{Name="бампер_a.jpg", URL = baseUri + "/Image/бампер_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/бампер_a.jpg"},
-				new FileModel{Name="бампер_b.jpg", URL = baseUri + "/Image/бампер_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}/image/бампер_b.jpg"},
+				new FileModel{Name="стартер_a.jpg", URL = baseUri + "/Image/стартер_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\стартер_a.jpg"},
+				new FileModel{Name="стартер_b.jpg", URL = baseUri + "/Image/стартер_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\стартер_b.jpg"},
+				new FileModel{Name="тормозной_диск_a.jpg", URL = baseUri + "/Image/тормозной_диск_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\тормозной_диск_a.jpg"},
+				new FileModel{Name="тормозной_диск_b.jpg", URL = baseUri + "/Image/тормозной_диск_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\тормозной_диск_b.jpg"},
+				new FileModel{Name="фильтр_a.jpg", URL = baseUri + "/Image/фильтр_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\фильтр_a.jpg"},
+				new FileModel{Name="фильтр_b.jpg", URL = baseUri + "/Image/фильтр_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\фильтр_b.jpg"},
+				new FileModel{Name="свеча_a.jpg", URL = baseUri + "/Image/свеча_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\свеча_a.jpg"},
+				new FileModel{Name="свеча_b.jpg", URL = baseUri + "/Image/свеча_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\свеча_b.jpg"},
+				new FileModel{Name="амортизатор_a.jpg", URL = baseUri + "/Image/амортизатор_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\амортизатор_a.jpg"},
+				new FileModel{Name="амортизатор_b.jpg", URL = baseUri + "/Image/амортизатор_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\амортизатор_b.jpg"},
+				new FileModel{Name="масло_a.jpg", URL = baseUri + "/Image/масло_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\масло_a.jpg"},
+				new FileModel{Name="масло_b.jpg", URL = baseUri + "/Image/масло_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\масло_b.jpg"},
+				new FileModel{Name="шина_a.jpg", URL = baseUri + "/Image/шина_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\шина_a.jpg"},
+				new FileModel{Name="шина_b.jpg", URL = baseUri + "/Image/шина_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\шина_b.jpg"},
+				new FileModel{Name="аксессуар_a.jpg", URL = baseUri + "/Image/аксессуар_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\аксессуар_a.jpg"},
+				new FileModel{Name="аксессуар_b.jpg", URL = baseUri + "/Image/аксессуар_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\аксессуар_b.jpg"},
+				new FileModel{Name="радиатор_a.jpg", URL = baseUri + "/Image/радиатор_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\радиатор_a.jpg"},
+				new FileModel{Name="радиатор_b.jpg", URL = baseUri + "/Image/радиатор_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\радиатор_b.jpg"},
+				new FileModel{Name="бампер_a.jpg", URL = baseUri + "/Image/бампер_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\бампер_a.jpg"},
+				new FileModel{Name="бампер_b.jpg", URL = baseUri + "/Image/бампер_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\бампер_b.jpg"},
 			};
 
 			context.FileModels.AddRange(fileModels);

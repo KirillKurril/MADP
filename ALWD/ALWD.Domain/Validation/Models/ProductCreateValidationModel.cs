@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 namespace ALWD.Domain.Validation.Models
 {
-    public class ProductValidationModel
+    public class ProductCreateValidationModel
     {
         [Required(ErrorMessage = "Поле названия обязательное для заполнения")]
         [StringLength(100, ErrorMessage = "Название должно быть не более 100 символов.")]

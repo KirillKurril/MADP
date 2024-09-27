@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
 using ALWD.UI.Services.CategoryService;
+using ALWD.Domain.Validation.Models;
+using ALWD.Domain.Models;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
@@ -12,57 +14,76 @@ namespace ALWD.UI.Admin.Pages.ProductPages
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
 
+        [BindProperty]
+        public ProductEditValidationModel Model { get; set; }
+
         public EditModel(IProductService productService, ICategoryService categoryService)
         {
             _productService = productService;
             _categoryService = categoryService;
         }
 
-        [BindProperty]
-        public Product Product { get; set; } = default!;
-
-        [BindProperty]
-        public IFormFile? ProductImage { get; set; }
-
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null)
+            Model = new ProductEditValidationModel();
+            if (id == null || id <= 0)
             {
                 return NotFound();
             }
 
-            var product = await _productService.GetProductByIdAsync(id.Value);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            Product = product.Data;
-
-            var categoryList = await _categoryService.GetCategoryListAsync();
-            ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name");
-            return Page();
-        }
-
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more information, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
-            Product.Image.MimeType = ProductImage.ContentType;
+            ResponseData<Product> product;
             try
             {
-                await _productService.UpdateProductAsync(Product, ProductImage);
+                product = await _productService.GetProductByIdAsync(id.Value);
             }
             catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
 
-            return RedirectToPage("./Index");
+            if (product == null)
+            {
+                return NotFound($"Product with id {id} can't be found");
+            }
+            else
+            {
+                Model.Name = product.Data.Name;
+                Model.Description = product.Data.Description;
+                Model.Price = product.Data.Price;
+                Model.Quantity = product.Data.Quantity;
+                Model.Id = product.Data.Id; 
+            }
+
+            var categoryList = await _categoryService.GetCategoryListAsync();
+            ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name", product.Data.CategoryId);
+            ViewData["PrevImageURL"] = product.Data.Image.URL;
+            return Page();
+        }
+
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                var categoryList = await _categoryService.GetCategoryListAsync();
+                ViewData["CategoryId"] = new SelectList(categoryList.Data, "Id", "Name");
+                return Page();
+            }
+
+            ResponseData<int> updatedIdResponse;
+            try
+            {
+                updatedIdResponse = await _productService.UpdateProductAsync(Model);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+
+            if (!updatedIdResponse.Successfull)
+                return NotFound(updatedIdResponse.ErrorMessage);
+
+            return RedirectToPage("./Details", new { id = updatedIdResponse.Data });
         }
 
         private async Task<bool> ProductExists(int id)

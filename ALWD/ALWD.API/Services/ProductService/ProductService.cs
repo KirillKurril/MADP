@@ -262,7 +262,7 @@ namespace ALWD.API.Services.ProductService
 			ResponseData<FileModel> fileModelResponce;
 			try
 			{
-				fileModelResponce = await _fileService.UpdateFileAsync(product.Image.Id, formFile);
+				fileModelResponce = await _fileService.UpdateFileAsync(formFile);
 			}
 			catch (Exception ex)
 			{
@@ -272,7 +272,8 @@ namespace ALWD.API.Services.ProductService
 			if (!fileModelResponce.Successfull)
 				return new ResponseData<Product>(null, false, fileModelResponce.ErrorMessage);
 
-			product.Image = fileModelResponce.Data;
+            if (fileModelResponce.Data != null)
+                product.FileModelId = fileModelResponce.Data.Id;
 
 			try
 			{

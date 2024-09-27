@@ -47,8 +47,7 @@ namespace ALWD.UI.Services.ProductService
             parameters.Add("page", pageNo.ToString());
             string urlWithQuery = QueryHelpers.AddQueryString(baseUri, parameters);
 
-            var response = await _httpClient.GetAsync(
-            new Uri(urlWithQuery));
+            var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
 
             Console.WriteLine(response);
 
@@ -56,15 +55,12 @@ namespace ALWD.UI.Services.ProductService
             {
                 try
                 {
-                    return await response.
-                            Content.ReadFromJsonAsync<ResponseData<ListModel<Product>>>(_serializerOptions);
+                    return await response.Content.ReadFromJsonAsync<ResponseData<ListModel<Product>>>(_serializerOptions);
                 }
-                catch (System.Text.Json.JsonException ex)
+                catch (Exception ex)
                 {
-                    _logger.LogError($"-----> Ошибка: {ex.Message}");
-                    var uiResponse = new ResponseData<ListModel<Product>>(null);
-                    uiResponse.ErrorMessage = $"Error: {ex.Message}";
-                    return uiResponse;
+                    _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+                    return new ResponseData<ListModel<Product>>(null, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
                 }
             }
             _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode.ToString()}");
@@ -94,7 +90,7 @@ namespace ALWD.UI.Services.ProductService
             return new ResponseData<Product>(null, false, $"Product not found. Error: {response.StatusCode.ToString()}");
         }
 
-        public async Task CreateProductAsync(Product product, IFormFile? formFile)
+        public async Task<ResponseData<int>> CreateProductAsync(Product product, IFormFile? formFile)
           {
               var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Product";
 
@@ -123,9 +119,21 @@ namespace ALWD.UI.Services.ProductService
                   _logger.LogError($"-----> Unable to create product. Error: {response.Content}");
                   throw new HttpRequestException($"Error creating product: {response.Content}");
               }
-          }
 
-        public async Task CreateProductAsync(ProductValidationModel model)
+            int createdId;
+            try
+            {
+                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+            }
+            return new ResponseData<int>(createdId);
+        }
+
+        public async Task<ResponseData<int>> CreateProductAsync(ProductCreateValidationModel model)
         {
             var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
 
@@ -161,56 +169,81 @@ namespace ALWD.UI.Services.ProductService
                 _logger.LogError($"-----> Unable to create product. Error: {response.Content}");
                 throw new HttpRequestException($"Error creating product: {response.Content}");
             }
-        }
 
-        public Task UpdateProductAsync(ProductValidationModel model)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task UpdateProductAsync(Product product, IFormFile? formFile)
-        {
-            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products/{product.Id}";
-
-            MultipartFormDataContent multipartContent = new MultipartFormDataContent();
-
-            var productContent = JsonContent.Create(product, options: _serializerOptions);
-            multipartContent.Add(productContent, "product");
-
-            if (formFile != null)
+            int createdId;
+            try
             {
-                byte[] fileBytes;
-                using (var ms = new MemoryStream())
-                {
-                    await formFile.CopyToAsync(ms);
-                    fileBytes = ms.ToArray();
-                }
+                createdId  = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+            }
+            return new ResponseData<int>(createdId);
+        }
 
-                var fileContent = new ByteArrayContent(fileBytes);
-                fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(formFile.ContentType);
-                multipartContent.Add(fileContent, "formFile", formFile.FileName);
+        public async Task<ResponseData<int>> UpdateProductAsync(ProductEditValidationModel model)
+        {
+            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
+
+            UpdateProductDTO dto = new UpdateProductDTO()
+            {
+                ProductName = model.Name,
+                ProductDescription = model.Description,
+                ProductPrice = model.Price,
+                ProductQuantity = model.Quantity,
+                ProductCategoryId = model.CategoryId,
+                ImageName = model.Image.FileName,
+                ImageMimeType = model.Image.ContentType,
+                ProductId = model.Id,
+            };
+
+            if (model.Image != null)
+            {
+                await using var ms = new MemoryStream();
+                await model.Image.CopyToAsync(ms);
+                dto.ImageContent = ms.ToArray();
             }
 
-            var response = await _httpClient.PutAsync(uri, multipartContent);
+            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(uri, dto, _serializerOptions);
 
             if (!response.IsSuccessStatusCode)
             {
-                _logger.LogError($"-----> Unable to update product. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error updating product: {response.StatusCode}");
+                _logger.LogError($"-----> Unable to put product. Error: {response.Content}, Code: {response.StatusCode}");
+                throw new HttpRequestException($"Error creating product: {response.Content}, Code: {response.StatusCode}");
             }
+
+            int createdId;
+            try
+            {
+                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+            }
+            return new ResponseData<int>(createdId);
         }
         
-        public async Task DeleteProductAsync(int id)
+        public async Task<ResponseData<bool>> DeleteProductAsync(int id)
         {
             var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}";
 
-            var response = await _httpClient.DeleteAsync(uri);
+            HttpResponseMessage response = await _httpClient.DeleteAsync(uri);
 
             if (!response.IsSuccessStatusCode)
             {
-                _logger.LogError($"-----> Unable to delete product. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error deletion product: {response.StatusCode}");
+                _logger.LogError($"-----> Unable to delete product with id {id}. Error: {response.Content}, Code: {response.StatusCode}");
+                throw new HttpRequestException($"Unable to delete product with id {id}. Error: {response.Content}, Code: {response.StatusCode}");
             }
+            return new ResponseData<bool>(true);
+        }
+
+        public Task<ResponseData<int>> UpdateProductAsync(Product product, IFormFile? formFile)
+        {
+            throw new NotImplementedException();
         }
     }
 }

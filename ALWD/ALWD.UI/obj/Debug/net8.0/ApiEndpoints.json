@@ -188,6 +188,22 @@
   },
   {
     "ContainingType": "ALWD.API.Controllers.ProductsController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/Products",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ALWD.Domain.DTOs.UpdateProductDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ALWD.API.Controllers.ProductsController",
     "Method": "GetProduct",
     "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",
@@ -211,32 +227,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "ALWD.API.Controllers.ProductsController",
-    "Method": "UpdateProduct",
-    "RelativePath": "api/Products/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "product",
-        "Type": "ALWD.Domain.Entities.Product",
-        "IsRequired": true
-      },
-      {
-        "Name": "formFile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "ALWD.API.Controllers.ProductsController",

@@ -70,10 +70,9 @@ namespace ALWD.API.Services.FileService
 			}
 			
 			byte[] file;
-			string filePath = string.Join("\\", _filesPath, "images", fileModel.Name);
 			try
 			{
-				file = File.ReadAllBytes(filePath);
+				file = File.ReadAllBytes(fileModel.Path);
 			}
 			catch (Exception ex)
 			{
@@ -101,7 +100,7 @@ namespace ALWD.API.Services.FileService
 			FileModel fileModel = new FileModel()
 			{
 				MimeType = file.ContentType,
-				Name = file.Name
+				Name = file.FileName
 			};
 
 			int lastDotIndex = fileModel.Name.LastIndexOf('.');
@@ -113,7 +112,7 @@ namespace ALWD.API.Services.FileService
 
 			string fileDirectory = fileModel.MimeType.Split('/')[0];
 
-			string filePath = string.Join('/', _filesPath, fileDirectory, fileModel.Name);
+			string filePath = string.Join('\\', _filesPath, fileDirectory, fileModel.Name);
 
 			fileModel.Path = filePath;
 
@@ -144,24 +143,10 @@ namespace ALWD.API.Services.FileService
 			return new ResponseData<FileModel>(fileModel); 
 		}
 		
-		public async Task<ResponseData<FileModel>> UpdateFileAsync(int id, IFormFile file)
+		public async Task<ResponseData<FileModel>> UpdateFileAsync(IFormFile file)
 		{
-			bool exist = await _repository.Exists(id);
-			if (!exist)
-				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile with id {id} doesn't exists");
-
-			ResponseData<bool> deleteResponse;
-			try
-			{
-				deleteResponse = await DeleteFileAsync(id);
-			}
-			catch (Exception ex)
-			{
-				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile with id {id} removing failure: {ex.Message}");
-			}
-
-			if (!deleteResponse.Successfull)
-				return new ResponseData<FileModel>(null, false, deleteResponse.ErrorMessage);
+			if (file == null)
+				return new ResponseData<FileModel>(null, true);
 
 			ResponseData<FileModel> createResponse;
 			try
@@ -170,11 +155,11 @@ namespace ALWD.API.Services.FileService
 			}
 			catch (Exception ex)
 			{
-				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile with id {id} creation failure: {ex.Message}");
+				return new ResponseData<FileModel>(null, false, $"class FileService, method UpdateFileAsync: FormFile {file.FileName} creation failure: {ex.Message}");
 			}
 
-			if (!deleteResponse.Successfull)
-				return new ResponseData<FileModel>(null, false, deleteResponse.ErrorMessage);
+			if (!createResponse.Successfull)
+				return new ResponseData<FileModel>(null, false, createResponse.ErrorMessage);
 
 			return createResponse;
 		}
