@@ -18,11 +18,6 @@ namespace ALWD.API.Services.FileService
 			_filesUri = config["APIUri"];
 		}
 
-		public async Task<ResponseData<FileModel>> DownloadFileAsync(int id)
-		{
-			throw new NotImplementedException();
-		}
-
 		public async Task<ResponseData<FileModel>> GetFileAsync(int id)
 		{
 			FileModel fileModel;

@@ -10,7 +10,6 @@ namespace ALWD.API.Services.FileService
 		Task<ResponseData<byte[]>> GetFileAsByteStreamAsync(int id);
 		Task<ResponseData<FileModel>> CreateFileAsync(IFormFile file);
 		Task<ResponseData<FileModel>> UpdateFileAsync(IFormFile file);
-		Task<ResponseData<FileModel>> DownloadFileAsync(int id);
 		Task<ResponseData<bool>> DeleteFileAsync(int id);
 	}
 }

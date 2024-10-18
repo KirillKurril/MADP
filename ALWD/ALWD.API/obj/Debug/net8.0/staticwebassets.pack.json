@@ -1,171 +1,171 @@
 {
   "Files": [
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
       "PackagePath": "staticwebassets\\image\\default-profile-picture.png"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",
       "PackagePath": "staticwebassets\\image\\аксессуар_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_b.jpg",
       "PackagePath": "staticwebassets\\image\\аксессуар_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_a.jpg",
       "PackagePath": "staticwebassets\\image\\амортизатор_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_b.jpg",
       "PackagePath": "staticwebassets\\image\\амортизатор_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_a.jpg",
       "PackagePath": "staticwebassets\\image\\бампер_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_b.jpg",
       "PackagePath": "staticwebassets\\image\\бампер_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_a.jpg",
       "PackagePath": "staticwebassets\\image\\масло_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_b.jpg",
       "PackagePath": "staticwebassets\\image\\масло_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_a.jpg",
       "PackagePath": "staticwebassets\\image\\радиатор_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_b.jpg",
       "PackagePath": "staticwebassets\\image\\радиатор_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_a.jpg",
       "PackagePath": "staticwebassets\\image\\свеча_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_b.jpg",
       "PackagePath": "staticwebassets\\image\\свеча_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
       "PackagePath": "staticwebassets\\image\\стартер_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
       "PackagePath": "staticwebassets\\image\\стартер_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
       "PackagePath": "staticwebassets\\image\\тормозной_диск_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_b.jpg",
       "PackagePath": "staticwebassets\\image\\тормозной_диск_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_a.jpg",
       "PackagePath": "staticwebassets\\image\\фильтр_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_b.jpg",
       "PackagePath": "staticwebassets\\image\\фильтр_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_a.jpg",
       "PackagePath": "staticwebassets\\image\\шина_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_b.jpg",
       "PackagePath": "staticwebassets\\image\\шина_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\default-profile-picture.png",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\default-profile-picture.png",
       "PackagePath": "staticwebassets\\image_backup\\default-profile-picture.png"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\аксессуар_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\аксессуар_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\аксессуар_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\аксессуар_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\аксессуар_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\аксессуар_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\амортизатор_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\амортизатор_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\амортизатор_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\амортизатор_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\амортизатор_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\амортизатор_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\бампер_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\бампер_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\бампер_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\бампер_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\бампер_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\бампер_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\масло_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\масло_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\масло_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\масло_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\масло_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\масло_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\радиатор_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\радиатор_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\радиатор_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\радиатор_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\радиатор_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\радиатор_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\свеча_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\свеча_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\свеча_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\свеча_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\свеча_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\свеча_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\стартер_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\стартер_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\стартер_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\стартер_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\стартер_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\стартер_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\тормозной_диск_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\тормозной_диск_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\тормозной_диск_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\тормозной_диск_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\тормозной_диск_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\тормозной_диск_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\фильтр_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\фильтр_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\фильтр_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\фильтр_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\фильтр_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\фильтр_b.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\шина_a.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\шина_a.jpg",
       "PackagePath": "staticwebassets\\image_backup\\шина_a.jpg"
     },
     {
-      "Id": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\шина_b.jpg",
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image_backup\\шина_b.jpg",
       "PackagePath": "staticwebassets\\image_backup\\шина_b.jpg"
     },
     {

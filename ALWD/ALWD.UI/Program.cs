@@ -1,13 +1,20 @@
+using ALWD.API.Models;
+using ALWD.UI.Extensions.YourNamespace.Extensions;
 using ALWD.UI.Models;
+using ALWD.UI.Services.Authentication;
 using ALWD.UI.Services.CategoryService;
 using ALWD.UI.Services.ProductService;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 public class Program
 {
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-        ConfigureServices(builder.Services);
+        ConfigureServices(builder);
         var app = builder.Build();
 
         ConfigureMiddleware(app);
@@ -16,22 +23,64 @@ public class Program
         app.Run();
     }
 
-    private static void ConfigureServices(IServiceCollection services)
+    private static void ConfigureServices(WebApplicationBuilder builder)
     {
-        services.AddControllersWithViews();
-        services.AddSingleton<UriData>();
-        services.AddRazorPages();
+		builder.Services.ConfigureKeycloak(builder.Configuration);
 
-        var apiUri = services.BuildServiceProvider().GetService<IConfiguration>().GetSection("UriData:ApiUri").Value;
+		builder.Services.AddControllersWithViews();
+		builder.Services.AddSingleton<UriData>();
+		builder.Services.AddRazorPages();
+        builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
 
-        services.AddHttpClient<IProductService, ApiProductService>(opt =>
+        var apiUri = builder.Services
+			.BuildServiceProvider()!
+            .GetService<IConfiguration>()!
+            .GetSection("UriData:ApiUri")
+            .Value;
+
+
+
+		builder.Services.AddHttpClient<IProductService, ApiProductService>(opt =>
             opt.BaseAddress = new Uri(apiUri));
 
-        services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
-            opt.BaseAddress = new Uri(apiUri));
-    }
+		builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
+	        opt.BaseAddress = new Uri(apiUri));
 
-    private static void ConfigureMiddleware(WebApplication app)
+
+
+		var keycloakData =
+		builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();
+		builder.Services
+		.AddAuthentication(options =>
+		{
+			options.DefaultScheme =	CookieAuthenticationDefaults.AuthenticationScheme;
+			options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+		})
+		.AddCookie()
+		.AddJwtBearer()
+		.AddOpenIdConnect(options =>
+		{
+			options.Authority =
+	            $"{keycloakData.Host}/auth/realms/{keycloakData.Realm}";
+			            options.ClientId = keycloakData.ClientId;
+			            options.ClientSecret = keycloakData.ClientSecret;
+			            options.ResponseType = OpenIdConnectResponseType.Code;
+			            options.Scope.Add("openid"); // Customize scopes as needed
+			            options.SaveTokens = true;
+			            options.RequireHttpsMetadata = false; 
+		            options.MetadataAddress =
+		            $"{keycloakData.Host}/realms/{keycloakData.Realm}/.well-known/openid-configuration";
+		            });
+
+		builder.Services.AddAuthorization(opt =>
+		{
+			opt.AddPolicy("admin", p => p.RequireRole("POWER-USER"));
+		});
+
+		builder.Services.AddHttpContextAccessor();
+	}
+
+	private static void ConfigureMiddleware(WebApplication app)
     {
         if (!app.Environment.IsDevelopment())
         {

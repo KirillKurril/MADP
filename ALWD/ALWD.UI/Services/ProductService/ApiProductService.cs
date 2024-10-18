@@ -9,6 +9,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using ALWD.Domain.DTOs;
 using Microsoft.AspNetCore.Http;
+using ALWD.UI.Services.Authentication;
 
 namespace ALWD.UI.Services.ProductService
 {
@@ -18,10 +19,12 @@ namespace ALWD.UI.Services.ProductService
         HttpClient _httpClient;
         JsonSerializerOptions _serializerOptions;
         ILogger<ApiProductService> _logger;
+        ITokenAccessor _tokenAccessor;
 
         public ApiProductService(HttpClient httpClient,
             IConfiguration configuration,
-            ILogger<ApiProductService> logger)
+            ILogger<ApiProductService> logger,
+            ITokenAccessor tokenAccessor)
         {
             _httpClient = httpClient;
             _itemsPerPage = configuration.GetSection("ItemsPerPage").Value;
@@ -31,6 +34,7 @@ namespace ALWD.UI.Services.ProductService
 				PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
             _logger = logger;
+            _tokenAccessor = tokenAccessor;
         }
 
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName = null, int pageNo = 1)
@@ -47,7 +51,7 @@ namespace ALWD.UI.Services.ProductService
             parameters.Add("page", pageNo.ToString());
             string urlWithQuery = QueryHelpers.AddQueryString(baseUri, parameters);
 
-            var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
+			var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
 
             Console.WriteLine(response);
 
@@ -112,7 +116,9 @@ namespace ALWD.UI.Services.ProductService
               }
 
               _logger.LogInformation($"Requesting URL: {uri}");
-              HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
+
+			await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+			HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
 
               if (!response.IsSuccessStatusCode)
               {
@@ -155,14 +161,15 @@ namespace ALWD.UI.Services.ProductService
                 dto.ImageContent = ms.ToArray();
             }
 
-            //string json = JsonConvert.SerializeObject(dto);
-            //HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+			//string json = JsonConvert.SerializeObject(dto);
+			//HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            //_logger.LogError(uri.ToString());
-            //HttpResponseMessage response = await _httpClient.PostAsync(uri, content);
-            
+			//_logger.LogError(uri.ToString());
+			//HttpResponseMessage response = await _httpClient.PostAsync(uri, content);
 
-            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
+
+			await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+			HttpResponseMessage response = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
 
             if (!response.IsSuccessStatusCode)
             {
@@ -207,7 +214,8 @@ namespace ALWD.UI.Services.ProductService
                 dto.ImageMimeType = model.Image.ContentType;
             }
 
-            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(uri, dto, _serializerOptions);
+			await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+			HttpResponseMessage response = await _httpClient.PutAsJsonAsync(uri, dto, _serializerOptions);
 
             if (!response.IsSuccessStatusCode)
             {
@@ -232,7 +240,8 @@ namespace ALWD.UI.Services.ProductService
         {
             var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}";
 
-            HttpResponseMessage response = await _httpClient.DeleteAsync(uri);
+			await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+			HttpResponseMessage response = await _httpClient.DeleteAsync(uri);
 
             if (!response.IsSuccessStatusCode)
             {
