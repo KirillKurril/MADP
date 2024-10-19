@@ -9,6 +9,7 @@ using ALWD.API.Services.FileService;
 using System.Text.Json.Serialization;
 using ALWD.API.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using ALWD.API.Services.AccountService;
 
 namespace ALWD.API
 {
@@ -33,12 +34,15 @@ namespace ALWD.API
 			builder.Services.AddDbContext<AppDbContext>(options =>
 				options.UseSqlServer(connStr));
 
-			builder.Services.AddScoped<IRepository<Product>, EfRepository<Product>>();
+            builder.Services.AddHttpClient();
+
+            builder.Services.AddScoped<IRepository<Product>, EfRepository<Product>>();
 			builder.Services.AddScoped<IRepository<Category>, EfRepository<Category>>();
 			builder.Services.AddScoped<IRepository<FileModel>, EfRepository<FileModel>>();
 			builder.Services.AddScoped<IProductService, ProductService>();
 			builder.Services.AddScoped<ICategoryService, CategoryService>();
 			builder.Services.AddScoped<IFileService, FileService>();
+			builder.Services.AddScoped<IAccountService, KeycloakAccountService>();
 
 			builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -47,18 +51,13 @@ namespace ALWD.API
 			var authServer = builder.Configuration
 			.GetSection("AuthServer")
 			.Get<AuthServerData>();
-			// Добавить сервис аутентификации
+			
 			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 			.AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, o =>
 			{
-				// Адрес метаданных конфигурации OpenID
 				o.MetadataAddress = $"{authServer.Host}/realms/{authServer.Realm}/.wellknown/openid-configuration";
-				// Authority сервера аутентификации
 				o.Authority = $"{authServer.Host}/realms/{authServer.Realm}";
-				// Audience для токена JWT
 				o.Audience = "account";
-				// Запретить HTTPS для использования локальной версии Keycloak
-				// В рабочем проекте должно быть true
 				o.RequireHttpsMetadata = false;
 			});
 

@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using ALWD.Domain.Services.Authentication;
+using ALWD.Domain.Models;
 
 public class Program
 {
@@ -31,6 +33,7 @@ public class Program
 		builder.Services.AddSingleton<UriData>();
 		builder.Services.AddRazorPages();
         builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
+        builder.Services.AddScoped<IAuthService, KeycloakAuthService>();
 
         var apiUri = builder.Services
 			.BuildServiceProvider()!
@@ -65,7 +68,7 @@ public class Program
 			            options.ClientId = keycloakData.ClientId;
 			            options.ClientSecret = keycloakData.ClientSecret;
 			            options.ResponseType = OpenIdConnectResponseType.Code;
-			            options.Scope.Add("openid"); // Customize scopes as needed
+			            options.Scope.Add("openid");
 			            options.SaveTokens = true;
 			            options.RequireHttpsMetadata = false; 
 		            options.MetadataAddress =

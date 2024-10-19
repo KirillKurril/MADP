@@ -110,6 +110,38 @@
   },
   {
     "ContainingType": "ALWD.API.Controllers.ImageController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ALWD.Domain.DTOs.UploadImageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ALWD.API.Controllers.ImageController",
+    "Method": "GetImage",
+    "RelativePath": "api/Image/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ALWD.API.Controllers.ImageController",
     "Method": "GetImage",
     "RelativePath": "api/Image/{imageName}",
     "HttpMethod": "GET",

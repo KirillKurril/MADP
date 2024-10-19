@@ -1,6 +1,7 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using ALWD.Domain.Validation.Models;
+using ALWD.Domain.Services.Authentication;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
@@ -8,8 +9,6 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using ALWD.Domain.DTOs;
-using Microsoft.AspNetCore.Http;
-using ALWD.UI.Services.Authentication;
 
 namespace ALWD.UI.Services.ProductService
 {

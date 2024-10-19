@@ -1,4 +1,4 @@
-﻿using ALWD.UI.Models;
+﻿using ALWD.Domain.Models;
 
 namespace ALWD.UI.Extensions
 {
