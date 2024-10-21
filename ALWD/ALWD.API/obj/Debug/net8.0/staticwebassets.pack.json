@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\image\\default-profile-picture.png"
     },
     {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
+      "PackagePath": "staticwebassets\\image\\rena-202410211116454456.jpg"
+    },
+    {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png",
       "PackagePath": "staticwebassets\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png"
     },

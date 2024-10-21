@@ -84,7 +84,7 @@ namespace ALWD.API.Controllers
         }
 
 		[HttpPost]
-        public async Task<IActionResult> UploadImage(UploadImageDTO dto)
+        public async Task<IActionResult> CreateImage(UploadImageDTO dto)
 		{
             if (!ModelState.IsValid)
             {

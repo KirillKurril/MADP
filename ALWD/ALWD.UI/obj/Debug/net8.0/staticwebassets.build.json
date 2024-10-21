@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jolFNWhVHev61OkGhqnN3tqVMOxFCu8H2GGWQbnQQZE=",
+  "Hash": "DqgU2it7oXpe/nHIIq1E4j6nbZwfqjItlrl4owY/85Q=",
   "Source": "ALWD.UI",
   "BasePath": "_content/ALWD.UI",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\default-profile-picture.png"
+    },
+    {
+      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
+      "SourceId": "ALWD.API",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "BasePath": "_content/ALWD.API",
+      "RelativePath": "image/rena-202410211116454456.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\rena-202410211116454456.jpg"
     },
     {
       "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",

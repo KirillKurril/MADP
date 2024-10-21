@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Azure;
 using System.Configuration;
+using System.Text.Json.Serialization;
 
 
 namespace ALWD.UI.Services.Authentication
@@ -21,7 +22,8 @@ namespace ALWD.UI.Services.Authentication
         private readonly HttpClient _httpClient;
         private readonly IConfiguration _configuration;
         private readonly ITokenAccessor _tokenAccessor;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+		JsonSerializerOptions _serializerOptions;
+		private readonly IHttpContextAccessor _httpContextAccessor;
         ILogger<ApiProductService> _logger;
         KeycloakData _keycloakData;
 
@@ -37,7 +39,12 @@ namespace ALWD.UI.Services.Authentication
             _tokenAccessor = tokenAccessor;
             _keycloakData = options.Value;
             _configuration = config;
-        }
+			_serializerOptions = new JsonSerializerOptions()
+			{
+				ReferenceHandler = ReferenceHandler.Preserve,
+				PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+			};
+		}
         public async Task<ResponseData<bool>> RegisterUserAsync(string email, string password, string? name, IFormFile? image)
         {
             try
@@ -70,26 +77,27 @@ namespace ALWD.UI.Services.Authentication
 
             string userUri = registrationResponse.Headers.Location!.AbsoluteUri;
 
-            if (image != null)
+			if (image != null)
             {
-                HttpResponseMessage avatarUpdateResponse;
-                using (var ms = new MemoryStream()) {
-                    image.CopyTo(ms);
+				var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Image";
 
-                    UploadImageDTO dto = new()
-                    {
-                        ImageContent = ms.ToArray(),
-                        ImageMimeType = image.ContentType,
-                        ImageName = image.Name,
-                        UserUri = userUri
-					};
+				await using var ms = new MemoryStream();
+				await image.CopyToAsync(ms);
 
-					string baseUri = _configuration.GetSection("UriData:ApiUri").Value + "Image";
-                    avatarUpdateResponse = await _httpClient.PostAsJsonAsync(baseUri, dto, serializerOptions);
+				UploadImageDTO dto = new()
+				{
+					ImageContent = ms.ToArray(),
+					ImageMimeType = image.ContentType,
+					ImageName = image.Name,
+					UserUri = userUri,
+					AccessToken = await _tokenAccessor.GetAccessTokenAsync()
+				};
 
-                    if (!avatarUpdateResponse.IsSuccessStatusCode)
-                        return new ResponseData<bool>(false, false, avatarUpdateResponse.StatusCode + " " + avatarUpdateResponse.ReasonPhrase);
-                }
+
+				HttpResponseMessage avatarUpdateResponse = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
+
+                if (!avatarUpdateResponse.IsSuccessStatusCode)
+                    return new ResponseData<bool>(false, false, avatarUpdateResponse.StatusCode + " " + avatarUpdateResponse.ReasonPhrase);
             }
 
             var signInResponse = await SignIn(registrationResponse);

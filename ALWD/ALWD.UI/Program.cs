@@ -34,7 +34,6 @@ public class Program
         builder.Services.AddSingleton<UriData>();
 		builder.Services.AddRazorPages();
         builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
-        builder.Services.AddScoped<IAuthService, KeycloakAuthService>();
 
         var apiUri = builder.Services
 			.BuildServiceProvider()!
@@ -50,7 +49,8 @@ public class Program
 		builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
 	        opt.BaseAddress = new Uri(apiUri));
 
-
+		builder.Services.AddHttpClient<IAuthService, KeycloakAuthService>(opt =>
+	        opt.BaseAddress = new Uri(apiUri));
 
 		var keycloakData =
 		builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();
