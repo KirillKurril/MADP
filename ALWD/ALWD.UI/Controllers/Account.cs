@@ -48,7 +48,6 @@ namespace ALWD.UI.Controllers
             return View(registerData);
         }
 
-        [HttpPost]
         public async Task<IActionResult> Login(AuthorizeUserViewModel loginData, [FromServices] IAuthService authService)
         {
             ResponseData<bool> response;
@@ -68,9 +67,23 @@ namespace ALWD.UI.Controllers
             else return BadRequest(response.ErrorMessage);
         }
 
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout([FromServices] IAuthService authService)
         {
-            return Ok();
+            ResponseData<bool> response;
+            try
+            {
+                response = await authService.LogOut();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            if (response.Successfull)
+            {
+                return Redirect(Url.Action("Index", "Home"));
+            }
+            else return BadRequest(response.ErrorMessage);
         }
     }
 }

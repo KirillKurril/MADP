@@ -22,5 +22,7 @@ namespace ALWD.Domain.DTOs
         public string? ImageMimeType { get; set; }
 
         public string UserUri { get; set; } = string.Empty;
-    }
+		public string AccessToken { get; set; }
+
+	}
 }

@@ -7,6 +7,7 @@ using ALWD.API.Services.ProductService;
 using ALWD.API.Services.CategoryService;
 using ALWD.API.Services.FileService;
 using ALWD.API.Models;
+using ALWD.API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ALWD.API.Services.AccountService;
 using ALWD.Domain.Services.Authentication;
@@ -30,6 +31,8 @@ namespace ALWD.API
 
 		private static void ConfigureServices(WebApplicationBuilder builder)
 		{
+			builder.Services.ConfigureKeycloak(builder.Configuration);
+
 			var connStr = builder.Configuration.GetConnectionString("MicrosoftSQLServer");
 			builder.Services.AddDbContext<AppDbContext>(options =>
 				options.UseSqlServer(connStr));

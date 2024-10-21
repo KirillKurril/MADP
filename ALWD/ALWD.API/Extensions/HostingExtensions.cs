@@ -1,6 +1,6 @@
 ﻿using ALWD.Domain.Models;
 
-namespace ALWD.UI.Extensions
+namespace ALWD.API.Extensions
 {
 		public static class HostingExtensions
 		{

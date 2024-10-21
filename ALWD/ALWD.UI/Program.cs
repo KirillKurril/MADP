@@ -1,5 +1,4 @@
 using ALWD.API.Models;
-using ALWD.UI.Extensions.YourNamespace.Extensions;
 using ALWD.UI.Models;
 using ALWD.UI.Services.Authentication;
 using ALWD.UI.Services.CategoryService;
@@ -10,6 +9,7 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using ALWD.Domain.Services.Authentication;
 using ALWD.Domain.Models;
+using ALWD.UI.Extensions;
 
 public class Program
 {

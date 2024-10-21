@@ -6,6 +6,7 @@ namespace ALWD.UI.Services.Authentication
 	{
 		Task<ResponseData<bool>> RegisterUserAsync(string email, string password, string? name,	IFormFile? avatar);
 		Task<ResponseData<bool>> AuthenticateUser(string email, string password);
+		Task<ResponseData<bool>> LogOut();
 
     }
 

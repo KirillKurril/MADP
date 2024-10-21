@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\uni\\MADP\\ALWD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\authentication\\keycloakauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\authentication\\keycloakauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +15,80 @@
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\dtos\\uploadimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\dtos\\uploadimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\accountservice\\keycloakaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\accountservice\\keycloakaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\accountservice\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\accountservice\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\controllers\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\models\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\models\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\models\\createusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\models\\createusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\alwd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\alwd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\services\\authenticatino\\keycloaktokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\services\\authenticatino\\keycloaktokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\menu\\partialuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\menu\\partialuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\controllers\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\controllers\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\controllers\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -27,20 +99,16 @@
       "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\models\\authorizeuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\authentication\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\models\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\models\\registeruserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\menu\\partialuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\menu\\partialuserdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\controllers\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,36 +119,8 @@
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\identity\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\models\\createusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\models\\createusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\extensions\\hostingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\services\\authenticatino\\keycloaktokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\services\\authenticatino\\keycloaktokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\services\\authenticatino\\itokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\services\\authenticatino\\itokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\controllers\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\controllers\\identity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\controllers\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,24 +135,12 @@
       "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\models\\catalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\accountservice\\keycloakaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\accountservice\\keycloakaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\accountservice\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\accountservice\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\productservice\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -143,20 +171,12 @@
       "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\dtos\\uploadimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\dtos\\uploadimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\services\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\services\\fileservice\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\menu\\partialadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\menu\\partialadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\models\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\models\\usercredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\models\\listdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -203,10 +223,6 @@
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -219,20 +235,12 @@
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\alwd.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\alwd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\alwd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\areas\\admin\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\areas\\admin\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\areas\\admin\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\areas\\admin\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\libman.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -293,89 +301,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 190,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Account.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Account.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Account.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Account.cs",
-              "RelativeToolTip": "ALWD.UI\\Controllers\\Account.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T15:31:54.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Program.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
-              "RelativeToolTip": "ALWD.API\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T13:14:07.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\IAuthService.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Services\\Authentication\\IAuthService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\IAuthService.cs",
-              "RelativeToolTip": "ALWD.UI\\Services\\Authentication\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:28:19.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "KeycloakAuthService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\KeycloakAuthService.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Services\\Authentication\\KeycloakAuthService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\KeycloakAuthService.cs*",
-              "RelativeToolTip": "ALWD.UI\\Services\\Authentication\\KeycloakAuthService.cs*",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAEwJYAAAAQAAAAAAAAAA==",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\KeycloakAuthService.cs",
+              "RelativeToolTip": "ALWD.UI\\Services\\Authentication\\KeycloakAuthService.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAMwFkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T17:11:55.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "ALWD.UI\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "ALWD.UI\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T13:34:52.44Z",
+              "DocumentIndex": 9,
+              "Title": "UserCredentials.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\UserCredentials.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Models\\UserCredentials.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\UserCredentials.cs",
+              "RelativeToolTip": "ALWD.UI\\Models\\UserCredentials.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:16:46.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\IAccountService.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Services\\AccountService\\IAccountService.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\IAccountService.cs",
+              "RelativeToolTip": "ALWD.API\\Services\\AccountService\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T12:34:08.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UploadImageDTO.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\UploadImageDTO.cs",
+              "RelativeDocumentMoniker": "ALWD.Domain\\DTOs\\UploadImageDTO.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\UploadImageDTO.cs",
+              "RelativeToolTip": "ALWD.Domain\\DTOs\\UploadImageDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:37:35.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Program.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
+              "RelativeToolTip": "ALWD.UI\\Program.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwDYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:09:10.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiProductService.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T14:08:26.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\appsettings.json",
               "RelativeDocumentMoniker": "ALWD.UI\\appsettings.json",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\appsettings.json",
               "RelativeToolTip": "ALWD.UI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-17T20:41:26.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Image.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Image.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Image.cs",
+              "RelativeToolTip": "ALWD.API\\Controllers\\Image.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:09:51.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateUserModel.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\CreateUserModel.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Models\\CreateUserModel.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\CreateUserModel.cs",
+              "RelativeToolTip": "ALWD.UI\\Models\\CreateUserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:16:13.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Account.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Account.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Account.cs",
+              "RelativeToolTip": "ALWD.UI\\Controllers\\Account.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T15:31:54.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Registration.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Account\\Registration.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Account\\Registration.cshtml",
@@ -388,163 +448,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthorizeUserViewModel.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
-              "RelativeDocumentMoniker": "ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
-              "RelativeToolTip": "ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "KeycloakAccountService.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
+              "RelativeToolTip": "ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T13:40:36.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterUserViewModel.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\RegisterUserViewModel.cs",
-              "RelativeDocumentMoniker": "ALWD.Domain\\Models\\RegisterUserViewModel.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\RegisterUserViewModel.cs",
-              "RelativeToolTip": "ALWD.Domain\\Models\\RegisterUserViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:47:54.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PartialUserData.cshtml",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
-              "RelativeDocumentMoniker": "ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
-              "RelativeToolTip": "ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T23:13:35.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApiProductService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAArwCgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:08:26.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Catalog.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Catalog.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Catalog.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Catalog.cs",
-              "RelativeToolTip": "ALWD.UI\\Controllers\\Catalog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:34:18.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "ALWD.UI\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "ALWD.UI\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T20:43:10.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Program.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
-              "RelativeToolTip": "ALWD.UI\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAawFMAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:09:10.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LogOut.cshtml",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Identity\\LogOut.cshtml",
-              "RelativeDocumentMoniker": "ALWD.UI\\Views\\Identity\\LogOut.cshtml",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Identity\\LogOut.cshtml",
-              "RelativeToolTip": "ALWD.UI\\Views\\Identity\\LogOut.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T15:34:56.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CreateUserModel.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\CreateUserModel.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Models\\CreateUserModel.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\CreateUserModel.cs",
-              "RelativeToolTip": "ALWD.UI\\Models\\CreateUserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:16:13.943Z",
+              "WhenOpened": "2024-10-18T23:44:53.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "HostingExtensions.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Extensions\\HostingExtensions.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Extensions\\HostingExtensions.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Extensions\\HostingExtensions.cs",
-              "RelativeToolTip": "ALWD.UI\\Extensions\\HostingExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T13:52:48.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "KeycloakTokenAccessor.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authenticatino\\KeycloakTokenAccessor.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\Services\\Authenticatino\\KeycloakTokenAccessor.cs",
               "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authenticatino\\KeycloakTokenAccessor.cs",
               "RelativeToolTip": "ALWD.Domain\\Services\\Authenticatino\\KeycloakTokenAccessor.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwDQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T23:54:02.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ITokenAccessor.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
-              "RelativeDocumentMoniker": "ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
-              "RelativeToolTip": "ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Program.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
+              "RelativeToolTip": "ALWD.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T23:53:49.264Z",
+              "WhenOpened": "2024-10-12T13:14:07.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HostingExtensions.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Extensions\\HostingExtensions.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Extensions\\HostingExtensions.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Extensions\\HostingExtensions.cs",
+              "RelativeToolTip": "ALWD.UI\\Extensions\\HostingExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T13:52:48.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ALWD.API.csproj",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
+              "RelativeDocumentMoniker": "ALWD.API\\ALWD.API.csproj",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
+              "RelativeToolTip": "ALWD.API\\ALWD.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-12T13:17:29.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HostingExtensions.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Extensions\\HostingExtensions.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Extensions\\HostingExtensions.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Extensions\\HostingExtensions.cs",
+              "RelativeToolTip": "ALWD.API\\Extensions\\HostingExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T02:07:39.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ALWD.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T13:22:16.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PartialUserData.cshtml",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
+              "RelativeDocumentMoniker": "ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
+              "RelativeToolTip": "ALWD.UI\\Views\\Menu\\PartialUserData.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:13:35.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Home.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Home.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Home.cs",
+              "RelativeToolTip": "ALWD.UI\\Controllers\\Home.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T01:25:14.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Identity.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Identity.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Identity.cs",
@@ -557,7 +578,120 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ALWD.UI\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ALWD.UI\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T13:34:52.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ALWD.UI\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ALWD.UI\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T20:43:10.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ALWD.UI\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ALWD.UI\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-17T20:41:56.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthorizeUserViewModel.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
+              "RelativeDocumentMoniker": "ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
+              "RelativeToolTip": "ALWD.Domain\\Models\\AuthorizeUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:40:36.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\IAuthService.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Services\\Authentication\\IAuthService.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\Authentication\\IAuthService.cs",
+              "RelativeToolTip": "ALWD.UI\\Services\\Authentication\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:28:19.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RegisterUserViewModel.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\RegisterUserViewModel.cs",
+              "RelativeDocumentMoniker": "ALWD.Domain\\Models\\RegisterUserViewModel.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\RegisterUserViewModel.cs",
+              "RelativeToolTip": "ALWD.Domain\\Models\\RegisterUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:47:54.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Catalog.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Catalog.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Catalog.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Catalog.cs",
+              "RelativeToolTip": "ALWD.UI\\Controllers\\Catalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:34:18.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LogOut.cshtml",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Identity\\LogOut.cshtml",
+              "RelativeDocumentMoniker": "ALWD.UI\\Views\\Identity\\LogOut.cshtml",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Identity\\LogOut.cshtml",
+              "RelativeToolTip": "ALWD.UI\\Views\\Identity\\LogOut.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T15:34:56.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ITokenAccessor.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
+              "RelativeDocumentMoniker": "ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
+              "RelativeToolTip": "ALWD.Domain\\Services\\Authenticatino\\ITokenAccessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T23:53:49.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Category.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Category.cs",
@@ -565,12 +699,11 @@
               "RelativeToolTip": "ALWD.UI\\Controllers\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T13:55:05.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T13:55:05.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "Cart.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Controllers\\Cart.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Controllers\\Cart.cs",
@@ -578,12 +711,11 @@
               "RelativeToolTip": "ALWD.UI\\Controllers\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T13:55:03.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T13:55:03.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "CatalogViewModel.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\CatalogViewModel.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\Models\\CatalogViewModel.cs",
@@ -591,38 +723,11 @@
               "RelativeToolTip": "ALWD.Domain\\Models\\CatalogViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T13:43:56.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T13:43:56.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Image.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Image.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Image.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Image.cs",
-              "RelativeToolTip": "ALWD.API\\Controllers\\Image.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAIwG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:09:51.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "KeycloakAccountService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
-              "RelativeToolTip": "ALWD.API\\Services\\AccountService\\KeycloakAccountService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T23:44:53.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\IProductService.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Services\\ProductService\\IProductService.cs",
@@ -630,12 +735,11 @@
               "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T21:34:11.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T21:34:11.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "FileService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\FileService\\FileService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\FileService\\FileService.cs",
@@ -643,25 +747,11 @@
               "RelativeToolTip": "ALWD.API\\Services\\FileService\\FileService.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:13:39.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T15:13:39.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\IAccountService.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Services\\AccountService\\IAccountService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\AccountService\\IAccountService.cs",
-              "RelativeToolTip": "ALWD.API\\Services\\AccountService\\IAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:34:08.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "ProductService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\ProductService\\ProductService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\ProductService\\ProductService.cs",
@@ -669,12 +759,11 @@
               "RelativeToolTip": "ALWD.API\\Services\\ProductService\\ProductService.cs",
               "ViewState": "AgIAACMBAAAAAAAAAAAAAD4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T15:10:01.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T15:10:01.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "CetegoryService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
@@ -682,12 +771,11 @@
               "RelativeToolTip": "ALWD.API\\Services\\CategoryService\\CetegoryService.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T12:32:37.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T12:32:37.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
               "RelativeDocumentMoniker": "ALWD.API\\appsettings.json",
@@ -695,12 +783,11 @@
               "RelativeToolTip": "ALWD.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-12T13:09:59.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-12T13:09:59.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Shared\\_Layout.cshtml",
@@ -708,12 +795,11 @@
               "RelativeToolTip": "ALWD.UI\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-27T15:59:59.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T15:59:59.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Data\\DbInitializer.cs",
@@ -721,12 +807,11 @@
               "RelativeToolTip": "ALWD.API\\Data\\DbInitializer.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAACLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T13:22:28.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-12T13:22:28.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "KeycloakData.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Models\\KeycloakData.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\Models\\KeycloakData.cs",
@@ -738,7 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "Products.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Products.cs",
@@ -750,7 +835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "IFileService.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Services\\FileService\\IFileService.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Services\\FileService\\IFileService.cs",
@@ -762,19 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UploadImageDTO.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\UploadImageDTO.cs",
-              "RelativeDocumentMoniker": "ALWD.Domain\\DTOs\\UploadImageDTO.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\UploadImageDTO.cs",
-              "RelativeToolTip": "ALWD.Domain\\DTOs\\UploadImageDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T19:37:35.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "PartialAdmin.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Menu\\PartialAdmin.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Menu\\PartialAdmin.cshtml",
@@ -786,19 +859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "UserCredentials.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\UserCredentials.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Models\\UserCredentials.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\UserCredentials.cs",
-              "RelativeToolTip": "ALWD.UI\\Models\\UserCredentials.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:16:46.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "ListDemo.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\ListDemo.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Models\\ListDemo.cs",
@@ -810,7 +871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "UriData.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\UriData.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Models\\UriData.cs",
@@ -822,7 +883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "CreateProductDTO.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\CreateProductDTO.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\DTOs\\CreateProductDTO.cs",
@@ -834,7 +895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "FormFile.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\FormFile.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\DTOs\\FormFile.cs",
@@ -846,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "Categories.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Categories.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Categories.cs",
@@ -858,7 +919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "FileModel.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Entities\\FileModel.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\Entities\\FileModel.cs",
@@ -870,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "UpdateProductDTO.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\DTOs\\UpdateProductDTO.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\DTOs\\UpdateProductDTO.cs",
@@ -882,7 +943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Home\\Index.cshtml",
@@ -894,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Category\\Delete.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Category\\Delete.cshtml",
@@ -906,7 +967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Cart\\Index.cshtml",
@@ -918,7 +979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Product\\Create.cshtml",
@@ -930,7 +991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\Catalog\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Views\\Catalog\\Index.cshtml",
@@ -942,7 +1003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Models\\ErrorViewModel.cs",
@@ -954,19 +1015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "ALWD.API\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T13:22:16.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "ALWD.UI.csproj",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
               "RelativeDocumentMoniker": "ALWD.UI\\ALWD.UI.csproj",
@@ -978,19 +1027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "ALWD.API.csproj",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
-              "RelativeDocumentMoniker": "ALWD.API\\ALWD.API.csproj",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
-              "RelativeToolTip": "ALWD.API\\ALWD.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-12T13:17:29.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\Index.cshtml",
@@ -1002,7 +1039,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\Index.cshtml.cs",
@@ -1014,7 +1051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "libman.json",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\libman.json",
               "RelativeDocumentMoniker": "ALWD.UI\\libman.json",
@@ -1026,19 +1063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "ALWD.UI\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "ALWD.UI\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-17T20:41:56.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "AuthServerData.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Models\\AuthServerData.cs",
               "RelativeDocumentMoniker": "ALWD.API\\Models\\AuthServerData.cs",
@@ -1050,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\kamid\\AppData\\Roaming\\Microsoft\\UserSecrets\\dc2aeebd-56b8-4f39-9958-f4c05cb3d0b3\\secrets.json",
               "ToolTip": "C:\\Users\\kamid\\AppData\\Roaming\\Microsoft\\UserSecrets\\dc2aeebd-56b8-4f39-9958-f4c05cb3d0b3\\secrets.json",
@@ -1060,7 +1085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "MaxStringLength.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Validation\\Attributes\\MaxStringLength.cs",
               "RelativeDocumentMoniker": "ALWD.Domain\\Validation\\Attributes\\MaxStringLength.cs",
@@ -1072,7 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Create.cshtml.cs",
@@ -1084,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 67,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Details.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Details.cshtml",
@@ -1096,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Create.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Create.cshtml",
@@ -1108,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 66,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Delete.cshtml.cs",
@@ -1120,7 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 68,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Delete.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Delete.cshtml",
@@ -1132,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 69,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\ProductPages\\Index.cshtml",
@@ -1144,7 +1169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 70,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\CategoryPages\\Index.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\CategoryPages\\Index.cshtml",
@@ -1156,7 +1181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 72,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\CategoryPages\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\CategoryPages\\Edit.cshtml.cs",
@@ -1169,7 +1194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 71,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Areas\\Admin\\Pages\\CategoryPages\\Details.cshtml",
               "RelativeDocumentMoniker": "ALWD.UI\\Areas\\Admin\\Pages\\CategoryPages\\Details.cshtml",

@@ -115,7 +115,7 @@ namespace ALWD.API.Controllers
                 ResponseData<bool> updateAvatarResponse;
                 try
                 {
-                    updateAvatarResponse = await _accountService.UpdateAvatar(dto.UserUri, createAvatarresponse.Data.URL);
+                    updateAvatarResponse = await _accountService.UpdateAvatar(dto.UserUri, dto.AccessToken, createAvatarresponse.Data.URL);
                 }
                 catch (Exception ex)
                 {

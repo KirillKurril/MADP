@@ -11,6 +11,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Azure;
+using System.Configuration;
 
 
 namespace ALWD.UI.Services.Authentication
@@ -18,6 +19,7 @@ namespace ALWD.UI.Services.Authentication
     public class KeycloakAuthService : IAuthService
     {
         private readonly HttpClient _httpClient;
+        private readonly IConfiguration _configuration;
         private readonly ITokenAccessor _tokenAccessor;
         private readonly IHttpContextAccessor _httpContextAccessor;
         ILogger<ApiProductService> _logger;
@@ -27,14 +29,14 @@ namespace ALWD.UI.Services.Authentication
         public KeycloakAuthService(HttpClient httpClient,
             IOptions<KeycloakData> options,
             ITokenAccessor tokenAccessor,
-            ILogger<ApiProductService> logger,
-            IHttpContextAccessor httpContextAccessor)
+            IHttpContextAccessor httpContextAccessor,
+            IConfiguration config)
         {
             _httpClient = httpClient;
             _httpContextAccessor = httpContextAccessor;
             _tokenAccessor = tokenAccessor;
             _keycloakData = options.Value;
-            _logger = logger;
+            _configuration = config;
         }
         public async Task<ResponseData<bool>> RegisterUserAsync(string email, string password, string? name, IFormFile? image)
         {
@@ -66,12 +68,6 @@ namespace ALWD.UI.Services.Authentication
             if (!registrationResponse.IsSuccessStatusCode)
                 return new ResponseData<bool>(false, false, registrationResponse.StatusCode + " " + registrationResponse.Content);
 
-            var jsonString = await registrationResponse.Content.ReadAsStringAsync();
-            var jsonDoc = JsonDocument.Parse(jsonString);
-            var accessToken = jsonDoc.RootElement.GetProperty("access_token").GetString();
-            var handler = new JwtSecurityTokenHandler();
-            var jsonToken = handler.ReadToken(accessToken) as JwtSecurityToken;
-
             string userUri = registrationResponse.Headers.Location!.AbsoluteUri;
 
             if (image != null)
@@ -86,13 +82,13 @@ namespace ALWD.UI.Services.Authentication
                         ImageMimeType = image.ContentType,
                         ImageName = image.Name,
                         UserUri = userUri
-                    };
+					};
 
-                    string baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Image";
+					string baseUri = _configuration.GetSection("UriData:ApiUri").Value + "Image";
                     avatarUpdateResponse = await _httpClient.PostAsJsonAsync(baseUri, dto, serializerOptions);
 
                     if (!avatarUpdateResponse.IsSuccessStatusCode)
-                        return new ResponseData<bool>(false, false, avatarUpdateResponse.StatusCode + " " + avatarUpdateResponse.Content);
+                        return new ResponseData<bool>(false, false, avatarUpdateResponse.StatusCode + " " + avatarUpdateResponse.ReasonPhrase);
                 }
             }
 
@@ -176,6 +172,35 @@ namespace ALWD.UI.Services.Authentication
             
             return new ResponseData<bool>(true);
         }
-    }
 
+        public async Task<ResponseData<bool>> LogOut()
+        {
+            try
+            {
+                await _httpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+                var logoutEndpoint = $"{_keycloakData.Host}/realms/{_keycloakData.Realm}/protocol/openid-connect/logout";
+
+                var request = new HttpRequestMessage(HttpMethod.Post, logoutEndpoint);
+                request.Content = new FormUrlEncodedContent(new[]
+                {
+                new KeyValuePair<string, string>("client_id", _keycloakData.ClientId),
+                new KeyValuePair<string, string>("client_secret", _keycloakData.ClientSecret)
+                });
+
+                var response = await _httpClient.SendAsync(request);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return new ResponseData<bool>(true);
+                }
+
+                return new ResponseData<bool>(false, false, response.StatusCode + " " + response.ReasonPhrase);
+            }
+            catch (Exception ex)
+            {
+                return new ResponseData<bool>(false, false, ex.Message);
+            }
+        }
+    }
 }

@@ -1,31 +1,37 @@
-﻿using System.Net.Http;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text;
-using ALWD.API.Services.FileService;
-using ALWD.Domain.Abstractions;
-using ALWD.Domain.Entities;
 using ALWD.Domain.Services.Authentication;
 using ALWD.Domain.Models;
+using System.Net.Http.Headers;
+using Microsoft.Extensions.Options;
 
 namespace ALWD.API.Services.AccountService
 {
     public class KeycloakAccountService : IAccountService
     {
-        private readonly HttpClient _httpClient;
-        private readonly ITokenAccessor _tokenAccessor;
+		private readonly HttpClient _httpClient;
+		private readonly ITokenAccessor _tokenAccessor;
+		private readonly IHttpContextAccessor _httpContextAccessor;
+		KeycloakData _keycloakData;
 
-        public KeycloakAccountService(HttpClient httpClient, ITokenAccessor tokenService)
-        {
-            _httpClient = httpClient;
-            _tokenAccessor = tokenService;
-        }
-        public async Task<ResponseData<bool>> UpdateAvatar(string userUri, string newAvatarUri)
+
+		public KeycloakAccountService(HttpClient httpClient,
+			IOptions<KeycloakData> options,
+			ITokenAccessor tokenAccessor,
+			IHttpContextAccessor httpContextAccessor)
+		{
+			_httpClient = httpClient;
+			_httpContextAccessor = httpContextAccessor;
+			_tokenAccessor = tokenAccessor;
+			_keycloakData = options.Value;
+		}
+		public async Task<ResponseData<bool>> UpdateAvatar(string userUri, string accessToken, string imageUri)
         {
             var updatedUser = new
             {
                 attributes = new Dictionary<string, object>
                     {
-                        { "AvatarUri", newAvatarUri } 
+                        { "avatar", imageUri } 
                     }
             };
 
@@ -34,28 +40,23 @@ namespace ALWD.API.Services.AccountService
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+			_httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
-            var userData = JsonSerializer.Serialize(updatedUser, serializerOptions);
-            HttpContent content = new StringContent(userData, Encoding.UTF8, "application/json");
+			string jsonContent = JsonSerializer.Serialize(updatedUser, serializerOptions);
+			HttpContent content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response;
+			var response = await _httpClient.PutAsync(userUri, content);
 
-            try
-            {
-                response = await _httpClient.PutAsync(userUri, content);
-            }
-            catch (Exception ex)
-            {
-                return new ResponseData<bool>(false, false, $"class: ProductService, method: CreateProductAsync: removing product: {ex.Message}");
-            }
-
-            if(!response.IsSuccessStatusCode)
-                return new ResponseData<bool>(false, false, response.StatusCode.ToString() + " " + response.Content);
-
-            return new ResponseData<bool>(true);
-
-        }
+			if (response.IsSuccessStatusCode)
+			{
+				return new ResponseData<bool>(true);
+			}
+			else
+			{
+				var errorContent = await response.Content.ReadAsStringAsync();
+				return new ResponseData<bool>(false, false, $"Error updating avatar: {response.ReasonPhrase} - {errorContent}");
+			}
+		}
 
     }
 }
