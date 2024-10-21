@@ -97,26 +97,35 @@ namespace ALWD.API.Controllers
                 dto.ImageName!,
                 dto.ImageMimeType!);
 
-            ResponseData<FileModel> response;
+            ResponseData<FileModel> createAvatarresponse;
             try
             {
-                response = await _fileService.CreateFileAsync(image);
+                createAvatarresponse = await _fileService.CreateFileAsync(image);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
 
-            if (!response.Successfull)
-                return StatusCode(500, response.ErrorMessage);
+            if (!createAvatarresponse.Successfull)
+                return StatusCode(500, createAvatarresponse.ErrorMessage);
 
             if (!string.IsNullOrEmpty(dto.UserUri))
             {
-                await _accountService.
-                //отдельным методом в FileService
+                ResponseData<bool> updateAvatarResponse;
+                try
+                {
+                    updateAvatarResponse = await _accountService.UpdateAvatar(dto.UserUri, createAvatarresponse.Data.URL);
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(500, ex.Message);
+                }
 
-                //int imageId = response.Data.Id;
-                //Изменить avatarId;                
+                if (!updateAvatarResponse.Successfull)
+                {
+                    return StatusCode(500, createAvatarresponse.ErrorMessage);
+                }
             }
             return Ok();
         }

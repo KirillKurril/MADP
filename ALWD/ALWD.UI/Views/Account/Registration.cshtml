@@ -1,12 +1,12 @@
 ﻿@model ALWD.Domain.ViewModels.RegisterUserViewModel
 
 @{
-    ViewData["Title"] = "Create User";
+    ViewData["Title"] = "Sign Up";
 }
 
 <h2>Create User</h2>
 
-<form asp-action="Create" method="post" enctype="multipart/form-data">
+<form asp-action="Register" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label asp-for="Email" class="control-label"></label>
         <input asp-for="Email" class="form-control" />

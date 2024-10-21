@@ -160,15 +160,16 @@ namespace ALWD.UI.Services.ProductService
                 dto.ImageContent = ms.ToArray();
             }
 
-			//string json = JsonConvert.SerializeObject(dto);
-			//HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+            try
+            {
+                await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+            }
+            catch (Exception ex)
+            {
+                return new ResponseData<int>(-1, false, ex.Message);
+            }
 
-			//_logger.LogError(uri.ToString());
-			//HttpResponseMessage response = await _httpClient.PostAsync(uri, content);
-
-
-			await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
-			HttpResponseMessage response = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
 
             if (!response.IsSuccessStatusCode)
             {

@@ -36,7 +36,7 @@ namespace ALWD.API.Data
 
 			var fileModels = new List<FileModel>
 			{
-                new FileModel{Name="default-profile-picture.png", URL = baseUri + "Image/default-profile-picture.png", Path=$"{rootPath}\\image\\default-profile-picture.png"},
+                new FileModel{Name="default-profile-picture.png", URL = baseUri + "Image/default-profile-picture.png", MimeType="image/jpeg", Path=$"{rootPath}\\image\\default-profile-picture.png"},
                 new FileModel{Name="стартер_a.jpg", URL = baseUri + "/Image/стартер_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\стартер_a.jpg"},
 				new FileModel{Name="стартер_b.jpg", URL = baseUri + "/Image/стартер_b.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\стартер_b.jpg"},
 				new FileModel{Name="тормозной_диск_a.jpg", URL = baseUri + "/Image/тормозной_диск_a.jpg", MimeType="image/jpeg", Path=$"{rootPath}\\image\\тормозной_диск_a.jpg"},

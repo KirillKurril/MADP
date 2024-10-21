@@ -6,10 +6,10 @@ using ALWD.API.Data.Repository;
 using ALWD.API.Services.ProductService;
 using ALWD.API.Services.CategoryService;
 using ALWD.API.Services.FileService;
-using System.Text.Json.Serialization;
 using ALWD.API.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ALWD.API.Services.AccountService;
+using ALWD.Domain.Services.Authentication;
 
 namespace ALWD.API
 {
@@ -35,7 +35,9 @@ namespace ALWD.API
 				options.UseSqlServer(connStr));
 
             builder.Services.AddHttpClient();
+            builder.Services.AddHttpContextAccessor();
 
+            builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
             builder.Services.AddScoped<IRepository<Product>, EfRepository<Product>>();
 			builder.Services.AddScoped<IRepository<Category>, EfRepository<Category>>();
 			builder.Services.AddScoped<IRepository<FileModel>, EfRepository<FileModel>>();

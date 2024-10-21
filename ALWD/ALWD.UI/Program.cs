@@ -30,7 +30,8 @@ public class Program
 		builder.Services.ConfigureKeycloak(builder.Configuration);
 
 		builder.Services.AddControllersWithViews();
-		builder.Services.AddSingleton<UriData>();
+        builder.Services.AddHttpContextAccessor();
+        builder.Services.AddSingleton<UriData>();
 		builder.Services.AddRazorPages();
         builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
         builder.Services.AddScoped<IAuthService, KeycloakAuthService>();
@@ -65,22 +66,21 @@ public class Program
 		{
 			options.Authority =
 	            $"{keycloakData.Host}/auth/realms/{keycloakData.Realm}";
-			            options.ClientId = keycloakData.ClientId;
-			            options.ClientSecret = keycloakData.ClientSecret;
-			            options.ResponseType = OpenIdConnectResponseType.Code;
-			            options.Scope.Add("openid");
-			            options.SaveTokens = true;
-			            options.RequireHttpsMetadata = false; 
-		            options.MetadataAddress =
-		            $"{keycloakData.Host}/realms/{keycloakData.Realm}/.well-known/openid-configuration";
-		            });
+			
+            options.ClientId = keycloakData.ClientId;
+			options.ClientSecret = keycloakData.ClientSecret;
+			options.ResponseType = OpenIdConnectResponseType.Code;
+			options.Scope.Add("openid");
+			options.SaveTokens = true;
+			options.RequireHttpsMetadata = false; 
+		    options.MetadataAddress = $"{keycloakData.Host}/realms/{keycloakData.Realm}/.well-known/openid-configuration";
+		    });
 
 		builder.Services.AddAuthorization(opt =>
 		{
 			opt.AddPolicy("admin", p => p.RequireRole("POWER-USER"));
 		});
 
-		builder.Services.AddHttpContextAccessor();
 	}
 
 	private static void ConfigureMiddleware(WebApplication app)
