@@ -93,6 +93,7 @@ namespace ALWD.UI.Services.Authentication
 					AccessToken = await _tokenAccessor.GetAccessTokenAsync()
 				};
 
+                HttpResponseMessage respomse = await _httpClient.PostAsJsonAsync(_httpClient.BaseAddress + "Image", "aboba");
 
 				HttpResponseMessage avatarUpdateResponse = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
 

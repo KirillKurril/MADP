@@ -83,13 +83,18 @@ namespace ALWD.API.Controllers
             return File(fileResponse.Data, fileModelInfo.Data.MimeType);
         }
 
-		[HttpPost]
+        [HttpPost]
+        public IActionResult PostImage(string aboba)
+        {
+            string _aboba = aboba;
+            return Ok(_aboba);
+        }
         public async Task<IActionResult> CreateImage(UploadImageDTO dto)
 		{
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
-            }
+				return StatusCode(500);
+			}
 
             IFormFile image = new Domain.DTOs.FormFile(
                 new MemoryStream(dto.ImageContent!),
