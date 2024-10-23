@@ -110,25 +110,9 @@
   },
   {
     "ContainingType": "ALWD.API.Controllers.ImageController",
-    "Method": "PostImage",
-    "RelativePath": "api/Image",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "aboba",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ALWD.API.Controllers.ImageController",
     "Method": "CreateImage",
     "RelativePath": "api/Image",
-    "HttpMethod": "",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

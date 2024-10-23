@@ -93,7 +93,6 @@ namespace ALWD.API
 			app.UseHttpsRedirection();
 			app.UseAuthentication();
 			app.UseAuthorization();
-
 		}
 
 		private static void ConfigureEndpoints(WebApplication app)

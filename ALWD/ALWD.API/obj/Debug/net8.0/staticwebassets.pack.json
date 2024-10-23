@@ -1,12 +1,48 @@
 {
   "Files": [
     {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230109155182.jpg",
+      "PackagePath": "staticwebassets\\image\\S600xU_2x-202410230109155182.jpg"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230151442936.jpg",
+      "PackagePath": "staticwebassets\\image\\S600xU_2x-202410230151442936.jpg"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230156045794.jpg",
+      "PackagePath": "staticwebassets\\image\\S600xU_2x-202410230156045794.jpg"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230158068364.jpg",
+      "PackagePath": "staticwebassets\\image\\S600xU_2x-202410230158068364.jpg"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230206484149.jpg",
+      "PackagePath": "staticwebassets\\image\\S600xU_2x-202410230206484149.jpg"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230217029347.jpg",
+      "PackagePath": "staticwebassets\\image\\S600xU_2x-202410230217029347.jpg"
+    },
+    {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
       "PackagePath": "staticwebassets\\image\\default-profile-picture.png"
     },
     {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
       "PackagePath": "staticwebassets\\image\\rena-202410211116454456.jpg"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png",
+      "PackagePath": "staticwebassets\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png",
+      "PackagePath": "staticwebassets\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png"
+    },
+    {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png",
+      "PackagePath": "staticwebassets\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png"
     },
     {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png",

@@ -45,7 +45,7 @@ namespace ALWD.UI.Controllers
                 }
                 else return BadRequest(response.ErrorMessage);
             }
-            return View(registerData);
+            return RedirectToAction(nameof(ShowRegistration), registerData);
         }
 
         public async Task<IActionResult> Login(AuthorizeUserViewModel loginData, [FromServices] IAuthService authService)

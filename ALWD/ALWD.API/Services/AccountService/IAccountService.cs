@@ -4,7 +4,7 @@ namespace ALWD.API.Services.AccountService
 {
     public interface IAccountService
     {
-		Task<ResponseData<bool>> UpdateAvatar(string userUri, string accessToken, string imageUri);
+		Task<ResponseData<bool>> UpdateAvatar(string userUri, string imageUri, string email);
 
 	}
 }

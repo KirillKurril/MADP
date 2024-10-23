@@ -84,18 +84,8 @@ namespace ALWD.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostImage(string aboba)
-        {
-            string _aboba = aboba;
-            return Ok(_aboba);
-        }
         public async Task<IActionResult> CreateImage(UploadImageDTO dto)
 		{
-            if (!ModelState.IsValid)
-            {
-				return StatusCode(500);
-			}
-
             IFormFile image = new Domain.DTOs.FormFile(
                 new MemoryStream(dto.ImageContent!),
                 "productImage",
@@ -120,7 +110,7 @@ namespace ALWD.API.Controllers
                 ResponseData<bool> updateAvatarResponse;
                 try
                 {
-                    updateAvatarResponse = await _accountService.UpdateAvatar(dto.UserUri, dto.AccessToken, createAvatarresponse.Data.URL);
+                    updateAvatarResponse = await _accountService.UpdateAvatar(dto.UserUri, createAvatarresponse.Data!.URL, dto.Email);
                 }
                 catch (Exception ex)
                 {
@@ -132,8 +122,7 @@ namespace ALWD.API.Controllers
                     return StatusCode(500, createAvatarresponse.ErrorMessage);
                 }
             }
-            return Ok();
+            return Ok(createAvatarresponse.Data!.URL);
         }
-
     }
 }

@@ -4,6 +4,7 @@ using ALWD.Domain.Services.Authentication;
 using ALWD.Domain.Models;
 using System.Net.Http.Headers;
 using Microsoft.Extensions.Options;
+using System.Text.Json.Serialization;
 
 namespace ALWD.API.Services.AccountService
 {
@@ -12,6 +13,7 @@ namespace ALWD.API.Services.AccountService
 		private readonly HttpClient _httpClient;
 		private readonly ITokenAccessor _tokenAccessor;
 		private readonly IHttpContextAccessor _httpContextAccessor;
+		JsonSerializerOptions _serializerOptions;
 		KeycloakData _keycloakData;
 
 
@@ -24,27 +26,27 @@ namespace ALWD.API.Services.AccountService
 			_httpContextAccessor = httpContextAccessor;
 			_tokenAccessor = tokenAccessor;
 			_keycloakData = options.Value;
+			_serializerOptions = new JsonSerializerOptions()
+			{
+				ReferenceHandler = ReferenceHandler.Preserve,
+				PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+			};
 		}
-		public async Task<ResponseData<bool>> UpdateAvatar(string userUri, string accessToken, string imageUri)
+		public async Task<ResponseData<bool>> UpdateAvatar(string userUri, string imageUri, string email)
         {
-            var updatedUser = new
-            {
-                attributes = new Dictionary<string, object>
-                    {
-                        { "avatar", imageUri } 
-                    }
-            };
+			var body = new
+			{
+				attributes = new
+				{
+					avatar = new[] { imageUri }
+				}, 
+				email = email
+			};
 
-            var serializerOptions = new JsonSerializerOptions
-            {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            };
-
-			_httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-			string jsonContent = JsonSerializer.Serialize(updatedUser, serializerOptions);
-			HttpContent content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
+			var jsonBody = JsonSerializer.Serialize(body);
+			var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+			
+			await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
 			var response = await _httpClient.PutAsync(userUri, content);
 
 			if (response.IsSuccessStatusCode)

@@ -71,15 +71,18 @@ namespace ALWD.UI.Services.Authentication
             HttpContent content = new StringContent(userData, Encoding.UTF8, "application/json");
 
             var registrationResponse = await _httpClient.PostAsync($"{_keycloakData.Host}/admin/realms/{_keycloakData.Realm}/users", content);
+			var jsonString = await registrationResponse.Content.ReadAsStringAsync();
 
-            if (!registrationResponse.IsSuccessStatusCode)
+
+			if (!registrationResponse.IsSuccessStatusCode)
                 return new ResponseData<bool>(false, false, registrationResponse.StatusCode + " " + registrationResponse.Content);
 
             string userUri = registrationResponse.Headers.Location!.AbsoluteUri;
+            string? imageUri = null;
 
 			if (image != null)
             {
-				var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Image";
+				var requestUri = $"{_httpClient.BaseAddress.AbsoluteUri}Image";
 
 				await using var ms = new MemoryStream();
 				await image.CopyToAsync(ms);
@@ -88,56 +91,55 @@ namespace ALWD.UI.Services.Authentication
 				{
 					ImageContent = ms.ToArray(),
 					ImageMimeType = image.ContentType,
-					ImageName = image.Name,
+					ImageName = image.FileName,
 					UserUri = userUri,
-					AccessToken = await _tokenAccessor.GetAccessTokenAsync()
+                    Email = email,
 				};
 
-                HttpResponseMessage respomse = await _httpClient.PostAsJsonAsync(_httpClient.BaseAddress + "Image", "aboba");
+				HttpResponseMessage avatarUpdateResponse = await _httpClient.PostAsJsonAsync(requestUri, dto, _serializerOptions);
+                imageUri = await avatarUpdateResponse.Content.ReadAsStringAsync();
 
-				HttpResponseMessage avatarUpdateResponse = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
-
-                if (!avatarUpdateResponse.IsSuccessStatusCode)
+				if (!avatarUpdateResponse.IsSuccessStatusCode)
                     return new ResponseData<bool>(false, false, avatarUpdateResponse.StatusCode + " " + avatarUpdateResponse.ReasonPhrase);
             }
 
-            var signInResponse = await SignIn(registrationResponse);
+            var signInResponse = await AuthenticateUser(email, password);
             return signInResponse;
         }
-    
-        public async Task<ResponseData<bool>> AuthenticateUser(string username, string password)
-        {
-            HttpResponseMessage authResponse;
-            try
-            {
-                await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
 
-                var tokenEndpoint = $"{_keycloakData.Host}/realms/{_keycloakData.Realm}/protocol/openid-connect/token";
+		public async Task<ResponseData<bool>> AuthenticateUser(string username, string password)
+		{
+			HttpResponseMessage authResponse;
+			try
+			{
+				await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
 
-                var content = new FormUrlEncodedContent(new[]
-                    {
-                        new KeyValuePair<string, string>("username", username),
-                        new KeyValuePair<string, string>("password", password),
-                        new KeyValuePair<string, string>("client_id", _keycloakData.ClientId),
-                        new KeyValuePair<string, string>("client_secret", _keycloakData.ClientSecret),
-                        new KeyValuePair<string, string>("grant_type", "password"),
-                    }); 
+				var tokenEndpoint = $"{_keycloakData.Host}/realms/{_keycloakData.Realm}/protocol/openid-connect/token";
 
-                authResponse = await _httpClient.PostAsync(tokenEndpoint, content);
-                if (!authResponse.IsSuccessStatusCode)
-                {
-                    throw new Exception("Authentication failed");
-                }
-            }
-            catch (Exception ex)
-            {
-                return new ResponseData<bool>(false, false, ex.Message);
-            }
-                var signInResponse = await SignIn(authResponse);
-                return signInResponse;
+				var content = new FormUrlEncodedContent(new[]
+					{
+						new KeyValuePair<string, string>("username", username),
+						new KeyValuePair<string, string>("password", password),
+						new KeyValuePair<string, string>("client_id", _keycloakData.ClientId),
+						new KeyValuePair<string, string>("client_secret", _keycloakData.ClientSecret),
+						new KeyValuePair<string, string>("grant_type", "password"),
+					});
 
-               
-        }
+				authResponse = await _httpClient.PostAsync(tokenEndpoint, content);
+				if (!authResponse.IsSuccessStatusCode)
+				{
+					throw new Exception("Authentication failed");
+				}
+			}
+			catch (Exception ex)
+			{
+				return new ResponseData<bool>(false, false, ex.Message);
+			}
+			var signInResponse = await SignIn(authResponse);
+			return signInResponse;
+
+
+		}
 
         private async Task<ResponseData<bool>> SignIn (HttpResponseMessage authResponse)
         {
@@ -149,7 +151,7 @@ namespace ALWD.UI.Services.Authentication
                 var handler = new JwtSecurityTokenHandler();
                 var jsonToken = handler.ReadToken(accessToken) as JwtSecurityToken;
 
-                var username = jsonToken.Claims.First(claim => claim.Type == "name").Value;
+                var username = jsonToken.Claims.First(claim => claim.Type == "preferred_username").Value;
                 var userId = jsonToken.Claims.First(claim => claim.Type == "sub").Value;
                 var email = jsonToken.Claims.First(claim => claim.Type == "email").Value;
                 var roles = jsonToken.Claims.Where(claim => claim.Type == "role").Select(claim => claim.Value).ToList();
