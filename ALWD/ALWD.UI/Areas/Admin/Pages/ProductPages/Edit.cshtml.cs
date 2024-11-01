@@ -6,9 +6,11 @@ using ALWD.UI.Services.ProductService;
 using ALWD.UI.Services.CategoryService;
 using ALWD.Domain.Validation.Models;
 using ALWD.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
+    [Authorize(Policy = "admin")]
     public class EditModel : PageModel
     {
         private readonly IProductService _productService;

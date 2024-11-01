@@ -39,7 +39,15 @@ namespace ALWD.UI.TagHelpers
 
             for (int i = 1; i <= TotalPages; i++)
             {
-                output.Content.AppendHtml(CreatePageLink(i.ToString(), i));
+                if (i == CurrentPage)
+                {
+                    TagBuilder link = CreatePageLink(i.ToString(), i);
+                    link.AddCssClass("active");
+                    output.Content.AppendHtml(link);
+                }
+                else
+                    output.Content.AppendHtml(CreatePageLink(i.ToString(), i));
+                
             }
 
             var nextPage = CurrentPage < TotalPages ? CurrentPage + 1 : TotalPages;

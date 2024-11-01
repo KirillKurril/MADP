@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/IndexPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXEluZGV4UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -134,20 +138,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcTG9nT3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialAdmin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQWRtaW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQ2FydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialCatalog.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQ2F0YWxvZy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialLab.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsTGFiLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialUserData.cshtml]

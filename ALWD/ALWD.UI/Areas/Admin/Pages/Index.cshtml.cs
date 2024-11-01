@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ALWD.UI.Areas.Admin.Pages
 {
-	//[Authorize(Roles = "admin")]
-	public class IndexModel : PageModel
+    [Authorize(Policy = "admin")]
+    public class IndexModel : PageModel
     {
         public void OnGet()
         {

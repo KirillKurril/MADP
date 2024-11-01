@@ -1,0 +1,65 @@
+﻿@model ALWD.UI.Admin.Pages.ProductPages.IndexModel
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Название
+            </th>
+            <th>
+                Описание
+            </th>
+            <th>
+                Цена
+            </th>
+            <th>
+                Количество
+            </th>
+            <th>
+                Изображение
+            </th>
+            <th>
+                Категория
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products.Items)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Quantity)
+                </td>
+                <td>
+                    <img src="@product.Image.URL??" alt="Product Image" style="max-width: 250px; max-height: 250px;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Category.Name)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@product.Id" class="btn btn-success">Edit</a>
+                    <a asp-page="./Details" asp-route-id="@product.Id" class="btn btn-primary my-2">Details</a>
+                    <a asp-page="./Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<nav aria-label="Page navigation example">
+    <Pager admin="@(User.HasClaim(c => c.Type == ClaimTypes.Role && c.Value == "POWER-USER"))"
+           current-page="@Model.CurrentPage"
+           total-pages="@Model.Products.TotalPages"
+           category=@(Model.CurrentCategory == null ? "" : Model.CurrentCategory.NormalizedName)>
+    </Pager>
+</nav>

@@ -60,7 +60,7 @@ namespace ALWD.API
 			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 			.AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, o =>
 			{
-				o.MetadataAddress = $"{authServer.Host}/realms/{authServer.Realm}/.wellknown/openid-configuration";
+				o.MetadataAddress = $"{authServer.Host}/realms/{authServer.Realm}/.well-known/openid-configuration";
 				o.Authority = $"{authServer.Host}/realms/{authServer.Realm}";
 				o.Audience = "account";
 				o.RequireHttpsMetadata = false;

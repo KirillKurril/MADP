@@ -4,7 +4,6 @@ using ALWD.Domain.Models;
 using ALWD.UI.Services.CategoryService;
 using ALWD.Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using ALWD.UI.Extensions;
 

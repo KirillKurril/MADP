@@ -60,7 +60,11 @@ public class Program
 			options.DefaultScheme =	CookieAuthenticationDefaults.AuthenticationScheme;
 			options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
 		})
-		.AddCookie()
+		.AddCookie(options =>
+        {
+            options.LoginPath = "/Account/ShowLogin"; 
+            options.AccessDeniedPath = "/Home/Index"; 
+        })
 		.AddJwtBearer()
 		.AddOpenIdConnect(options =>
 		{

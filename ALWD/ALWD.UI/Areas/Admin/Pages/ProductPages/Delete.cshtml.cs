@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.ProductService;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ALWD.UI.Admin.Pages.ProductPages
 {
+    [Authorize(Policy = "admin")]
     public class DeleteModel : PageModel
     {
         private readonly IProductService _productService;

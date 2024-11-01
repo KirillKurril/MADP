@@ -4,9 +4,11 @@ using ALWD.Domain.Entities;
 using ALWD.UI.Services.CategoryService;
 using ALWD.Domain.Validation.Models;
 using ALWD.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ALWD.UI.Admin.Pages.CategoryPages
 {
+    [Authorize(Policy = "admin")]
     public class CreateModel : PageModel
     {
         private readonly ICategoryService _categoryService;

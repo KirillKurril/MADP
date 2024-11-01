@@ -11,7 +11,7 @@
                 $('#productArea').html(result);
             },
             error: function (xhr, status, error) {
-                console.error("Ошибка при загрузке данных:", error);
+                console.error("Data receiving error:", error);
             }
         });
     });

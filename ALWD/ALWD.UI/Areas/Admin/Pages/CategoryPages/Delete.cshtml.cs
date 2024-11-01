@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ALWD.Domain.Entities;
 using ALWD.UI.Services.CategoryService;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ALWD.UI.Admin.Pages.CategoryPages
 {
+    [Authorize(Policy = "admin")]
     public class DeleteModel : PageModel
     {
         private readonly ICategoryService _categoryService;

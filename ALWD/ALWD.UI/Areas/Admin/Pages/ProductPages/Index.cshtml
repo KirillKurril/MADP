@@ -1,109 +1,81 @@
 ﻿@page
 @model ALWD.UI.Admin.Pages.ProductPages.IndexModel
 
+@section SpecialHead {
+    <script src="~/js/product-pagination-partial.js" asp-append-version="true"></script>
+}
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-
-<p>
-    <a asp-page="../Index" class="btn btn-primary my-2">Admin Menu</a>
-</p>
-<p>
-    <a asp-page="./Create" class="btn btn-primary my-2">Create New</a>
-</p>
- <table class="table">
-     <thead>
-         <tr>
-             <th>
-                 Название
-             </th>
-             <th>
-                 Описание
-             </th>
-             <th>
-                 Цена
-             </th>
-             <th>
-                 Количество
-             </th>
-             <th>
-                 Изображение
-             </th>
-             <th>
-                 Категория
-             </th>
-             <th></th>
-         </tr>
-     </thead>
-     <tbody>
- @foreach (var product in Model.Products.Items) {
-         <tr>
-             <td>
-                    @Html.DisplayFor(modelItem => product.Name)
-             </td>
-             <td>
-                    @Html.DisplayFor(modelItem => product.Description)
-             </td>
-             <td>
-                    @Html.DisplayFor(modelItem => product.Price)
-             </td>
-             <td>
-                    @Html.DisplayFor(modelItem => product.Quantity)
-             </td>
-             <td>
-                 <img src="@product.Image.URL" alt="Product Image" style="max-width: 250px; max-height: 250px;" />
-             </td>
-             <td>
-                    @Html.DisplayFor(modelItem => product.Category.Name)
-             </td>
-             <td>
-                    <a asp-page="./Edit" asp-route-id="@product.Id" class="btn btn-success">Edit</a>  
-                    <a asp-page="./Details" asp-route-id="@product.Id" class="btn btn-primary my-2">Details</a>  
-                    <a asp-page="./Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>  
-             </td>
-         </tr>
- }
-     </tbody>
- </table>
-
-
 <div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link"
-                   asp-page="./Index"
-                   asp-route-category=@null
-                   asp-route-pageNo="@(Model.Products.CurrentPage > 1 ? Model.Products.CurrentPage - 1 : Model.Products.CurrentPage)">
-                   Previous
-                </a>
-            </li>
-            @if (Model.Products.TotalPages > 1)
-            {
-                for (int i = 1; i <= Model.Products.TotalPages; i++)
+    <p>
+        <a asp-page="../Index" class="btn btn-primary my-2">Admin Menu</a>
+    </p>
+    <p>
+        <a asp-page="./Create" class="btn btn-primary my-2">Create New</a>
+    </p>
+    <p>
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false">
+                @(Model.CurrentCategory == null ? "Все" : Model.CurrentCategory.Name)
+            </a>
+            <div class="dropdown-menu">
+                @if (Model.Categories.Count == 0)
                 {
-                    <li class="page-item @(Model.Products.CurrentPage == i ? "active" : "")">
-                        <a class="page-link"
-                           asp-page="./Index"
-                           asp-route-category=@null
-                           asp-route-pageNo="@i">
-                            @i
-                        </a>
-                    </li>
+                    <div>No categories available.</div>
                 }
-            }
-            <li class="page-item">
-                <a class="page-link"
-                   asp-page="./Index"
-                   asp-route-category=@null
-                   asp-route-pageNo="@(Model.Products.CurrentPage < Model.Products.TotalPages ? Model.Products.CurrentPage + 1 : Model.Products.CurrentPage)">
-                   Next
-                </a>
-            </li>
-        </ul>
-    </nav>
+                else
+                {
+                    @foreach (var category in Model.Categories)
+                    {
+                        <a class="dropdown-item"
+                           asp-page="./Index"
+                           asp-route-page="@Model.CurrentPage"
+                           asp-route-category="@category.NormalizedName">
+                            @category.Name
+                        </a>
+                    }
+                    @if (Model.CurrentCategory != null)
+                    {
+                        <a class="dropdown-item"
+                           asp-page="./Index"
+                           asp-route-category=""
+                           asp-route-page="@Model.CurrentPage">
+                            Все
+                        </a>
+                    }
+                }
+            </div>
+        </div>
 </div>
+<div id="productArea">
+    <partial name="./IndexPartial" model=@Model />
+</div>
+
+@section Scripts{
+$(document).ready(function () {
+    $(document).on('click', '.page-link', function (event) {
+        event.preventDefault();
+
+        var url = $(this).attr('href');
+
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function (result) {
+                $('#productArea').html(result);
+            },
+            error: function (xhr, status, error) {
+                console.error("Data receiving error:", error);
+            }
+        });
+    });
+});
+}
 
