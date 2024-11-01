@@ -6,6 +6,7 @@ using ALWD.Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
+using ALWD.UI.Extensions;
 
 namespace ALWD.UI.Controllers
 {
@@ -33,7 +34,10 @@ namespace ALWD.UI.Controllers
 			if (!productResponse.Successfull)
 				return NotFound(productResponse.ErrorMessage);
 
-			var viewModel = new CatalogViewModel(productResponse, categories);
+            if (Request.IsAjaxRequest())
+                return PartialView("_ListPartial", page); 
+
+            var viewModel = new CatalogViewModel(productResponse, categories);
 			return View(viewModel);
 		}
 	}

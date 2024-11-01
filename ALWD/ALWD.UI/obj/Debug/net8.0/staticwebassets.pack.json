@@ -105,6 +105,10 @@
       "PackagePath": "staticwebassets\\images\\шина_b.jpg"
     },
     {
+      "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\js\\product-pagination-partial.js",
+      "PackagePath": "staticwebassets\\js\\product-pagination-partial.js"
+    },
+    {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,0 +1,27 @@
+﻿@model ALWD.Domain.ViewModels.CatalogViewModel
+
+
+<div id="productArea">
+    <div class="d-flex flex-wrap">
+        @foreach (var item in Model.ProductResponse.Data.Items)
+        {
+            <div class="card m-2" style="width: 18rem;">
+                <img src="@item.Image.URL" class="card-img-top" style="height: 18rem; object-fit: contain;" alt="@item.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Description</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        }
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <Pager 
+            admin="@(User.HasClaim(c => c.Type == ClaimTypes.Role && c.Value == "POWER-USER"))"
+            current-page="@Model.ProductResponse.Data.CurrentPage"
+            total-pages="@Model.ProductResponse.Data.TotalPages"
+            category="@ViewData["currentCategoryNormilizedName"]">
+        </Pager>
+    </nav>
+</div>

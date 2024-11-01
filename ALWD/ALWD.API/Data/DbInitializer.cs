@@ -92,7 +92,7 @@ namespace ALWD.API.Data
 			new Product {Name="Радиатор A", Description="Описание радиатора A", Price=150.00, Quantity=10,Image = context.FileModels.Find(18), Category=context.Categories.Find(9)},
 			new Product {Name="Радиатор B", Description="Описание радиатора B", Price=160.00, Quantity=8,Image = context.FileModels.Find(19), Category=context.Categories.Find(9)},
 
-			new Product {Name="Бампер A", Description="Описание бампера A", Price=200.00, Quantity=5,Image = context.FileModels.Find(120), Category=context.Categories.Find(10)},
+			new Product {Name="Бампер A", Description="Описание бампера A", Price=200.00, Quantity=5,Image = context.FileModels.Find(20), Category=context.Categories.Find(10)},
 			new Product {Name="Бампер B", Description="Описание бампера B", Price=220.00, Quantity=4,Image = context.FileModels.Find(21), Category=context.Categories.Find(10)}
 			};
 			context.Products.AddRange(products);
