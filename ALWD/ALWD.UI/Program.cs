@@ -1,15 +1,14 @@
-using ALWD.API.Models;
 using ALWD.UI.Models;
 using ALWD.UI.Services.Authentication;
 using ALWD.UI.Services.CategoryService;
 using ALWD.UI.Services.ProductService;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using ALWD.Domain.Services.Authentication;
 using ALWD.Domain.Models;
 using ALWD.UI.Extensions;
+using ALWD.UI.Services.CartService;
 
 public class Program
 {
@@ -51,6 +50,8 @@ public class Program
 
 		builder.Services.AddHttpClient<IAuthService, KeycloakAuthService>(opt =>
 	        opt.BaseAddress = new Uri(apiUri));
+
+        builder.Services.AddScoped<ICartService, SessionCartService>();
 
 		var keycloakData =
 		builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();

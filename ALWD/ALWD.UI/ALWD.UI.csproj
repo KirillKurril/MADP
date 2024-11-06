@@ -7,6 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Login\**" />
+    <Compile Remove="Views\Registration\**" />
+    <Compile Remove="Views\Shared\PartialViews\**" />
+    <Content Remove="Views\Login\**" />
+    <Content Remove="Views\Registration\**" />
+    <Content Remove="Views\Shared\PartialViews\**" />
+    <EmbeddedResource Remove="Views\Login\**" />
+    <EmbeddedResource Remove="Views\Registration\**" />
+    <EmbeddedResource Remove="Views\Shared\PartialViews\**" />
+    <None Remove="Views\Login\**" />
+    <None Remove="Views\Registration\**" />
+    <None Remove="Views\Shared\PartialViews\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FontAwesome" Version="4.7.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.10" />
@@ -39,12 +54,6 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Login\" />
-    <Folder Include="Views\Registration\" />
-    <Folder Include="Views\Shared\PartialViews\" />
   </ItemGroup>
 
 </Project>

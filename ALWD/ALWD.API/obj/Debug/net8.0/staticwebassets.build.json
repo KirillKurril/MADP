@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jgfq7oT68gavWK/e9otSflZcl6wp/W4H3w33f/Htgv8=",
+  "Hash": "y/TUMJ03GDQ+9wpMZHVUaOIVcRkhXDi0UA4knWnOd2o=",
   "Source": "ALWD.API",
   "BasePath": "_content/ALWD.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ALWD.API\\wwwroot",
       "Source": "ALWD.API",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\image\\AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/default-profile-picture.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\image\\default-profile-picture.png"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/rena-202410211116454456.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\image\\rena-202410211116454456.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230109155182.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230109155182.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230109155182.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230109155182.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230151442936.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230151442936.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230151442936.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230151442936.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230156045794.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230156045794.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230156045794.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230156045794.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230158068364.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230158068364.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230158068364.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230158068364.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230206484149.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230206484149.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230206484149.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230206484149.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230217029347.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230217029347.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230217029347.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230217029347.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230219304464.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230219304464.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230219304464.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230219304464.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230222335287.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230222335287.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230222335287.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230222335287.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230223135068.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230223135068.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230223135068.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230223135068.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230226561037.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230226561037.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230226561037.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230226561037.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230230007263.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230230007263.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230230007263.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230230007263.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230233507781.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230233507781.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230233507781.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230233507781.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230235196577.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230235196577.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230235196577.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230235196577.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230257241847.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230257241847.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230257241847.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230257241847.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230300262517.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230300262517.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/S600xU_2x-202410230300262517.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230300262517.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/аксессуар_a.jpg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\image\\аксессуар_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/аксессуар_b.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\image\\аксессуар_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/амортизатор_a.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\image\\амортизатор_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/амортизатор_b.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\image\\амортизатор_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/бампер_a.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\image\\бампер_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/бампер_b.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\image\\бампер_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/масло_a.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\image\\масло_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/масло_b.jpg",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\image\\масло_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/радиатор_a.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\image\\радиатор_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/радиатор_b.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\image\\радиатор_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/свеча_a.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\image\\свеча_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/свеча_b.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\image\\свеча_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/Снимок экрана 2024-08-18 005025-202410222021481366.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/Снимок экрана 2024-08-19 093755-202410230048026155.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/Снимок экрана 2024-08-20 113057-202410230100042101.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/Снимок экрана 2024-10-16 222056-202410181750432520.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/стартер_a.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\image\\стартер_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/стартер_b.jpg",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\image\\стартер_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/тормозной_диск_a.jpg",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\image\\тормозной_диск_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/тормозной_диск_b.jpg",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\image\\тормозной_диск_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/фильтр_a.jpg",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\image\\фильтр_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/фильтр_b.jpg",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\image\\фильтр_b.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_a.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_a.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/шина_a.jpg",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\image\\шина_a.jpg"
     },
     {
-      "Identity": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_b.jpg",
+      "Identity": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_b.jpg",
       "SourceId": "ALWD.API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
+      "ContentRoot": "E:\\Uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
       "RelativePath": "image/шина_b.jpg",
       "AssetKind": "All",
