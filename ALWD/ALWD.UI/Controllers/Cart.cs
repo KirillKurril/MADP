@@ -9,11 +9,9 @@ namespace ALWD.UI.Controllers
 	public class CartController : Controller
 	{
 		readonly ICartService _cartService;
-		readonly IProductService _productService;
 
-		public CartController(ICartService cartService, IProductService productService)
+		public CartController(ICartService cartService)
 		{
-			_productService = productService;
 			_cartService = cartService;
 		}
 
@@ -31,21 +29,26 @@ namespace ALWD.UI.Controllers
 			if (!addToCartResponse.Successfull)
 				return StatusCode(500, addToCartResponse.ErrorMessage);
 
-			return RedirectToAction("Index"); 
+			if (Request.Headers.ContainsKey("Referer"))
+			{
+				return Redirect(Request.Headers["Referer"].ToString());
+			}
+
+			return RedirectToAction("Index", "Catalog"); 
 		}
 
-		[HttpDelete("{id}")]
-		public IActionResult RemoveFromCart(int productId)
+		[HttpPost("{id}")]
+		public IActionResult RemoveFromCart(int id)
 		{
-			var removeFromCartResponse = _cartService.RemoveFromCart(productId);
+			var removeFromCartResponse = _cartService.RemoveFromCart(id);
 
 			if (!removeFromCartResponse.Successfull)
 				return StatusCode(500, removeFromCartResponse.ErrorMessage);
 
-			return RedirectToAction("Index");  
+			return View("Index", removeFromCartResponse.Data);  
 		}
 
-		[HttpDelete]
+		[HttpPost]
 		public IActionResult ClearCart()
 		{
 			var clearCartResponse = _cartService.ClearCart();
@@ -53,7 +56,7 @@ namespace ALWD.UI.Controllers
 			if (!clearCartResponse.Successfull)
 				return StatusCode(500, clearCartResponse.ErrorMessage);
 
-			return RedirectToAction("Index");
+			return View("Index", clearCartResponse.Data);
 		}
-	}
+    }
 }

@@ -17,175 +17,175 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ALWD.UI
 build_property.RootNamespace = ALWD.UI
-build_property.ProjectDir = E:\Uni\MADP\ALWD\ALWD.UI\
+build_property.ProjectDir = D:\uni\MADP\ALWD\ALWD.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Uni\MADP\ALWD\ALWD.UI
+build_property.MSBuildProjectDirectory = D:\uni\MADP\ALWD\ALWD.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Create.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlQYWdlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Delete.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlQYWdlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Details.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlQYWdlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Edit.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlQYWdlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Index.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/CategoryPages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlQYWdlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/Error.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/Index.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Create.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Delete.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Details.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Edit.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Index.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/IndexPartial.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/ProductPages/IndexPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUHJvZHVjdFBhZ2VzXEluZGV4UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ValidationScriptsPartial.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ViewImports.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ViewStart.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Areas/Admin/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Account/Login.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Account/Registration.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Account/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Cart/Index.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Catalog/Index.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Catalog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Catalog/IndexPartial.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Catalog/IndexPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xJbmRleFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Category/Create.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Category/Delete.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Category/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Category/Details.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Category/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Category/Update.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Home/Index.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Home/Privacy.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Identity/LogOut.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Identity/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWRlbnRpdHlcTG9nT3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialCart.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialUserData.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Menu/PartialUserData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQYXJ0aWFsVXNlckRhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Product/Create.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Product/Delete.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Product/Details.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Product/Update.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Shared/Components/PaginationBar/Default.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/Components/PaginationBar/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGFnaW5hdGlvbkJhclxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Shared/Components/TotalCartPrice/Default.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/Components/TotalCartPrice/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG90YWxDYXJ0UHJpY2VcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Shared/Error.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/_ViewImports.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/_ViewStart.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Uni/MADP/ALWD/ALWD.UI/Views/Shared/_Layout.cshtml]
+[D:/uni/MADP/ALWD/ALWD.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e7p6xzxksz

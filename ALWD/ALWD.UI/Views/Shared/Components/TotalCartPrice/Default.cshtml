@@ -1,3 +1,6 @@
-﻿<a class="navbar-text ms-auto" asp-controller="Cart" asp-action="Index">
-    @((new Random().NextDouble() * 100).ToString("0.00"))  руб <i class="fa-solid fa-cart-shopping"></i>
+﻿@using ALWD.UI.Services.CartService
+@inject ICartService _cartService
+
+<a class="navbar-text ms-auto" asp-controller="Cart" asp-action="Index">
+    @(_cartService.TotalPrice().ToString("0.00"))  руб <i class="fa-solid fa-cart-shopping"></i>
 </a>

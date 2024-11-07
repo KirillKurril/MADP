@@ -1,1 +1,48 @@
-﻿<h1>Cart index</h1>
+﻿@model ALWD.Domain.Models.CartModel
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Cart</h1>
+        <form
+            asp-action="ClearCart"
+            method="post"
+            class="mb-0">
+            <button type="submit" class="btn btn-danger">Clear Cart</button>
+        </form>
+    </div>
+
+    @if (Model.Items.Any())
+
+    {
+        <div class="list-group">
+            @foreach (var item in Model.Items.Values)
+
+            {
+                <div class="list-group-item d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h5 class="mb-1">@item.Name</h5>
+                        <small class="text-muted">Price: $@item.Price</small><br>
+                        <small class="text-muted">Quantity: @item.Count</small>
+                    </div>
+                    <form asp-action="RemoveFromCart" asp-route-id="@item.Id" method="post" class="mb-0">
+                        <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>
+                    </form>
+                </div>
+            }
+        </div>
+    }
+
+    else
+
+    {
+        <p>Your cart is empty.</p>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+}
+
+

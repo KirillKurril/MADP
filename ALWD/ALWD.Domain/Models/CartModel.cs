@@ -3,7 +3,7 @@ namespace ALWD.Domain.Models
 {
 	public class CartModel
 	{
-		public Dictionary<int, CartItem> Items { get; set; }
+		public Dictionary<int, CartItem> Items { get; set; } = new();
 		public int Count
 			=> Items.Count;
 		public double TotalPrice

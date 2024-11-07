@@ -10,9 +10,20 @@
                 <div class="card-body">
                     <h5 class="card-title">@item.Name</h5>
                     <p class="card-text">@item.Description</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <form
+                        asp-area=""
+                        asp-controller="Cart"
+                        asp-action="AddToCart"
+                        method="post">
+                        <input type="hidden" name="productId" value="@item.Id" />
+                        <input type="hidden" name="productName" value="@item.Name" />
+                        <input type="hidden" name="productPrice" value="@item.Price" />
+                        <button type="submit" class="btn btn-primary d-inline-block">Add to cart</button>
+                        <input type="number" name="productQuantity" value="1" min="1" max="999" class="form-control me-2 d-inline-block pt-1 ms-5" style="width: 80px;" />
+                    </form>
                 </div>
             </div>
+
         }
     </div>
 

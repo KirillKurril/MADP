@@ -32,6 +32,8 @@ public class Program
         builder.Services.AddHttpContextAccessor();
         builder.Services.AddSingleton<UriData>();
 		builder.Services.AddRazorPages();
+        builder.Services.AddDistributedMemoryCache();
+        builder.Services.AddSession();
         builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
 
         var apiUri = builder.Services
@@ -53,7 +55,7 @@ public class Program
 
         builder.Services.AddScoped<ICartService, SessionCartService>();
 
-		var keycloakData =
+        var keycloakData =
 		builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();
 		builder.Services
 		.AddAuthentication(options =>
@@ -96,6 +98,7 @@ public class Program
             app.UseHsts();
         }
 
+        app.UseSession();
         app.UseHttpsRedirection();
         app.UseStaticFiles();
         app.UseRouting();

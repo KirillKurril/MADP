@@ -7,10 +7,22 @@ namespace ALWD.UI.Services.CartService
     public class SessionCartService : ICartService
 	{
 		readonly IHttpContextAccessor _httpContextAccessor;
-		const string CartSessionKey = "cart";  
-		public SessionCartService(IHttpContextAccessor httpContextAccessor)
+		const string CartSessionKey = "cart";
+
+        public SessionCartService(IHttpContextAccessor httpContextAccessor)
 			=> _httpContextAccessor = httpContextAccessor;
-		public CartModel GetCart()
+
+		public int Count()
+		{
+            var cart = GetCart();
+			return cart.Count;
+        }
+        public double TotalPrice()
+		{
+            var cart = GetCart();
+            return cart.TotalPrice;
+        }
+        public CartModel GetCart()
 		{
 			var cart = _httpContextAccessor.HttpContext!.Session.GetString(CartSessionKey);
 			return cart == null
@@ -52,36 +64,38 @@ namespace ALWD.UI.Services.CartService
 			return new ResponseData<bool>(true);
 
 		}
-		public ResponseData<bool> RemoveFromCart(int productId)
+		public ResponseData<CartModel> RemoveFromCart(int productId)
 		{
+			CartModel? cart = null;
 			try
 			{
-				var cart = GetCart();
+				cart = GetCart();
 				cart.RemoveItem(productId);
 				var saveCartResponse = SaveCart(cart);
 				if (!saveCartResponse.Successfull)
-					return saveCartResponse;
+					return new ResponseData<CartModel>(null, false, saveCartResponse.ErrorMessage!);
 			}
 			catch (Exception ex)
 			{
-				return new ResponseData<bool>(false, false, ex.Message);
+				return new ResponseData<CartModel>(cart, false, ex.Message);
 			}
-			return new ResponseData<bool>(true);
+			return new ResponseData<CartModel>(cart);
 		}
-		public ResponseData<bool> ClearCart()
+		public ResponseData<CartModel> ClearCart()
 		{
+			CartModel? cart = null;
 			try
 			{
-				var cart = new CartModel();
+				cart = new CartModel();
 				var saveCartResponse = SaveCart(cart);
 				if (!saveCartResponse.Successfull)
-					return saveCartResponse;
+					return new ResponseData<CartModel>(null, false, saveCartResponse.ErrorMessage!);
 			}
 			catch (Exception ex)
 			{
-				return new ResponseData<bool>(false, false, ex.Message);
+				return new ResponseData<CartModel>(cart, false, ex.Message);
 			}
-			return new ResponseData<bool>(true);
+			return new ResponseData<CartModel>(cart);
 		}
 	}
 }
