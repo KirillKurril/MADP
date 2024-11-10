@@ -122,7 +122,7 @@ namespace ALWD.API.Services.ProductService
         
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName)
         {
-			if (itemsPerPage > _maxPageSize)
+			if (itemsPerPage > _maxPageSize || itemsPerPage < 0)
 				itemsPerPage = _maxPageSize;
 
 			IReadOnlyList<Product> products;
@@ -152,7 +152,7 @@ namespace ALWD.API.Services.ProductService
         
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, int pageNo)
         {
-            if (itemsPerPage > _maxPageSize)
+            if (itemsPerPage > _maxPageSize || itemsPerPage < 0)
                 itemsPerPage = _maxPageSize;
 
 			IReadOnlyList<Product> products;
@@ -173,7 +173,7 @@ namespace ALWD.API.Services.ProductService
 
 			int totalPages = (int)Math.Ceiling((double)products.Count / itemsPerPage);
 
-            if (pageNo > totalPages)
+            if (pageNo > totalPages || pageNo < 0)
                 return new ResponseData<ListModel<Product>>(null, false, "Incorrect page number");
 
             var productsOnPage = products
@@ -191,8 +191,8 @@ namespace ALWD.API.Services.ProductService
         
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(int itemsPerPage, string categoryNormalizedName, int pageNo)
         {
-            if (itemsPerPage > _maxPageSize)
-                itemsPerPage = _maxPageSize;
+			if (itemsPerPage > _maxPageSize || itemsPerPage < 0)
+				itemsPerPage = _maxPageSize;
 
             IReadOnlyList<Product> products;
             try

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ALWD.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abe17672134d3156109d7eafc96bfb726023e06b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beb1b1a7c332cd8f4dbe74519bbcc216b6afcf02")]
 [assembly: System.Reflection.AssemblyProductAttribute("ALWD.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ALWD.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
