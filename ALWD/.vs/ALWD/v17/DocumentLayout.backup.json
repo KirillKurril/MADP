@@ -1,7 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Uni\\MADP\\ALWD\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\uni\\MADP\\ALWD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\middleware\\responseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\middleware\\responseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\middleware\\responseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\middleware\\responseloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\extensions\\responseloggingextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\extensions\\responseloggingextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\controllers\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,113 @@
       "DocumentGroups": [
         {
           "DockedWidth": 190,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResponseLoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Middleware\\ResponseLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Middleware\\ResponseLoggingMiddleware.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Middleware\\ResponseLoggingMiddleware.cs",
+              "RelativeToolTip": "ALWD.UI\\Middleware\\ResponseLoggingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T20:01:22.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResponseLoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Middleware\\ResponseLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Middleware\\ResponseLoggingMiddleware.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Middleware\\ResponseLoggingMiddleware.cs",
+              "RelativeToolTip": "ALWD.API\\Middleware\\ResponseLoggingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:54:54.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResponseLoggingExtension.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Extensions\\ResponseLoggingExtension.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Extensions\\ResponseLoggingExtension.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Extensions\\ResponseLoggingExtension.cs",
+              "RelativeToolTip": "ALWD.API\\Extensions\\ResponseLoggingExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:54:47.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Image.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Image.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Image.cs",
+              "RelativeToolTip": "ALWD.API\\Controllers\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:53:03.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Products.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Products.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
+              "RelativeToolTip": "ALWD.API\\Controllers\\Products.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:52:51.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Program.cs",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
+              "RelativeToolTip": "ALWD.API\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwDUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T19:50:01.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
             }
           ]
         }

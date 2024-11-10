@@ -49,7 +49,7 @@ namespace ALWD.API
 		{
 			builder.Services.ConfigureKeycloak(builder.Configuration);
 
-			var connStr = builder.Configuration.GetConnectionString("MicrosoftSQLServerH&M");
+			var connStr = builder.Configuration.GetConnectionString("MicrosoftSQLServer");
 			builder.Services.AddDbContext<AppDbContext>(options =>
 				options.UseSqlServer(connStr));
 

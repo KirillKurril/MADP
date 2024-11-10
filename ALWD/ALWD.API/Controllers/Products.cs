@@ -56,7 +56,8 @@ namespace ALWD.API.Controllers
             if (response.Data == null)
 				return NotFound();
 
-			return Ok(response);
+            //return Ok(response);
+            return StatusCode(400);
         }
 
         /*  [HttpPost]

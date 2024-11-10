@@ -13,6 +13,8 @@ namespace ALWD.UI.Middleware
 
 		public async Task InvokeAsync(HttpContext context)
 		{
+			await _next(context);
+
 			var request = context.Request;
 			var response = context.Response;
 			var statusCode = response.StatusCode;
@@ -21,8 +23,6 @@ namespace ALWD.UI.Middleware
 			{
 				Log.Warning($"---> request {request.Path.ToString()} returns {statusCode}");
 			}
-
-			await _next(context);
 		}
 	}
 }
