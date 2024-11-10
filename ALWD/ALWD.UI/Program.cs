@@ -9,20 +9,37 @@ using ALWD.Domain.Services.Authentication;
 using ALWD.Domain.Models;
 using ALWD.UI.Extensions;
 using ALWD.UI.Services.CartService;
+using Serilog;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
-        ConfigureServices(builder);
-        var app = builder.Build();
 
-        ConfigureMiddleware(app);
-        ConfigureEndpoints(app);
+		try
+		{
+			ConfigureLogger();
 
-        app.Run();
-    }
+			Log.Information("Starting ALWD.UI application");
+
+			var builder = WebApplication.CreateBuilder(args);
+            ConfigureServices(builder);
+            var app = builder.Build();
+
+            ConfigureMiddleware(app);
+            ConfigureEndpoints(app);
+
+            app.Run();
+		}
+		catch (Exception ex)
+		{
+			Log.Fatal(ex, "Application terminated unexpectedly");
+		}
+		finally
+		{
+			Log.CloseAndFlush();
+		}
+	}
 
     private static void ConfigureServices(WebApplicationBuilder builder)
     {
@@ -122,4 +139,15 @@ public class Program
             context.Response.Redirect("/Admin/Index");
         });
     }
+
+	private static void ConfigureLogger()
+	{
+		var configuration = new ConfigurationBuilder()
+			.AddJsonFile("appsettings.json")
+			.Build();
+
+		Log.Logger = new LoggerConfiguration()
+			.ReadFrom.Configuration(configuration)
+			.CreateLogger();
+	}
 }

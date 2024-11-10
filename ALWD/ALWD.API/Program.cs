@@ -11,6 +11,7 @@ using ALWD.API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ALWD.API.Services.AccountService;
 using ALWD.Domain.Services.Authentication;
+using Serilog;
 
 namespace ALWD.API
 {
@@ -18,15 +19,30 @@ namespace ALWD.API
 	{
 		public static async Task Main(string[] args)
 		{
-			var builder = WebApplication.CreateBuilder(args);
-			ConfigureServices(builder);
-			var app = builder.Build();
+			try
+			{
+				ConfigureLogger();
 
-			await InitializeDatabase(app);
-			ConfigureMiddleware(app);
-			ConfigureEndpoints(app);
+				Log.Information("Starting ALWD.API application");
 
-			app.Run();
+				var builder = WebApplication.CreateBuilder(args);
+				ConfigureServices(builder);
+				var app = builder.Build();
+
+				await InitializeDatabase(app);
+				ConfigureMiddleware(app);
+				ConfigureEndpoints(app);
+
+				app.Run();
+			}
+			catch (Exception ex)
+			{
+				Log.Fatal(ex, "Application terminated unexpectedly");
+			}
+			finally
+			{
+				Log.CloseAndFlush();
+			}
 		}
 
 		private static void ConfigureServices(WebApplicationBuilder builder)
@@ -52,8 +68,9 @@ namespace ALWD.API
 			builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
+			builder.Services.AddSerilog();
 
-			var authServer = builder.Configuration
+				var authServer = builder.Configuration
 			.GetSection("AuthServer")
 			.Get<AuthServerData>();
 			
@@ -90,6 +107,7 @@ namespace ALWD.API
 				app.UseSwaggerUI();
 			}
 
+			app.UseResponseLoggingMiddleware();
 			app.UseHttpsRedirection();
 			app.UseAuthentication();
 			app.UseAuthorization();
@@ -98,6 +116,17 @@ namespace ALWD.API
 		private static void ConfigureEndpoints(WebApplication app)
 		{
 			app.MapControllers();
+		}
+
+		private static void ConfigureLogger()
+		{
+			var configuration = new ConfigurationBuilder()
+				.AddJsonFile("appsettings.json")
+				.Build();
+
+			Log.Logger = new LoggerConfiguration()
+				.ReadFrom.Configuration(configuration)
+				.CreateLogger();
 		}
 	}
 }

@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ALWD.UI\\ALWD.UI.csproj",
+        "Action": "Start",
+        "DebugTarget": "MyProfile"
+      },
+      {
+        "Path": "ALWD.API\\ALWD.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
