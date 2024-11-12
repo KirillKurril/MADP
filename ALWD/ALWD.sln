@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALWD.Domain", "ALWD.Domain\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALWD.API", "ALWD.API\ALWD.API.csproj", "{522682C0-03D7-42F5-9DAC-A114ABE58360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALWD.Tests", "ALWD.Tests\ALWD.Tests.csproj", "{4B4883D9-DA6C-4510-AB8C-F5BC94F1AFCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALWD.Tests", "ALWD.Tests\ALWD.Tests.csproj", "{4B4883D9-DA6C-4510-AB8C-F5BC94F1AFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALWD.Blazor.SSR", "ALWD.Blazor.SSR\ALWD.Blazor.SSR.csproj", "{DEBA587A-1DDA-4A91-8F8B-3A617E2EA742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4B4883D9-DA6C-4510-AB8C-F5BC94F1AFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B4883D9-DA6C-4510-AB8C-F5BC94F1AFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B4883D9-DA6C-4510-AB8C-F5BC94F1AFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBA587A-1DDA-4A91-8F8B-3A617E2EA742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBA587A-1DDA-4A91-8F8B-3A617E2EA742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBA587A-1DDA-4A91-8F8B-3A617E2EA742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBA587A-1DDA-4A91-8F8B-3A617E2EA742}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

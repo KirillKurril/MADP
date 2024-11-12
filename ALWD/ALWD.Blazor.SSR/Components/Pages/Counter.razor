@@ -1,0 +1,58 @@
+﻿@page "/counter/{initialCount:int?}"
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.WebUtilities
+@inject NavigationManager Navigation
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<EditForm Model="@counterModel" OnValidSubmit="ChangeCount">
+    <DataAnnotationsValidator />
+    <ValidationSummary class="text-danger mt-2" />
+    <div class="form-group">
+        <label>Enter number from 1 to 10:</label>
+        <InputNumber id="numberInput" class="form-control w-auto" @bind-Value="counterModel.Counter" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary mt-3">Update counter</button>
+</EditForm>
+
+@code {
+    private const int minCounterValue = 1;
+    private const int maxCounterValue = 10;
+
+    private int currentCount = 1;
+    private FormModel counterModel = new FormModel();
+
+    public class FormModel
+    {
+        [Range(minCounterValue, maxCounterValue, ErrorMessage = "Number must be from 1 to 10.")]
+        public int Counter { get; set; }
+    }
+
+    private void ChangeCount()
+    {
+        currentCount = counterModel.Counter;
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    [Parameter] public int? initialCount { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (initialCount != null && initialCount > minCounterValue && initialCount <= maxCounterValue)
+            currentCount = initialCount.Value;
+    }
+
+}

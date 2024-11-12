@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ALWD.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ed283852e8068d5216c538b1548501dd2d5b220")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a6ec091a6c446d0f8f593ed82dd2995f59f6a2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ALWD.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ALWD.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
