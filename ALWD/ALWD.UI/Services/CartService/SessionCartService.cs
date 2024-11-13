@@ -46,13 +46,19 @@ namespace ALWD.UI.Services.CartService
 			try
 			{
 				var cart = GetCart();
-				cart.AddItem(new CartItem
+
+				if (cart.Items.TryGetValue(productId, out var prevProduct))
 				{
-					Id = productId,
-					Name = productName,
-					Price = price,
-					Count = quantity
-				});
+					prevProduct.Count += quantity;
+				}
+				else
+					cart.AddItem(new CartItem
+					{
+						Id = productId,
+						Name = productName,
+						Price = price,
+						Count = quantity
+					});
 				var saveCartResponse = SaveCart(cart);
 				if (!saveCartResponse.Successfull)
 					return saveCartResponse;
