@@ -15,9 +15,5 @@ namespace ALWD.Domain.ViewModels
 
         [Required]
         public string Password { get; set; }
-
-        [Required]
-        [Compare(nameof(Password))]
-        public string ConfirmPassword { get; set; }
     }
 }

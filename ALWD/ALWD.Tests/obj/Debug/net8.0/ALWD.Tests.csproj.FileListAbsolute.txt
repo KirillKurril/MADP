@@ -12,7 +12,6 @@ D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\libman.json
 D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\ALWD.UI.staticwebassets.runtime.json
 D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\ALWD.UI.exe
 D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\testhost.exe
-D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\ALWD.Tests.deps.json
@@ -753,3 +752,14 @@ E:\Uni\MADP\ALWD\ALWD.Tests\obj\Debug\net8.0\ALWD.Tests.genruntimeconfig.cache
 E:\Uni\MADP\ALWD\ALWD.Tests\obj\Debug\net8.0\ref\ALWD.Tests.dll
 E:\Uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_ALWD.Tests
 E:\Uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_ALWD.Tests
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\uni\MADP\ALWD\ALWD.Tests\bin\Debug\net8.0\Serilog.Sinks.File.dll
