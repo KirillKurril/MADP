@@ -8,8 +8,5 @@ namespace ALWD.Blazor.WebAssembly.Services.CategoryService
     {
         Task<ResponseData<IReadOnlyList<Category>>> GetCategoryListAsync();
         Task<ResponseData<Category>> GetCategoryByIdAsync(int id);
-        Task<ResponseData<int>> CreateCategoryAsync(CategoryCreateValidationModel model);
-        Task<ResponseData<int>> UpdateCategoryAsync(CategoryEditValidationModel model);
-        Task DeleteCategoryAsync(int id);
     }
 }

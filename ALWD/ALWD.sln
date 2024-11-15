@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALWD.Tests", "ALWD.Tests\AL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALWD.Blazor.SSR", "ALWD.Blazor.SSR\ALWD.Blazor.SSR.csproj", "{DEBA587A-1DDA-4A91-8F8B-3A617E2EA742}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALWD.Blazor.WebAssembly", "ALWD.Blazor.WebAssembly\ALWD.Blazor.WebAssembly.csproj", "{A07AEA68-06EA-4718-8075-CBD4B7F0E393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALWD.Blazor.WebAssembly", "ALWD.Blazor.WebAssembly\ALWD.Blazor.WebAssembly.csproj", "{A07AEA68-06EA-4718-8075-CBD4B7F0E393}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

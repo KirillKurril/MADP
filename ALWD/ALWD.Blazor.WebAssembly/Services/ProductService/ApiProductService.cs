@@ -1,17 +1,14 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
-using ALWD.Domain.Validation.Models;
 using ALWD.Domain.Services.Authentication;
 using Microsoft.AspNetCore.WebUtilities;
-using Newtonsoft.Json;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ALWD.Domain.DTOs;
 using System.Net.Http.Json;
-using Microsoft.AspNetCore.Http;
 using JsonException = System.Text.Json.JsonException;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+using System.Net.Http.Headers;
+using System.Net.Http;
 
 namespace ALWD.Blazor.WebAssembly.Services.ProductService
 {
@@ -19,14 +16,14 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
     {
         string _itemsPerPage;
         HttpClient _httpClient;
+        IAccessTokenProvider _tokenProvider;
         JsonSerializerOptions _serializerOptions;
         ILogger<ApiProductService> _logger;
-        ITokenAccessor _tokenAccessor;
 
         public ApiProductService(HttpClient httpClient,
             IConfiguration configuration,
             ILogger<ApiProductService> logger,
-            ITokenAccessor tokenAccessor)
+            IAccessTokenProvider tokenProvider)
         {
             _httpClient = httpClient;
             _itemsPerPage = configuration.GetSection("ItemsPerPage").Value;
@@ -36,7 +33,7 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
             _logger = logger;
-            _tokenAccessor = tokenAccessor;
+            _tokenProvider = tokenProvider;
         }
 
         public async Task<ResponseData<ListModel<Product>>> GetProductListAsync(string? categoryNormalizedName = null, int pageNo = 1)
@@ -45,6 +42,7 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
 
             Dictionary<string, string> parameters = new();
 
+            ;
             parameters.Add("itemsPerPage", _itemsPerPage);
 
             if (categoryNormalizedName != null)
@@ -53,7 +51,17 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
             parameters.Add("page", pageNo.ToString());
             string urlWithQuery = QueryHelpers.AddQueryString(baseUri, parameters);
 
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+
+            var tokenRequest = await _tokenProvider.RequestAccessToken();
+            if (tokenRequest.TryGetToken(out var token))
+            {
+                var accessToken = token.Value;
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", accessToken); ;
+            }
+            else
+            {
+                throw new Exception("Token obtaining Failure");
+            }
 
             var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
 
@@ -79,7 +87,16 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
         {
             var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}");
 
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+            var tokenRequest = await _tokenProvider.RequestAccessToken();
+            if (tokenRequest.TryGetToken(out var token))
+            {
+                var accessToken = token.Value;
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", accessToken); ;
+            }
+            else
+            {
+                throw new Exception("Token obtaining Failure");
+            }
 
             var response = await _httpClient.GetAsync(uri);
 
@@ -100,167 +117,5 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
             return new ResponseData<Product>(null, false, $"Product not found. Error: {response.StatusCode.ToString()}");
         }
 
-        public async Task<ResponseData<int>> CreateProductAsync(Product product, IFormFile? formFile)
-        {
-            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Product";
-
-            var multipartContent = new MultipartFormDataContent();
-
-            string productJson = JsonConvert.SerializeObject(product);
-            HttpContent productContent = new StringContent(productJson, Encoding.UTF8, "application/json");
-            multipartContent.Add(productContent, "product");
-
-            if (formFile != null)
-            {
-                await using var ms = new MemoryStream();
-                await formFile.CopyToAsync(ms);
-                byte[] fileBytes = ms.ToArray();
-
-                ByteArrayContent fileContent = new ByteArrayContent(fileBytes);
-                fileContent.Headers.ContentType = new MediaTypeHeaderValue(formFile.ContentType);
-                multipartContent.Add(fileContent, "file", formFile.FileName);
-            }
-
-            _logger.LogInformation($"Requesting URL: {uri}");
-
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
-            HttpResponseMessage response = await _httpClient.PostAsync(uri, multipartContent);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to create product. Error: {response.Content}");
-                throw new HttpRequestException($"Error creating product: {response.Content}");
-            }
-
-            int createdId;
-            try
-            {
-                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-            }
-            return new ResponseData<int>(createdId);
-        }
-
-        public async Task<ResponseData<int>> CreateProductAsync(ProductCreateValidationModel model)
-        {
-            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
-
-            CreateProductDTO dto = new CreateProductDTO()
-            {
-                ProductName = model.Name,
-                ProductDescription = model.Description,
-                ProductPrice = model.Price,
-                ProductQuantity = model.Quantity,
-                ProductCategoryId = model.CategoryId,
-                ImageName = model.Image.FileName,
-                ImageMimeType = model.Image.ContentType,
-            };
-
-            if (model.Image != null)
-            {
-                await using var ms = new MemoryStream();
-                await model.Image.CopyToAsync(ms);
-                dto.ImageContent = ms.ToArray();
-            }
-
-            try
-            {
-                await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
-            }
-            catch (Exception ex)
-            {
-                return new ResponseData<int>(-1, false, ex.Message);
-            }
-
-            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(uri, dto, _serializerOptions);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to create product. Error: {response.Content}");
-                throw new HttpRequestException($"Error creating product: {response.Content}");
-            }
-
-            int createdId;
-            try
-            {
-                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-            }
-            return new ResponseData<int>(createdId);
-        }
-
-        public async Task<ResponseData<int>> UpdateProductAsync(ProductEditValidationModel model)
-        {
-            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products";
-
-            UpdateProductDTO dto = new UpdateProductDTO()
-            {
-                ProductName = model.Name,
-                ProductDescription = model.Description,
-                ProductPrice = model.Price,
-                ProductQuantity = model.Quantity,
-                ProductCategoryId = model.CategoryId,
-
-                ProductId = model.Id,
-            };
-
-            if (model.Image != null)
-            {
-                await using var ms = new MemoryStream();
-                await model.Image.CopyToAsync(ms);
-                dto.ImageContent = ms.ToArray();
-                dto.ImageName = model.Image.FileName;
-                dto.ImageMimeType = model.Image.ContentType;
-            }
-
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
-            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(uri, dto, _serializerOptions);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to put product. Error: {response.Content}, Code: {response.StatusCode}");
-                throw new HttpRequestException($"Error creating product: {response.Content}, Code: {response.StatusCode}");
-            }
-
-            int createdId;
-            try
-            {
-                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-            }
-            return new ResponseData<int>(createdId);
-        }
-
-        public async Task<ResponseData<bool>> DeleteProductAsync(int id)
-        {
-            var uri = $"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}";
-
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
-            HttpResponseMessage response = await _httpClient.DeleteAsync(uri);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to delete product with id {id}. Error: {response.Content}, Code: {response.StatusCode}");
-                throw new HttpRequestException($"Unable to delete product with id {id}. Error: {response.Content}, Code: {response.StatusCode}");
-            }
-            return new ResponseData<bool>(true);
-        }
-
-        public Task<ResponseData<int>> UpdateProductAsync(Product product, IFormFile? formFile)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

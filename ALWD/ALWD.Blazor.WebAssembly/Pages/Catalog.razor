@@ -27,9 +27,9 @@
 
 
 @code {
-    public int TotalPages { get; set; } = 3;
+    public int TotalPages { get; set; } = 1;
     public int CurrentPage { get; set; } = 1;
-    public List<Product> Products { get; set; } = new();
+    public IReadOnlyList<Product>? Products { get; set; }
     public Category? CurrentCategory { get; set; } = null;
 
     protected override async Task OnInitializedAsync()

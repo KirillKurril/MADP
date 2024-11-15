@@ -1,4 +1,4 @@
-﻿@if(Products.Count > 0)
+﻿@if(Products != null)
 {
     <div class="card" style="width: 60%;">
         <ul class="list-group list-group-flush">
@@ -9,7 +9,7 @@
                         <p>@product.Name</p>
                         <p>@product.Price</p>
                     </div>
-                    <button type="button" class="btn btn-primary" @onclick="() => ProductDetails(product)">
+                    <button type="button" class="btn btn-primary" @onclick="() => OnProductDetailsSelected(product)">
                         Подробнее
                     </button>
                 </li>
@@ -25,7 +25,7 @@ else
 @if(DetailedProduct != null)
 {
     <div class="card" style="width: 20rem;">
-      <img src="@DetailedProduct.Image.URL" class="card-img-top" style="height: 18rem; object-fit: contain;" alt="@DetailedProduct.Name">
+      <img src="@DetailedProduct.Image!.URL" class="card-img-top" style="height: 18rem; object-fit: contain;" alt="@DetailedProduct.Name">
       <div class="card-body">
             <h5 class="card-title">@DetailedProduct.Name</h5>
             <p><strong>Description:</strong>@DetailedProduct.Description</p>
@@ -38,11 +38,11 @@ else
 
 @code{
 
-    public Product? DetailedProduct { get; set; };
-    [Parameter] public List<Product> Products { get; set; }
+    public Product? DetailedProduct { get; set; }
+    [Parameter] public IReadOnlyList<Product> Products { get; set; }
 
-    private async Task OnProductDetailsSelected(Product product)
+    private void OnProductDetailsSelected(Product product)
     {
-        DetailedProduct = DetailedProduct.Id == product.Id ? null : DetailedProduct;
+        DetailedProduct = DetailedProduct != null && DetailedProduct.Id == product.Id ? null : DetailedProduct;
     }
 }

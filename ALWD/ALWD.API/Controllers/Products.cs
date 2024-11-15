@@ -3,11 +3,13 @@ using ALWD.Domain.Entities;
 using ALWD.API.Services.ProductService;
 using ALWD.Domain.Models;
 using ALWD.Domain.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ALWD.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private IProductService _productService;

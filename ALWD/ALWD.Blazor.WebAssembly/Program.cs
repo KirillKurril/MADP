@@ -39,17 +39,12 @@ namespace ALWD.Blazor.WebAssembly
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.Configure<KeycloakData>(builder.Configuration.GetSection("Keycloak"));
             builder.Services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
-            builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
 
-            var apiUri = builder.Services
-			    .BuildServiceProvider()!
-                .GetService<IConfiguration>()!
-                .GetSection("UriData:ApiUri")
-                .Value;
+            var apiUri = builder.Configuration.GetValue<string>("UriData:ApiUri");
 
 
 
-		    builder.Services.AddHttpClient<IProductService, ApiProductService>(opt =>
+            builder.Services.AddHttpClient<IProductService, ApiProductService>(opt =>
                 opt.BaseAddress = new Uri(apiUri));
 
 		    builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>

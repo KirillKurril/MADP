@@ -1,8 +1,8 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
-using ALWD.Domain.Validation.Models;
 using System.Text.Json;
 using System.Net.Http.Json;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
 namespace ALWD.Blazor.WebAssembly.Services.CategoryService
 {
@@ -67,88 +67,6 @@ namespace ALWD.Blazor.WebAssembly.Services.CategoryService
             }
             _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode.ToString()}");
             return new ResponseData<IReadOnlyList<Category>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
-        }
-
-        public async Task<ResponseData<int>> CreateCategoryAsync(CategoryCreateValidationModel model)
-        {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories";
-
-            Category category = new Category()
-            {
-                Name = model.Name,
-                NormalizedName = model.NormalizedName,
-            };
-
-            var response = await _httpClient.PostAsJsonAsync(baseUri, category, _serializerOptions);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to create category. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error creating category: {response.StatusCode}");
-            }
-
-            int createdId;
-            try
-            {
-                createdId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"-----> Reading JSON failure. ApiCategoryService/CreateCategoryAsync(): {ex.Message}");
-                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiCategoryService/CreateCategoryAsync(): {ex.Message}");
-            }
-            return new ResponseData<int>(createdId);
-        }
-
-        public async Task<ResponseData<int>> UpdateCategoryAsync(CategoryEditValidationModel model)
-        {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{model.Id}";
-
-            Category category = new Category()
-            {
-                Id = model.Id,
-                Name = model.Name,
-                NormalizedName = model.NormalizedName,
-            };
-
-            var response = await _httpClient.PutAsJsonAsync(baseUri, category, _serializerOptions);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                var errorMessage = await response.Content.ReadAsStringAsync();
-
-                _logger.LogError($"-----> Unable to update category. Error: {response.StatusCode.ToString()} | {errorMessage}");
-                throw new HttpRequestException($"Error updating category: {response.StatusCode} | {errorMessage}");
-            }
-
-            int updatedId;
-            try
-            {
-                updatedId = await response.Content.ReadFromJsonAsync<int>(_serializerOptions);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"-----> Reading JSON failure. ApiCategoryService/UpdateCategoryAsync(): {ex.Message}");
-                return new ResponseData<int>(-1, false, $"Reading JSON failure. ApiCategoryService/UpdateCategoryAsync(): {ex.Message}");
-            }
-            return new ResponseData<int>(updatedId);
-
-        }
-
-        public async Task DeleteCategoryAsync(int id)
-        {
-            var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories/{id}";
-
-            var response = await _httpClient.DeleteAsync(baseUri);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogError($"-----> Unable to delete category. Error: {response.StatusCode.ToString()}");
-                throw new HttpRequestException($"Error deleting category: {response.StatusCode}");
-            }
-
-            _logger.LogError($"-----> Category with ID {id} deleted successfully. Error: {response.StatusCode}");
-
         }
     }
 }
