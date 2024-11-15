@@ -1,7 +1,6 @@
 ﻿using ALWD.Domain.Entities;
 using ALWD.Domain.Models;
 using ALWD.Domain.Validation.Models;
-using ALWD.Blazor.WebAssembly.Services.ProductService;
 using System.Text.Json;
 using System.Net.Http.Json;
 

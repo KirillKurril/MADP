@@ -1,0 +1,64 @@
+﻿@inject ALWD.Blazor.WebAssembly.Services.CategoryService.ICategoryService _categoryService
+
+<p>
+    @if(Categories.Count == 0)
+    {
+        <div class="nav">
+            Извините, но сегодня без категорий
+        </div>
+    }
+    <div class="col-2 border-2">
+        <ul class="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                   data-bs-toggle="dropdown"
+                   href="#"
+                   role="button"
+                   aria-expanded="false">
+                    @(CurrentCategory != null ? CurrentCategory.Name : "Все")
+                </a>
+                <ul class="dropdown-menu">
+                    @if (CurrentCategory != null)
+                    {
+                        <li>
+                            <a class="dropdown-item" @onclick="() => OnCategoryChanged(null)">
+                                Все
+                            </a>
+                        </li>
+                    }
+                    @foreach (var category in Categories)
+                    {
+                        <li>
+                            <a class="dropdown-item" @onclick="() => OnCategoryChanged(category)">
+                                @category.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        </ul>
+    </div>
+</p>
+
+@code {
+    public IReadOnlyList<Category> Categories { get; set; } = new List<Category>();
+    [Parameter] public Category CurrentCategory { get; set; } = null;
+    [Parameter] public EventCallback OnCategoryChangedCallback { get; set; }
+
+    private async Task OnCategoryChanged(Category? newCurrentCategory)
+    {
+        CurrentCategory = newCurrentCategory;
+
+        if (newCurrentCategory == null)
+            await OnCategoryChangedCallback.InvokeAsync("");  
+
+        await OnCategoryChangedCallback.InvokeAsync();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var categoriesResponse = await _categoryService.GetCategoryListAsync();
+        if (categoriesResponse.Successfull)
+            Categories = categoriesResponse.Data;
+    }
+}

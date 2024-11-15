@@ -1,0 +1,48 @@
+﻿@if(Products.Count > 0)
+{
+    <div class="card" style="width: 60%;">
+        <ul class="list-group list-group-flush">
+            @foreach (var product in Products)
+            {
+                <li class="list-group-item mb-3" style="display:flex; flex-direction:row; justify-content:space-between;">
+                    <div style="display:block">
+                        <p>@product.Name</p>
+                        <p>@product.Price</p>
+                    </div>
+                    <button type="button" class="btn btn-primary" @onclick="() => ProductDetails(product)">
+                        Подробнее
+                    </button>
+                </li>
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <p>Извините, но сегодня детали не завезли</p>
+}
+
+@if(DetailedProduct != null)
+{
+    <div class="card" style="width: 20rem;">
+      <img src="@DetailedProduct.Image.URL" class="card-img-top" style="height: 18rem; object-fit: contain;" alt="@DetailedProduct.Name">
+      <div class="card-body">
+            <h5 class="card-title">@DetailedProduct.Name</h5>
+            <p><strong>Description:</strong>@DetailedProduct.Description</p>
+            <p><strong>Price:</strong>@DetailedProduct.Price</p>
+            <p><strong>Quantity:</strong>@DetailedProduct.Quantity</p>
+        <a href="#" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+}
+
+@code{
+
+    public Product? DetailedProduct { get; set; };
+    [Parameter] public List<Product> Products { get; set; }
+
+    private async Task OnProductDetailsSelected(Product product)
+    {
+        DetailedProduct = DetailedProduct.Id == product.Id ? null : DetailedProduct;
+    }
+}

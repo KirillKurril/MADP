@@ -1,0 +1,64 @@
+﻿@page "/catalog"
+@using Microsoft.AspNetCore.Authorization
+@using ALWD.Blazor.WebAssembly.Services.ProductService
+@attribute [Authorize]
+@attribute [StreamRendering]
+@inject HttpClient Http
+@inject IProductService _productservice
+
+<PageTitle>Products</PageTitle>
+
+<h1>Products</h1>
+
+<CategorySelector 
+    CurrentCategory="@CurrentCategory" 
+    OnCategoryChangedCallback="OnCategoryChanged" />
+
+<CatalogProductList
+    Products="Products"/>
+
+@if(TotalPages > 1)
+{
+    <CatalogPager 
+        TotalPages="TotalPages" 
+        CurrentPage="CurrentPage" 
+        PageChangedCallback="OnPageChanged" />
+}
+
+
+@code {
+    public int TotalPages { get; set; } = 3;
+    public int CurrentPage { get; set; } = 1;
+    public List<Product> Products { get; set; } = new();
+    public Category? CurrentCategory { get; set; } = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var productsResponse = await _productservice.GetProductListAsync();
+        if(productsResponse.Successfull)
+        {
+            TotalPages = productsResponse.Data.TotalPages;
+            Products = productsResponse.Data.Items;
+        }
+    }
+
+    private async Task OnCategoryChanged()
+    {
+        var productsResponse = await _productservice.GetProductListAsync(CurrentCategory?.NormalizedName, CurrentPage);
+        if(productsResponse.Successfull)
+        {
+            TotalPages = productsResponse.Data.TotalPages;
+            Products = productsResponse.Data.Items;
+        }
+    }
+
+    private async Task OnPageChanged()
+    {
+        var productsResponse = await _productservice.GetProductListAsync(CurrentCategory?.NormalizedName, CurrentPage);
+        if(productsResponse.Successfull)
+        {
+            TotalPages = productsResponse.Data.TotalPages;
+            Products = productsResponse.Data.Items;
+        }
+    }
+}

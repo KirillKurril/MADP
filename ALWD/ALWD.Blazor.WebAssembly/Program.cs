@@ -1,9 +1,11 @@
 using ALWD.Blazor.WebAssembly.Services.CategoryService;
 using ALWD.Blazor.WebAssembly.Services.ProductService;
+using ALWD.Domain.Models;
 using ALWD.Domain.Services.Authentication;
 
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.AspNetCore.Http;
 
 namespace ALWD.Blazor.WebAssembly
 {
@@ -35,6 +37,8 @@ namespace ALWD.Blazor.WebAssembly
         private static void ConfigureServices(WebAssemblyHostBuilder builder)
         {
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.Configure<KeycloakData>(builder.Configuration.GetSection("Keycloak"));
+            builder.Services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
 
             var apiUri = builder.Services

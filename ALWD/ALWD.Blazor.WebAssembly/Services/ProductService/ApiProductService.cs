@@ -53,6 +53,8 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
             parameters.Add("page", pageNo.ToString());
             string urlWithQuery = QueryHelpers.AddQueryString(baseUri, parameters);
 
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+
             var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
 
             Console.WriteLine(response);
@@ -76,6 +78,8 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
         public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
         {
             var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}");
+
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
 
             var response = await _httpClient.GetAsync(uri);
 

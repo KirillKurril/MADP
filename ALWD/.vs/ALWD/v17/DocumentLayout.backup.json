@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\uni\\MADP\\ALWD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\catalog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\catalog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Weather.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Weather.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Weather.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Weather.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Weather.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAApAAAAAAAAAA==",
+              "Title": "Catalog.razor",
+              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T21:14:15.395Z",
+              "WhenOpened": "2024-11-15T00:47:09.825Z",
               "EditorCaption": ""
             }
           ]

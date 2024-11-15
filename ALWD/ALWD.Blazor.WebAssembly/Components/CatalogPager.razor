@@ -1,0 +1,38 @@
+﻿@using ALWD.Domain.Entities;
+
+<ui class="pagination">
+    <li class="page-item">
+        <a class="page-link" @onclick="() => PageChanged(CurrentPage - 1)">
+            Previous
+        </a>
+    </li>
+
+    @foreach (int pageNumber in Enumerable.Range(1, TotalPages))
+    {
+        <li class="page-item @(pageNumber == CurrentPage ? "active" : "")">
+            <a class="page-link">
+                PageNumber
+            </a>
+        </li>
+    }
+    <li class="page-item">
+        <a class="page-link" @onclick="() => PageChanged(CurrentPage + 1)">
+            Next
+        </a>
+    </li>
+</ui>
+
+
+@code{
+    [Parameter] public int TotalPages { get; set; }
+    [Parameter] public int CurrentPage { get; set; }
+    [Parameter] public EventCallback<int> PageChangedCallback { get; set; }
+
+    public async Task PageChanged(int newPageNumber)
+    {
+        if (newPageNumber <= TotalPages && newPageNumber > 0)
+            CurrentPage = newPageNumber;
+
+        await PageChangedCallback.InvokeAsync(CurrentPage);
+    }
+}
