@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ALWD.UI.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ALWD.UI.bundle.scp.css"
+      "PackagePath": "staticwebassets\\ALWD.UI.3ga8rbjvxp.bundle.scp.css"
     },
     {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\css\\WebLabs_BSUIR_V253504.styles.css",
@@ -515,6 +515,10 @@
     {
       "Id": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ALWD.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ALWD.UI.Microsoft.AspNetCore.StaticWebAssets.props",

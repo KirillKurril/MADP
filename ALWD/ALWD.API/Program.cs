@@ -107,6 +107,10 @@ namespace ALWD.API
 				app.UseSwaggerUI();
 			}
 
+			app.UseCors(opt => opt
+			.AllowAnyOrigin()
+			.AllowAnyMethod());
+
 			app.UseResponseLoggingMiddleware();
 			app.UseHttpsRedirection();
 			app.UseAuthentication();

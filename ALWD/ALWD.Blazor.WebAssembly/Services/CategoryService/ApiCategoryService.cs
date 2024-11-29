@@ -21,29 +21,6 @@ namespace ALWD.Blazor.WebAssembly.Services.CategoryService
             };
             _logger = logger;
         }
-        public async Task<ResponseData<Category>> GetCategoryByIdAsync(int id)
-        {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Categories/{id}");
-
-            var response = await _httpClient.GetAsync(uri);
-
-            if (response.IsSuccessStatusCode)
-            {
-                try
-                {
-                    return await response.Content.ReadFromJsonAsync<ResponseData<Category>>(_serializerOptions);
-                }
-                catch (JsonException ex)
-                {
-                    _logger.LogError($"-----> Error while parsing JSON: {ex.Message}");
-                    return new ResponseData<Category>(null, false, $"JSON Parsing Error: {ex.Message}");
-                }
-            }
-
-            _logger.LogError($"-----> Product not found. Error: {response.StatusCode.ToString()}");
-            return new ResponseData<Category>(null, false, $"Category not found. Error: {response.StatusCode.ToString()}");
-        }
-
         public async Task<ResponseData<IReadOnlyList<Category>>> GetCategoryListAsync()
         {
             var baseUri = $"{_httpClient.BaseAddress.AbsoluteUri}Categories";

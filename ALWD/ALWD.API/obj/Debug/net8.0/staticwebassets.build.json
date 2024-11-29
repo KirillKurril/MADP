@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jgfq7oT68gavWK/e9otSflZcl6wp/W4H3w33f/Htgv8=",
+  "Hash": "i7ughKw5axr3QegIx0fc4YrFrf1nhuzNiicnqK7gamI=",
   "Source": "ALWD.API",
   "BasePath": "_content/ALWD.API",
   "Mode": "Default",
@@ -22,15 +22,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
+      "RelativePath": "image/AQADvucxG79YKUhy_23-53-17-32114-202410230303094956#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "d1bhs0wnmb",
+      "Integrity": "Ia6Fp+4SkcRG+Oy7qSYLnGEDxMv76+zrilvOqT4Yt9E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg"
@@ -41,15 +43,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/default-profile-picture.png",
+      "RelativePath": "image/default-profile-picture#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "rlvuio6ldc",
+      "Integrity": "gbIqu4SBKceGPScHJnY5kmFOEeT6zpvV6RZkf71PebE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\default-profile-picture.png"
@@ -60,15 +64,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/rena-202410211116454456.jpg",
+      "RelativePath": "image/rena-202410211116454456#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bfhnhr9ph8",
+      "Integrity": "CXs/qDbhx6KgGrREWzyA8WNkyKPmoeqih7S8YFRKYUk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\rena-202410211116454456.jpg"
@@ -79,15 +85,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230109155182.jpg",
+      "RelativePath": "image/S600xU_2x-202410230109155182#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230109155182.jpg"
@@ -98,15 +106,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230151442936.jpg",
+      "RelativePath": "image/S600xU_2x-202410230151442936#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230151442936.jpg"
@@ -117,15 +127,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230156045794.jpg",
+      "RelativePath": "image/S600xU_2x-202410230156045794#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230156045794.jpg"
@@ -136,15 +148,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230158068364.jpg",
+      "RelativePath": "image/S600xU_2x-202410230158068364#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230158068364.jpg"
@@ -155,15 +169,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230206484149.jpg",
+      "RelativePath": "image/S600xU_2x-202410230206484149#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230206484149.jpg"
@@ -174,15 +190,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230217029347.jpg",
+      "RelativePath": "image/S600xU_2x-202410230217029347#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230217029347.jpg"
@@ -193,15 +211,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230219304464.jpg",
+      "RelativePath": "image/S600xU_2x-202410230219304464#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230219304464.jpg"
@@ -212,15 +232,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230222335287.jpg",
+      "RelativePath": "image/S600xU_2x-202410230222335287#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230222335287.jpg"
@@ -231,15 +253,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230223135068.jpg",
+      "RelativePath": "image/S600xU_2x-202410230223135068#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230223135068.jpg"
@@ -250,15 +274,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230226561037.jpg",
+      "RelativePath": "image/S600xU_2x-202410230226561037#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230226561037.jpg"
@@ -269,15 +295,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230230007263.jpg",
+      "RelativePath": "image/S600xU_2x-202410230230007263#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230230007263.jpg"
@@ -288,15 +316,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230233507781.jpg",
+      "RelativePath": "image/S600xU_2x-202410230233507781#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230233507781.jpg"
@@ -307,15 +337,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230235196577.jpg",
+      "RelativePath": "image/S600xU_2x-202410230235196577#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230235196577.jpg"
@@ -326,15 +358,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230257241847.jpg",
+      "RelativePath": "image/S600xU_2x-202410230257241847#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230257241847.jpg"
@@ -345,15 +379,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/S600xU_2x-202410230300262517.jpg",
+      "RelativePath": "image/S600xU_2x-202410230300262517#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "06lr0genmc",
+      "Integrity": "6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\S600xU_2x-202410230300262517.jpg"
@@ -364,15 +400,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/аксессуар_a.jpg",
+      "RelativePath": "image/аксессуар_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "joidxla5v6",
+      "Integrity": "07S7ShUgONg4DlW2J11JLUtuRYwIB+myHbNH7xJ+4AE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\аксессуар_a.jpg"
@@ -383,15 +421,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/аксессуар_b.jpg",
+      "RelativePath": "image/аксессуар_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5s7opx7fml",
+      "Integrity": "m7VF6nZMTbjScBamFzUqsBVCbsJH9GwDY7tXDz7/t4Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\аксессуар_b.jpg"
@@ -402,15 +442,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/амортизатор_a.jpg",
+      "RelativePath": "image/амортизатор_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2h7ymi1q17",
+      "Integrity": "qrflhZejR1Cy72f6MY4t+ZecqxmdL8EWsUq3AhIbB14=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\амортизатор_a.jpg"
@@ -421,15 +463,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/амортизатор_b.jpg",
+      "RelativePath": "image/амортизатор_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zq2d4q24n6",
+      "Integrity": "K5sqg3gE4txXp80VloDcCLKD8h8WiGTEb1Yhh8ZAzlc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\амортизатор_b.jpg"
@@ -440,15 +484,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/бампер_a.jpg",
+      "RelativePath": "image/бампер_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "f52jhab0o6",
+      "Integrity": "XaVudLeh0t3FqqPsGjAvVJ24azPpIOHGvHB5t5oPb/A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\бампер_a.jpg"
@@ -459,15 +505,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/бампер_b.jpg",
+      "RelativePath": "image/бампер_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "o8lxnkxa1b",
+      "Integrity": "OD+ZCUmeBMu8PcQigrPhih8iPkKFRWTl134b4AJmL10=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\бампер_b.jpg"
@@ -478,15 +526,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/масло_a.jpg",
+      "RelativePath": "image/масло_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qcx6lzu685",
+      "Integrity": "phCXXuu+WhnxBSMOqV4ohCzeF3zfZn/FuldkN0BkdKU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\масло_a.jpg"
@@ -497,15 +547,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/масло_b.jpg",
+      "RelativePath": "image/масло_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ilo73bthl6",
+      "Integrity": "uogkdPR5XNCnn3wgvr7AYtnj2pBNfMTXJ/U20mxkpKI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\масло_b.jpg"
@@ -516,15 +568,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/радиатор_a.jpg",
+      "RelativePath": "image/радиатор_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "d6cuq6n1gm",
+      "Integrity": "JXvwbjZbausuwFrxGnepStNGOacFWuPg/e3oArJpgvc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\радиатор_a.jpg"
@@ -535,15 +589,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/радиатор_b.jpg",
+      "RelativePath": "image/радиатор_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "0crij5hniy",
+      "Integrity": "IK60SFRsYdXEAU/W551821Q8C4MGPri4VGFgauQSNr8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\радиатор_b.jpg"
@@ -554,15 +610,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/свеча_a.jpg",
+      "RelativePath": "image/свеча_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "33e1hnkhla",
+      "Integrity": "cRVa8pOvH+egmw/9mCxrgrfdFvBYAtKIYprNurXxMZY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\свеча_a.jpg"
@@ -573,15 +631,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/свеча_b.jpg",
+      "RelativePath": "image/свеча_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "s9gb2ckxth",
+      "Integrity": "4GZQINuUhODbAaAy2VrLPsbyD4JuBGEqPPJvgQvjbRc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\свеча_b.jpg"
@@ -592,15 +652,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/Снимок экрана 2024-08-18 005025-202410222021481366.png",
+      "RelativePath": "image/Снимок экрана 2024-08-18 005025-202410222021481366#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "cbk91ei92q",
+      "Integrity": "GMg+k2KeHa9Jm0t8Yja8Vqe34s2gDcpTm4qv8WR52v8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png"
@@ -611,15 +673,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/Снимок экрана 2024-08-19 093755-202410230048026155.png",
+      "RelativePath": "image/Снимок экрана 2024-08-19 093755-202410230048026155#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "w2pgkqk7dt",
+      "Integrity": "+B4jL3IFAL5iWRbLcrisw41/NIhGP0eewlHSHQUlUJw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png"
@@ -630,15 +694,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/Снимок экрана 2024-08-20 113057-202410230100042101.png",
+      "RelativePath": "image/Снимок экрана 2024-08-20 113057-202410230100042101#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qcqdtgiplp",
+      "Integrity": "VlwYGjLosBC5gh3/hPzvqLjU3kRWjQcpjWM7uUX3gHI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png"
@@ -649,15 +715,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/Снимок экрана 2024-10-16 222056-202410181750432520.png",
+      "RelativePath": "image/Снимок экрана 2024-10-16 222056-202410181750432520#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "3gixae211w",
+      "Integrity": "XYL1UFn1EoKlXiLqAKj4/avUowrXkhST6yNHKXvVlyA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png"
@@ -668,15 +736,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/стартер_a.jpg",
+      "RelativePath": "image/стартер_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "znhgafs1ej",
+      "Integrity": "kVz2NBF7ZCvn4tPY34vBU0+I0lv4IrNTxTuMOoMjhF0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\стартер_a.jpg"
@@ -687,15 +757,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/стартер_b.jpg",
+      "RelativePath": "image/стартер_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "g8egr14bvp",
+      "Integrity": "8LSZ/DgNM0/vd4n9M2a/Q2jN6Oiq1XDBD0ExLrnBrLM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\стартер_b.jpg"
@@ -706,15 +778,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/тормозной_диск_a.jpg",
+      "RelativePath": "image/тормозной_диск_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "is3gbuv3v8",
+      "Integrity": "zrXeMjhXQN6832uvMR4uz3VgeGxL5lXxFtsbSg9YH4E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\тормозной_диск_a.jpg"
@@ -725,15 +799,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/тормозной_диск_b.jpg",
+      "RelativePath": "image/тормозной_диск_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wlhu70f8jj",
+      "Integrity": "XPRj8nhFknKdzXKbKz7C0l/lZ936kC6obcMCx9H0Izc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\тормозной_диск_b.jpg"
@@ -744,15 +820,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/фильтр_a.jpg",
+      "RelativePath": "image/фильтр_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "x4rblmdjpf",
+      "Integrity": "38QrGtDsZ1m8DxfQyj4TfKaKZdZO/9R6SjORKAHMLjE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\фильтр_a.jpg"
@@ -763,15 +841,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/фильтр_b.jpg",
+      "RelativePath": "image/фильтр_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4t6nanu5wz",
+      "Integrity": "OKjc7fzG/SgI9vh2BuCd37csfS7iAtKilKKap3UYZ7k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\фильтр_b.jpg"
@@ -782,15 +862,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/шина_a.jpg",
+      "RelativePath": "image/шина_a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ebkryjp8ct",
+      "Integrity": "mr1vVHKugNZG7/pWtBRG9ex/TSf2yIYE2Hn42ObI1ts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\шина_a.jpg"
@@ -801,18 +883,3466 @@
       "SourceType": "Discovered",
       "ContentRoot": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\",
       "BasePath": "_content/ALWD.API",
-      "RelativePath": "image/шина_b.jpg",
+      "RelativePath": "image/шина_b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "pzkup7icby",
+      "Integrity": "O+UReNoYm3SUlWGH9w6Gxf0ixsOLqXSBwueYzoxXqXo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\шина_b.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "image/AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.d1bhs0wnmb.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ia6Fp+4SkcRG+Oy7qSYLnGEDxMv76+zrilvOqT4Yt9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d1bhs0wnmb"
+        },
+        {
+          "Name": "label",
+          "Value": "image/AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ia6Fp+4SkcRG+Oy7qSYLnGEDxMv76+zrilvOqT4Yt9E="
+        }
+      ]
+    },
+    {
+      "Route": "image/AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\AQADvucxG79YKUhy_23-53-17-32114-202410230303094956.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ia6Fp+4SkcRG+Oy7qSYLnGEDxMv76+zrilvOqT4Yt9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ia6Fp+4SkcRG+Oy7qSYLnGEDxMv76+zrilvOqT4Yt9E="
+        }
+      ]
+    },
+    {
+      "Route": "image/default-profile-picture.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64285"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbIqu4SBKceGPScHJnY5kmFOEeT6zpvV6RZkf71PebE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gbIqu4SBKceGPScHJnY5kmFOEeT6zpvV6RZkf71PebE="
+        }
+      ]
+    },
+    {
+      "Route": "image/default-profile-picture.rlvuio6ldc.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\default-profile-picture.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64285"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbIqu4SBKceGPScHJnY5kmFOEeT6zpvV6RZkf71PebE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rlvuio6ldc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/default-profile-picture.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gbIqu4SBKceGPScHJnY5kmFOEeT6zpvV6RZkf71PebE="
+        }
+      ]
+    },
+    {
+      "Route": "image/rena-202410211116454456.bfhnhr9ph8.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CXs/qDbhx6KgGrREWzyA8WNkyKPmoeqih7S8YFRKYUk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bfhnhr9ph8"
+        },
+        {
+          "Name": "label",
+          "Value": "image/rena-202410211116454456.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CXs/qDbhx6KgGrREWzyA8WNkyKPmoeqih7S8YFRKYUk="
+        }
+      ]
+    },
+    {
+      "Route": "image/rena-202410211116454456.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\rena-202410211116454456.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CXs/qDbhx6KgGrREWzyA8WNkyKPmoeqih7S8YFRKYUk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CXs/qDbhx6KgGrREWzyA8WNkyKPmoeqih7S8YFRKYUk="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230109155182.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230109155182.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230109155182.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230109155182.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230109155182.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230151442936.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230151442936.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230151442936.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230151442936.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230151442936.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230156045794.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230156045794.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230156045794.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230156045794.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230156045794.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230158068364.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230158068364.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230158068364.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230158068364.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230158068364.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230206484149.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230206484149.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230206484149.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230206484149.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230206484149.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230217029347.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230217029347.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230217029347.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230217029347.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230217029347.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230219304464.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230219304464.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230219304464.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230219304464.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230219304464.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230222335287.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230222335287.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230222335287.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230222335287.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230222335287.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230223135068.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230223135068.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230223135068.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230223135068.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230223135068.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230226561037.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230226561037.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230226561037.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230226561037.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230226561037.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230230007263.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230230007263.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230230007263.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230230007263.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230230007263.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230233507781.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230233507781.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230233507781.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230233507781.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230233507781.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230235196577.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230235196577.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230235196577.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230235196577.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230235196577.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230257241847.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230257241847.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230257241847.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230257241847.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230257241847.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230300262517.06lr0genmc.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230300262517.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "06lr0genmc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/S600xU_2x-202410230300262517.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/S600xU_2x-202410230300262517.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\S600xU_2x-202410230300262517.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169170"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6IPeAGO2JpFezs95dmukPxze2izQqD14JKo5Tut4Dwo="
+        }
+      ]
+    },
+    {
+      "Route": "image/аксессуар_a.joidxla5v6.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "360565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"07S7ShUgONg4DlW2J11JLUtuRYwIB+myHbNH7xJ+4AE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "joidxla5v6"
+        },
+        {
+          "Name": "label",
+          "Value": "image/аксессуар_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-07S7ShUgONg4DlW2J11JLUtuRYwIB+myHbNH7xJ+4AE="
+        }
+      ]
+    },
+    {
+      "Route": "image/аксессуар_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "360565"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"07S7ShUgONg4DlW2J11JLUtuRYwIB+myHbNH7xJ+4AE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-07S7ShUgONg4DlW2J11JLUtuRYwIB+myHbNH7xJ+4AE="
+        }
+      ]
+    },
+    {
+      "Route": "image/аксессуар_b.5s7opx7fml.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m7VF6nZMTbjScBamFzUqsBVCbsJH9GwDY7tXDz7/t4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5s7opx7fml"
+        },
+        {
+          "Name": "label",
+          "Value": "image/аксессуар_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m7VF6nZMTbjScBamFzUqsBVCbsJH9GwDY7tXDz7/t4Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/аксессуар_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\аксессуар_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m7VF6nZMTbjScBamFzUqsBVCbsJH9GwDY7tXDz7/t4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m7VF6nZMTbjScBamFzUqsBVCbsJH9GwDY7tXDz7/t4Q="
+        }
+      ]
+    },
+    {
+      "Route": "image/амортизатор_a.2h7ymi1q17.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qrflhZejR1Cy72f6MY4t+ZecqxmdL8EWsUq3AhIbB14=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2h7ymi1q17"
+        },
+        {
+          "Name": "label",
+          "Value": "image/амортизатор_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qrflhZejR1Cy72f6MY4t+ZecqxmdL8EWsUq3AhIbB14="
+        }
+      ]
+    },
+    {
+      "Route": "image/амортизатор_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qrflhZejR1Cy72f6MY4t+ZecqxmdL8EWsUq3AhIbB14=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qrflhZejR1Cy72f6MY4t+ZecqxmdL8EWsUq3AhIbB14="
+        }
+      ]
+    },
+    {
+      "Route": "image/амортизатор_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K5sqg3gE4txXp80VloDcCLKD8h8WiGTEb1Yhh8ZAzlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K5sqg3gE4txXp80VloDcCLKD8h8WiGTEb1Yhh8ZAzlc="
+        }
+      ]
+    },
+    {
+      "Route": "image/амортизатор_b.zq2d4q24n6.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\амортизатор_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K5sqg3gE4txXp80VloDcCLKD8h8WiGTEb1Yhh8ZAzlc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zq2d4q24n6"
+        },
+        {
+          "Name": "label",
+          "Value": "image/амортизатор_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K5sqg3gE4txXp80VloDcCLKD8h8WiGTEb1Yhh8ZAzlc="
+        }
+      ]
+    },
+    {
+      "Route": "image/бампер_a.f52jhab0o6.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XaVudLeh0t3FqqPsGjAvVJ24azPpIOHGvHB5t5oPb/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f52jhab0o6"
+        },
+        {
+          "Name": "label",
+          "Value": "image/бампер_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XaVudLeh0t3FqqPsGjAvVJ24azPpIOHGvHB5t5oPb/A="
+        }
+      ]
+    },
+    {
+      "Route": "image/бампер_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XaVudLeh0t3FqqPsGjAvVJ24azPpIOHGvHB5t5oPb/A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XaVudLeh0t3FqqPsGjAvVJ24azPpIOHGvHB5t5oPb/A="
+        }
+      ]
+    },
+    {
+      "Route": "image/бампер_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "796125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OD+ZCUmeBMu8PcQigrPhih8iPkKFRWTl134b4AJmL10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OD+ZCUmeBMu8PcQigrPhih8iPkKFRWTl134b4AJmL10="
+        }
+      ]
+    },
+    {
+      "Route": "image/бампер_b.o8lxnkxa1b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\бампер_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "796125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OD+ZCUmeBMu8PcQigrPhih8iPkKFRWTl134b4AJmL10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o8lxnkxa1b"
+        },
+        {
+          "Name": "label",
+          "Value": "image/бампер_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OD+ZCUmeBMu8PcQigrPhih8iPkKFRWTl134b4AJmL10="
+        }
+      ]
+    },
+    {
+      "Route": "image/масло_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"phCXXuu+WhnxBSMOqV4ohCzeF3zfZn/FuldkN0BkdKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-phCXXuu+WhnxBSMOqV4ohCzeF3zfZn/FuldkN0BkdKU="
+        }
+      ]
+    },
+    {
+      "Route": "image/масло_a.qcx6lzu685.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118602"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"phCXXuu+WhnxBSMOqV4ohCzeF3zfZn/FuldkN0BkdKU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qcx6lzu685"
+        },
+        {
+          "Name": "label",
+          "Value": "image/масло_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-phCXXuu+WhnxBSMOqV4ohCzeF3zfZn/FuldkN0BkdKU="
+        }
+      ]
+    },
+    {
+      "Route": "image/масло_b.ilo73bthl6.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uogkdPR5XNCnn3wgvr7AYtnj2pBNfMTXJ/U20mxkpKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilo73bthl6"
+        },
+        {
+          "Name": "label",
+          "Value": "image/масло_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uogkdPR5XNCnn3wgvr7AYtnj2pBNfMTXJ/U20mxkpKI="
+        }
+      ]
+    },
+    {
+      "Route": "image/масло_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\масло_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uogkdPR5XNCnn3wgvr7AYtnj2pBNfMTXJ/U20mxkpKI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uogkdPR5XNCnn3wgvr7AYtnj2pBNfMTXJ/U20mxkpKI="
+        }
+      ]
+    },
+    {
+      "Route": "image/радиатор_a.d6cuq6n1gm.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "323209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXvwbjZbausuwFrxGnepStNGOacFWuPg/e3oArJpgvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d6cuq6n1gm"
+        },
+        {
+          "Name": "label",
+          "Value": "image/радиатор_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXvwbjZbausuwFrxGnepStNGOacFWuPg/e3oArJpgvc="
+        }
+      ]
+    },
+    {
+      "Route": "image/радиатор_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "323209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXvwbjZbausuwFrxGnepStNGOacFWuPg/e3oArJpgvc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXvwbjZbausuwFrxGnepStNGOacFWuPg/e3oArJpgvc="
+        }
+      ]
+    },
+    {
+      "Route": "image/радиатор_b.0crij5hniy.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "293182"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IK60SFRsYdXEAU/W551821Q8C4MGPri4VGFgauQSNr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0crij5hniy"
+        },
+        {
+          "Name": "label",
+          "Value": "image/радиатор_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IK60SFRsYdXEAU/W551821Q8C4MGPri4VGFgauQSNr8="
+        }
+      ]
+    },
+    {
+      "Route": "image/радиатор_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\радиатор_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "293182"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IK60SFRsYdXEAU/W551821Q8C4MGPri4VGFgauQSNr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IK60SFRsYdXEAU/W551821Q8C4MGPri4VGFgauQSNr8="
+        }
+      ]
+    },
+    {
+      "Route": "image/свеча_a.33e1hnkhla.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cRVa8pOvH+egmw/9mCxrgrfdFvBYAtKIYprNurXxMZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "33e1hnkhla"
+        },
+        {
+          "Name": "label",
+          "Value": "image/свеча_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cRVa8pOvH+egmw/9mCxrgrfdFvBYAtKIYprNurXxMZY="
+        }
+      ]
+    },
+    {
+      "Route": "image/свеча_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71836"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cRVa8pOvH+egmw/9mCxrgrfdFvBYAtKIYprNurXxMZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cRVa8pOvH+egmw/9mCxrgrfdFvBYAtKIYprNurXxMZY="
+        }
+      ]
+    },
+    {
+      "Route": "image/свеча_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "253444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4GZQINuUhODbAaAy2VrLPsbyD4JuBGEqPPJvgQvjbRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4GZQINuUhODbAaAy2VrLPsbyD4JuBGEqPPJvgQvjbRc="
+        }
+      ]
+    },
+    {
+      "Route": "image/свеча_b.s9gb2ckxth.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\свеча_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "253444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4GZQINuUhODbAaAy2VrLPsbyD4JuBGEqPPJvgQvjbRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9gb2ckxth"
+        },
+        {
+          "Name": "label",
+          "Value": "image/свеча_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4GZQINuUhODbAaAy2VrLPsbyD4JuBGEqPPJvgQvjbRc="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-08-18 005025-202410222021481366.cbk91ei92q.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2259816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GMg+k2KeHa9Jm0t8Yja8Vqe34s2gDcpTm4qv8WR52v8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cbk91ei92q"
+        },
+        {
+          "Name": "label",
+          "Value": "image/Снимок экрана 2024-08-18 005025-202410222021481366.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GMg+k2KeHa9Jm0t8Yja8Vqe34s2gDcpTm4qv8WR52v8="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-08-18 005025-202410222021481366.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-18 005025-202410222021481366.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2259816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GMg+k2KeHa9Jm0t8Yja8Vqe34s2gDcpTm4qv8WR52v8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GMg+k2KeHa9Jm0t8Yja8Vqe34s2gDcpTm4qv8WR52v8="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-08-19 093755-202410230048026155.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "504159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+B4jL3IFAL5iWRbLcrisw41/NIhGP0eewlHSHQUlUJw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+B4jL3IFAL5iWRbLcrisw41/NIhGP0eewlHSHQUlUJw="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-08-19 093755-202410230048026155.w2pgkqk7dt.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-19 093755-202410230048026155.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "504159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+B4jL3IFAL5iWRbLcrisw41/NIhGP0eewlHSHQUlUJw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w2pgkqk7dt"
+        },
+        {
+          "Name": "label",
+          "Value": "image/Снимок экрана 2024-08-19 093755-202410230048026155.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+B4jL3IFAL5iWRbLcrisw41/NIhGP0eewlHSHQUlUJw="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-08-20 113057-202410230100042101.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2104160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VlwYGjLosBC5gh3/hPzvqLjU3kRWjQcpjWM7uUX3gHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VlwYGjLosBC5gh3/hPzvqLjU3kRWjQcpjWM7uUX3gHI="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-08-20 113057-202410230100042101.qcqdtgiplp.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-08-20 113057-202410230100042101.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2104160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VlwYGjLosBC5gh3/hPzvqLjU3kRWjQcpjWM7uUX3gHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qcqdtgiplp"
+        },
+        {
+          "Name": "label",
+          "Value": "image/Снимок экрана 2024-08-20 113057-202410230100042101.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VlwYGjLosBC5gh3/hPzvqLjU3kRWjQcpjWM7uUX3gHI="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-10-16 222056-202410181750432520.3gixae211w.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8259"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XYL1UFn1EoKlXiLqAKj4/avUowrXkhST6yNHKXvVlyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3gixae211w"
+        },
+        {
+          "Name": "label",
+          "Value": "image/Снимок экрана 2024-10-16 222056-202410181750432520.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XYL1UFn1EoKlXiLqAKj4/avUowrXkhST6yNHKXvVlyA="
+        }
+      ]
+    },
+    {
+      "Route": "image/Снимок экрана 2024-10-16 222056-202410181750432520.png",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\Снимок экрана 2024-10-16 222056-202410181750432520.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8259"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XYL1UFn1EoKlXiLqAKj4/avUowrXkhST6yNHKXvVlyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XYL1UFn1EoKlXiLqAKj4/avUowrXkhST6yNHKXvVlyA="
+        }
+      ]
+    },
+    {
+      "Route": "image/стартер_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637513"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kVz2NBF7ZCvn4tPY34vBU0+I0lv4IrNTxTuMOoMjhF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kVz2NBF7ZCvn4tPY34vBU0+I0lv4IrNTxTuMOoMjhF0="
+        }
+      ]
+    },
+    {
+      "Route": "image/стартер_a.znhgafs1ej.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637513"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kVz2NBF7ZCvn4tPY34vBU0+I0lv4IrNTxTuMOoMjhF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "znhgafs1ej"
+        },
+        {
+          "Name": "label",
+          "Value": "image/стартер_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kVz2NBF7ZCvn4tPY34vBU0+I0lv4IrNTxTuMOoMjhF0="
+        }
+      ]
+    },
+    {
+      "Route": "image/стартер_b.g8egr14bvp.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7153"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8LSZ/DgNM0/vd4n9M2a/Q2jN6Oiq1XDBD0ExLrnBrLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g8egr14bvp"
+        },
+        {
+          "Name": "label",
+          "Value": "image/стартер_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8LSZ/DgNM0/vd4n9M2a/Q2jN6Oiq1XDBD0ExLrnBrLM="
+        }
+      ]
+    },
+    {
+      "Route": "image/стартер_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\стартер_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7153"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8LSZ/DgNM0/vd4n9M2a/Q2jN6Oiq1XDBD0ExLrnBrLM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8LSZ/DgNM0/vd4n9M2a/Q2jN6Oiq1XDBD0ExLrnBrLM="
+        }
+      ]
+    },
+    {
+      "Route": "image/тормозной_диск_a.is3gbuv3v8.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zrXeMjhXQN6832uvMR4uz3VgeGxL5lXxFtsbSg9YH4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "is3gbuv3v8"
+        },
+        {
+          "Name": "label",
+          "Value": "image/тормозной_диск_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zrXeMjhXQN6832uvMR4uz3VgeGxL5lXxFtsbSg9YH4E="
+        }
+      ]
+    },
+    {
+      "Route": "image/тормозной_диск_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zrXeMjhXQN6832uvMR4uz3VgeGxL5lXxFtsbSg9YH4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zrXeMjhXQN6832uvMR4uz3VgeGxL5lXxFtsbSg9YH4E="
+        }
+      ]
+    },
+    {
+      "Route": "image/тормозной_диск_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XPRj8nhFknKdzXKbKz7C0l/lZ936kC6obcMCx9H0Izc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XPRj8nhFknKdzXKbKz7C0l/lZ936kC6obcMCx9H0Izc="
+        }
+      ]
+    },
+    {
+      "Route": "image/тормозной_диск_b.wlhu70f8jj.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\тормозной_диск_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XPRj8nhFknKdzXKbKz7C0l/lZ936kC6obcMCx9H0Izc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wlhu70f8jj"
+        },
+        {
+          "Name": "label",
+          "Value": "image/тормозной_диск_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XPRj8nhFknKdzXKbKz7C0l/lZ936kC6obcMCx9H0Izc="
+        }
+      ]
+    },
+    {
+      "Route": "image/фильтр_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1005077"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"38QrGtDsZ1m8DxfQyj4TfKaKZdZO/9R6SjORKAHMLjE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-38QrGtDsZ1m8DxfQyj4TfKaKZdZO/9R6SjORKAHMLjE="
+        }
+      ]
+    },
+    {
+      "Route": "image/фильтр_a.x4rblmdjpf.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1005077"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"38QrGtDsZ1m8DxfQyj4TfKaKZdZO/9R6SjORKAHMLjE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x4rblmdjpf"
+        },
+        {
+          "Name": "label",
+          "Value": "image/фильтр_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-38QrGtDsZ1m8DxfQyj4TfKaKZdZO/9R6SjORKAHMLjE="
+        }
+      ]
+    },
+    {
+      "Route": "image/фильтр_b.4t6nanu5wz.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OKjc7fzG/SgI9vh2BuCd37csfS7iAtKilKKap3UYZ7k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4t6nanu5wz"
+        },
+        {
+          "Name": "label",
+          "Value": "image/фильтр_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OKjc7fzG/SgI9vh2BuCd37csfS7iAtKilKKap3UYZ7k="
+        }
+      ]
+    },
+    {
+      "Route": "image/фильтр_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\фильтр_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OKjc7fzG/SgI9vh2BuCd37csfS7iAtKilKKap3UYZ7k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OKjc7fzG/SgI9vh2BuCd37csfS7iAtKilKKap3UYZ7k="
+        }
+      ]
+    },
+    {
+      "Route": "image/шина_a.ebkryjp8ct.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mr1vVHKugNZG7/pWtBRG9ex/TSf2yIYE2Hn42ObI1ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ebkryjp8ct"
+        },
+        {
+          "Name": "label",
+          "Value": "image/шина_a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mr1vVHKugNZG7/pWtBRG9ex/TSf2yIYE2Hn42ObI1ts="
+        }
+      ]
+    },
+    {
+      "Route": "image/шина_a.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mr1vVHKugNZG7/pWtBRG9ex/TSf2yIYE2Hn42ObI1ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mr1vVHKugNZG7/pWtBRG9ex/TSf2yIYE2Hn42ObI1ts="
+        }
+      ]
+    },
+    {
+      "Route": "image/шина_b.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5401335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O+UReNoYm3SUlWGH9w6Gxf0ixsOLqXSBwueYzoxXqXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O+UReNoYm3SUlWGH9w6Gxf0ixsOLqXSBwueYzoxXqXo="
+        }
+      ]
+    },
+    {
+      "Route": "image/шина_b.pzkup7icby.jpg",
+      "AssetFile": "D:\\uni\\MADP\\ALWD\\ALWD.API\\wwwroot\\image\\шина_b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5401335"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O+UReNoYm3SUlWGH9w6Gxf0ixsOLqXSBwueYzoxXqXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 10 Nov 2024 19:47:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pzkup7icby"
+        },
+        {
+          "Name": "label",
+          "Value": "image/шина_b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O+UReNoYm3SUlWGH9w6Gxf0ixsOLqXSBwueYzoxXqXo="
+        }
+      ]
     }
   ]
 }

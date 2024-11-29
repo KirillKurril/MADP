@@ -616,3 +616,8 @@ D:\uni\MADP\ALWD\ALWD.UI\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
 D:\uni\MADP\ALWD\ALWD.UI\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\uni\MADP\ALWD\ALWD.UI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\uni\MADP\ALWD\ALWD.UI\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\uni\MADP\ALWD\ALWD.UI\bin\Debug\net8.0\ALWD.API.staticwebassets.endpoints.json
+D:\uni\MADP\ALWD\ALWD.UI\bin\Debug\net8.0\ALWD.UI.staticwebassets.endpoints.json
+D:\uni\MADP\ALWD\ALWD.UI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\uni\MADP\ALWD\ALWD.UI\obj\Debug\net8.0\staticwebassets\msbuild.ALWD.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\uni\MADP\ALWD\ALWD.UI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

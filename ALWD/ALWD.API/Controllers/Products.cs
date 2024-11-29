@@ -9,7 +9,7 @@ namespace ALWD.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ProductsController : ControllerBase
     {
         private IProductService _productService;

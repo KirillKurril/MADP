@@ -7,6 +7,5 @@ namespace ALWD.Blazor.WebAssembly.Services.CategoryService
     public interface ICategoryService
     {
         Task<ResponseData<IReadOnlyList<Category>>> GetCategoryListAsync();
-        Task<ResponseData<Category>> GetCategoryByIdAsync(int id);
     }
 }

@@ -9,6 +9,7 @@ using JsonException = System.Text.Json.JsonException;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using System.Net.Http.Headers;
 using System.Net.Http;
+using System.Security.Claims;
 
 namespace ALWD.Blazor.WebAssembly.Services.ProductService
 {
@@ -51,7 +52,7 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
             parameters.Add("page", pageNo.ToString());
             string urlWithQuery = QueryHelpers.AddQueryString(baseUri, parameters);
 
-
+             
             var tokenRequest = await _tokenProvider.RequestAccessToken();
             if (tokenRequest.TryGetToken(out var token))
             {
@@ -63,59 +64,30 @@ namespace ALWD.Blazor.WebAssembly.Services.ProductService
                 throw new Exception("Token obtaining Failure");
             }
 
-            var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
-
-            Console.WriteLine(response);
-
-            if (response.IsSuccessStatusCode)
+            try
             {
-                try
+                var response = await _httpClient.GetAsync(new Uri(urlWithQuery));
+                Console.WriteLine(response);
+
+                if (response.IsSuccessStatusCode)
                 {
-                    return await response.Content.ReadFromJsonAsync<ResponseData<ListModel<Product>>>(_serializerOptions);
+                    try
+                    {
+                        return await response.Content.ReadFromJsonAsync<ResponseData<ListModel<Product>>>(_serializerOptions);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+                        return new ResponseData<ListModel<Product>>(null, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
+                    }
                 }
-                catch (Exception ex)
-                {
-                    _logger.LogError($"-----> Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-                    return new ResponseData<ListModel<Product>>(null, false, $"Reading JSON failure. ApiProductService/GetProductListAsync(): {ex.Message}");
-                }
+                _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode.ToString()}");
+                return new ResponseData<ListModel<Product>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
             }
-            _logger.LogError($"-----> Данные не получены от сервера. Error: {response.StatusCode.ToString()}");
-            return new ResponseData<ListModel<Product>>(null, false, $"Data not received from server {response.StatusCode.ToString()}");
+            catch (Exception ex)
+            {
+                return new ResponseData<ListModel<Product>>(null);
+            }
         }
-
-        public async Task<ResponseData<Product>> GetProductByIdAsync(int id)
-        {
-            var uri = new Uri($"{_httpClient.BaseAddress.AbsoluteUri}Products/{id}");
-
-            var tokenRequest = await _tokenProvider.RequestAccessToken();
-            if (tokenRequest.TryGetToken(out var token))
-            {
-                var accessToken = token.Value;
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", accessToken); ;
-            }
-            else
-            {
-                throw new Exception("Token obtaining Failure");
-            }
-
-            var response = await _httpClient.GetAsync(uri);
-
-            if (response.IsSuccessStatusCode)
-            {
-                try
-                {
-                    return await response.Content.ReadFromJsonAsync<ResponseData<Product>>(_serializerOptions);
-                }
-                catch (JsonException ex)
-                {
-                    _logger.LogError($"-----> Error while parsing JSON: {ex.Message}");
-                    return new ResponseData<Product>(null, false, $"JSON Parsing Error: {ex.Message}");
-                }
-            }
-
-            _logger.LogError($"-----> Product not found. Error: {response.StatusCode.ToString()}");
-            return new ResponseData<Product>(null, false, $"Product not found. Error: {response.StatusCode.ToString()}");
-        }
-
     }
 }
