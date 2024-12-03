@@ -1,4 +1,4 @@
-﻿@page "/catalog"
+@page "/catalog"
 @using Microsoft.AspNetCore.Authorization
 @using ALWD.Blazor.WebAssembly.Services.ProductService
 @attribute [Authorize]
@@ -11,7 +11,7 @@
 <h1>Products</h1>
 
 <CategorySelector 
-    CurrentCategory="@CurrentCategory" 
+    @bind-CurrentCategory="CurrentCategory"
     OnCategoryChangedCallback="OnCategoryChanged" />
 
 <CatalogProductList
@@ -20,13 +20,16 @@
 @if(TotalPages > 1)
 {
     <CatalogPager 
-        TotalPages="TotalPages" 
-        CurrentPage="CurrentPage" 
-        PageChangedCallback="OnPageChanged" />
+    TotalPages="TotalPages" 
+    CurrentPage="CurrentPage"
+    PageChangedCallback="OnPageChanged" />
 }
+@* @bind-CurrentPage="CurrentPage" *@
+
 
 
 @code {
+
     public int TotalPages { get; set; } = 1;
     public int CurrentPage { get; set; } = 1;
     public IReadOnlyList<Product>? Products { get; set; }
@@ -34,31 +37,29 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var productsResponse = await _productservice.GetProductListAsync();
+        await LoadProducts();
+    }
+
+    private async Task LoadProducts()
+    {
+        var productsResponse = await _productservice.GetProductListAsync(CurrentCategory?.NormalizedName, CurrentPage);
         if(productsResponse.Successfull)
         {
             TotalPages = productsResponse.Data.TotalPages;
             Products = productsResponse.Data.Items;
+            StateHasChanged();
         }
     }
 
     private async Task OnCategoryChanged()
     {
-        var productsResponse = await _productservice.GetProductListAsync(CurrentCategory?.NormalizedName, CurrentPage);
-        if(productsResponse.Successfull)
-        {
-            TotalPages = productsResponse.Data.TotalPages;
-            Products = productsResponse.Data.Items;
-        }
+        CurrentPage = 1;
+        await LoadProducts();
     }
 
-    private async Task OnPageChanged()
+    private async Task OnPageChanged(int newPageNumber)
     {
-        var productsResponse = await _productservice.GetProductListAsync(CurrentCategory?.NormalizedName, CurrentPage);
-        if(productsResponse.Successfull)
-        {
-            TotalPages = productsResponse.Data.TotalPages;
-            Products = productsResponse.Data.Items;
-        }
+        CurrentPage = newPageNumber;
+        await LoadProducts();
     }
 }

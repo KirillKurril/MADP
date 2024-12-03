@@ -1,14 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\uni\\MADP\\ALWD\\",
+  "WorkspaceRootPath": "D:\\Uni\\MADP\\ALWD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\components\\catalogpager.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\components\\catalogpager.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\catalog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\catalog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\components\\categoryselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\components\\categoryselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\components\\catalogproductlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\components\\catalogproductlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|d:\\uni\\madp\\alwd\\alwd.api\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,39 +47,27 @@
       "RelativeMoniker": "D:0:0:{522682C0-03D7-42F5-9DAC-A114ABE58360}|ALWD.API\\ALWD.API.csproj|solutionrelative:alwd.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|d:\\uni\\madp\\alwd\\alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF82F58-B2F5-4A15-B601-9D80BE139BDA}|ALWD.UI\\ALWD.UI.csproj|solutionrelative:alwd.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kamid\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\catalog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\catalog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\services\\productservice\\apiproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\components\\catalogpager.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\components\\catalogpager.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\components\\catalogproductlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\components\\catalogproductlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\components\\categoryselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\components\\categoryselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\services\\categoryservice\\apicategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\services\\categoryservice\\apicategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\wwwroot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -64,14 +76,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\layout\\logindisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -98,14 +102,6 @@
       "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\layout\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|d:\\uni\\madp\\alwd\\alwd.blazor.webassembly\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A07AEA68-06EA-4718-8075-CBD4B7F0E393}|ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj|solutionrelative:alwd.blazor.webassembly\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|d:\\uni\\madp\\alwd\\alwd.domain\\services\\authentication\\keycloaktokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BB75A15-0072-4A42-8C1E-E34FC9EE48D2}|ALWD.Domain\\ALWD.Domain.csproj|solutionrelative:alwd.domain\\services\\authentication\\keycloaktokenaccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -117,7 +113,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 190,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,68 +122,192 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Monitor.cs",
-              "DocumentMoniker": "C:\\Users\\kamid\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs",
-              "ToolTip": "C:\\Users\\kamid\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAYwFcAAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:19:57.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Program.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
-              "RelativeToolTip": "ALWD.API\\Program.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAkwG4AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:40:28.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "CatalogProductList.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogProductList.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogProductList.razor",
               "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Components\\CatalogProductList.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogProductList.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogProductList.razor",
               "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Components\\CatalogProductList.razor",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACkAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T10:22:48.816Z"
+              "WhenOpened": "2024-11-15T10:22:48.816Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "CatalogPager.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogPager.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogPager.razor",
               "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Components\\CatalogPager.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogPager.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CatalogPager.razor",
               "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Components\\CatalogPager.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T10:30:26.917Z"
+              "WhenOpened": "2024-11-15T10:30:26.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Program.cs",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Program.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Program.cs",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA3wCwAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:41:26.367Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Catalog.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCQAAAAIAAAAAAAAAA==",
+              "Title": "Authentication.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T00:47:09.825Z"
+              "WhenOpened": "2024-11-17T16:13:24.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T12:48:43.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T10:55:12.676Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Catalog.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Catalog.razor",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T00:47:09.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategorySelector.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAYwFUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:30:27.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Products.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Products.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
+              "RelativeToolTip": "ALWD.API\\Controllers\\Products.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAjwC8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T10:31:08.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ALWD.API\\appsettings.json",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
+              "RelativeToolTip": "ALWD.API\\appsettings.json",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-30T18:14:25.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
+              "RelativeDocumentMoniker": "ALWD.API\\Program.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\Program.cs",
+              "RelativeToolTip": "ALWD.API\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwD4AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T12:40:28.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T10:43:43.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApiProductService.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAjwEQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:56:36.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApiProductService.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeDocumentMoniker": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwK0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T18:45:23.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
               "RelativeDocumentMoniker": "ALWD.UI\\Program.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\Program.cs",
               "RelativeToolTip": "ALWD.UI\\Program.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwDgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -196,256 +316,142 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Products.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
-              "RelativeDocumentMoniker": "ALWD.API\\Controllers\\Products.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\Controllers\\Products.cs",
-              "RelativeToolTip": "ALWD.API\\Controllers\\Products.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAgwHQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:31:08.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiProductService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeDocumentMoniker": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeToolTip": "ALWD.UI\\Services\\ProductService\\ApiProductService.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAowK0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T18:45:23.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ALWD.API\\appsettings.json",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.API\\appsettings.json",
-              "RelativeToolTip": "ALWD.API\\appsettings.json",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-30T18:14:25.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "App.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\App.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\App.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\App.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T10:45:03.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApiProductService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Services\\ProductService\\ApiProductService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:56:36.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CategorySelector.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Components\\CategorySelector.razor",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwD4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T10:30:27.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\wwwroot\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-15T10:55:12.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApiCategoryService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAYwC4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:59:59.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Program.cs",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Program.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Program.cs",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDEAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:41:26.367Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\_Imports.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\_Imports.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\_Imports.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T10:57:34.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Counter.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Counter.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Counter.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Counter.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Counter.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T11:42:53.381Z"
+              "Title": "Monitor.cs",
+              "DocumentMoniker": "C:\\Users\\kamid\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs",
+              "ToolTip": "C:\\Users\\kamid\\AppData\\Local\\Temp\\.vsdbgsrc\\1ca169b5f8096b3fd01bc738c77225099d363dea7bb508bd774b256157500bca\\Monitor.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:19:57.595Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Authentication.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Authentication.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\App.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\App.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\App.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T16:13:24.731Z"
+              "WhenOpened": "2024-11-15T10:45:03.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-17T16:13:58.669Z"
+              "DocumentIndex": 16,
+              "Title": "ApiCategoryService.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ApiCategoryService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwC4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:59:59.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "LoginDisplay.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\_Imports.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\_Imports.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\_Imports.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T16:13:11.485Z"
+              "WhenOpened": "2024-11-15T10:57:34.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T16:13:10.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T16:13:13.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RedirectToLogin.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T16:13:17.28Z"
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-17T16:13:58.669Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:04:00.972Z"
+              "Title": "LoginDisplay.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\LoginDisplay.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T16:13:11.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T16:13:10.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T16:13:13.498Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Home.razor",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "RedirectToLogin.razor",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Layout\\RedirectToLogin.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-15T10:43:43.814Z"
+              "WhenOpened": "2024-11-17T16:13:17.28Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "KeycloakTokenAccessor.cs",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
-              "RelativeDocumentMoniker": "ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
-              "RelativeToolTip": "ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
+              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Services\\CategoryService\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:12:23.615Z"
+              "WhenOpened": "2024-11-15T12:04:00.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ALWD.Blazor.WebAssembly\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-15T12:48:43.4Z"
+              "Title": "KeycloakTokenAccessor.cs",
+              "DocumentMoniker": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
+              "RelativeDocumentMoniker": "ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
+              "ToolTip": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
+              "RelativeToolTip": "ALWD.Domain\\Services\\Authentication\\KeycloakTokenAccessor.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T12:12:23.615Z",
+              "EditorCaption": ""
             }
           ]
         },

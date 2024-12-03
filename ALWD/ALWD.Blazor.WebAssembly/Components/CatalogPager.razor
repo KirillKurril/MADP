@@ -1,38 +1,46 @@
-﻿@using ALWD.Domain.Entities;
+@using ALWD.Domain.Entities;
 
-<ui class="pagination">
-    <li class="page-item">
-        <a class="page-link" @onclick="() => PageChanged(CurrentPage - 1)">
-            Previous
-        </a>
-    </li>
-
-    @foreach (int pageNumber in Enumerable.Range(1, TotalPages))
-    {
-        <li class="page-item @(pageNumber == CurrentPage ? "active" : "")">
-            <a class="page-link">
-                @pageNumber
+<nav aria-label="Page navigation" class="mt-2">
+    <ul class="pagination">
+        <li class="page-item @(CurrentPage <= 1 ? "disabled" : "")">
+            <a class="page-link" href="javascript:void(0)" @onclick="() => PageChanged(CurrentPage - 1)" @onclick:preventDefault>
+                Previous
             </a>
         </li>
-    }
-    <li class="page-item">
-        <a class="page-link" @onclick="() => PageChanged(CurrentPage + 1)">
-            Next
-        </a>
-    </li>
-</ui>
 
+        @foreach (int pageNumber in Enumerable.Range(1, TotalPages))
+        {
+            var currentNumber = pageNumber;
+            <li class="page-item @(pageNumber == CurrentPage ? "active" : "")">
+                <a class="page-link" href="javascript:void(0)" @onclick="() => PageChanged(currentNumber)" @onclick:preventDefault>
+                    @pageNumber
+                </a>
+            </li>
+        }
 
-@code{
-    [Parameter] public int TotalPages { get; set; }
-    [Parameter] public int CurrentPage { get; set; }
-    [Parameter] public EventCallback<int> PageChangedCallback { get; set; }
+        <li class="page-item @(CurrentPage >= TotalPages ? "disabled" : "")">
+            <a class="page-link" href="javascript:void(0)" @onclick="() => PageChanged(CurrentPage + 1)" @onclick:preventDefault>
+                Next
+            </a>
+        </li>
+    </ul>
+</nav>
 
-    public async Task PageChanged(int newPageNumber)
+@code {
+    [Parameter]
+    public int TotalPages { get; set; }
+
+    [Parameter]
+    public int CurrentPage { get; set; }
+
+    [Parameter]
+    public EventCallback<int> PageChangedCallback { get; set; }
+
+    private async Task PageChanged(int newPageNumber)
     {
         if (newPageNumber <= TotalPages && newPageNumber > 0)
-            CurrentPage = newPageNumber;
-
-        await PageChangedCallback.InvokeAsync(CurrentPage);
+        {
+            await PageChangedCallback.InvokeAsync(newPageNumber);
+        }
     }
 }

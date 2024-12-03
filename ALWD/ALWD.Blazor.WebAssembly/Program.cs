@@ -36,19 +36,17 @@ namespace ALWD.Blazor.WebAssembly
 
         private static void ConfigureServices(WebAssemblyHostBuilder builder)
         {
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-            builder.Services.Configure<KeycloakData>(builder.Configuration.GetSection("Keycloak"));
-            builder.Services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
-
             var apiUri = builder.Configuration.GetValue<string>("UriData:ApiUri");
-
-
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(apiUri) });
 
             builder.Services.AddHttpClient<IProductService, ApiProductService>(opt =>
                 opt.BaseAddress = new Uri(apiUri));
 
-		    builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
-	            opt.BaseAddress = new Uri(apiUri));
+            builder.Services.AddHttpClient<ICategoryService, ApiCategoryService>(opt =>
+                opt.BaseAddress = new Uri(apiUri));
+
+            builder.Services.Configure<KeycloakData>(builder.Configuration.GetSection("Keycloak"));
+            builder.Services.AddScoped<IHttpContextAccessor, HttpContextAccessor>();
 
             builder.Services.AddOidcAuthentication(options =>
             {
@@ -63,4 +61,3 @@ namespace ALWD.Blazor.WebAssembly
         }
     }
 }
-

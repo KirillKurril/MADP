@@ -15,122 +15,129 @@ using Serilog;
 
 namespace ALWD.API
 {
-	public class Program
-	{
-		public static async Task Main(string[] args)
-		{
-			try
-			{
-				ConfigureLogger();
+    public class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            try
+            {
+                ConfigureLogger();
 
-				Log.Information("Starting ALWD.API application");
+                Log.Information("Starting ALWD.API application");
 
-				var builder = WebApplication.CreateBuilder(args);
-				ConfigureServices(builder);
-				var app = builder.Build();
+                var builder = WebApplication.CreateBuilder(args);
+                ConfigureServices(builder);
+                var app = builder.Build();
 
-				await InitializeDatabase(app);
-				ConfigureMiddleware(app);
-				ConfigureEndpoints(app);
+                await InitializeDatabase(app);
+                ConfigureMiddleware(app);
+                ConfigureEndpoints(app);
 
-				app.Run();
-			}
-			catch (Exception ex)
-			{
-				Log.Fatal(ex, "Application terminated unexpectedly");
-			}
-			finally
-			{
-				Log.CloseAndFlush();
-			}
-		}
+                app.Run();
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Application terminated unexpectedly");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
+        }
 
-		private static void ConfigureServices(WebApplicationBuilder builder)
-		{
-			builder.Services.ConfigureKeycloak(builder.Configuration);
+        private static void ConfigureServices(WebApplicationBuilder builder)
+        {
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowBlazorOrigin",
+                    builder => builder
+                        .WithOrigins("https://localhost:7003")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials()
+                        .WithExposedHeaders("Authorization"));
+            });
 
-			var connStr = builder.Configuration.GetConnectionString("MicrosoftSQLServer");
-			builder.Services.AddDbContext<AppDbContext>(options =>
-				options.UseSqlServer(connStr));
+            builder.Services.ConfigureKeycloak(builder.Configuration);
+
+            var connStr = builder.Configuration.GetConnectionString("MicrosoftSQLServerMiruku");
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(connStr));
 
             builder.Services.AddHttpClient();
             builder.Services.AddHttpContextAccessor();
 
             builder.Services.AddScoped<ITokenAccessor, KeycloakTokenAccessor>();
             builder.Services.AddScoped<IRepository<Product>, EfRepository<Product>>();
-			builder.Services.AddScoped<IRepository<Category>, EfRepository<Category>>();
-			builder.Services.AddScoped<IRepository<FileModel>, EfRepository<FileModel>>();
-			builder.Services.AddScoped<IProductService, ProductService>();
-			builder.Services.AddScoped<ICategoryService, CategoryService>();
-			builder.Services.AddScoped<IFileService, FileService>();
-			builder.Services.AddScoped<IAccountService, KeycloakAccountService>();
+            builder.Services.AddScoped<IRepository<Category>, EfRepository<Category>>();
+            builder.Services.AddScoped<IRepository<FileModel>, EfRepository<FileModel>>();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IFileService, FileService>();
+            builder.Services.AddScoped<IAccountService, KeycloakAccountService>();
 
-			builder.Services.AddControllers();
+            builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
-			builder.Services.AddSwaggerGen();
-			builder.Services.AddSerilog();
+            builder.Services.AddSwaggerGen();
+            builder.Services.AddSerilog();
 
-				var authServer = builder.Configuration
-			.GetSection("AuthServer")
-			.Get<AuthServerData>();
-			
-			builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-			.AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, o =>
-			{
-				o.MetadataAddress = $"{authServer.Host}/realms/{authServer.Realm}/.well-known/openid-configuration";
-				o.Authority = $"{authServer.Host}/realms/{authServer.Realm}";
-				o.Audience = "account";
-				o.RequireHttpsMetadata = false;
-			});
+            var authServer = builder.Configuration
+                .GetSection("AuthServer")
+                .Get<AuthServerData>();
 
-			builder.Services.AddAuthorization(opt =>
-			{
-				opt.AddPolicy("admin", p => p.RequireRole("POWER-USER"));
-			});
-		}
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, o =>
+                {
+                    o.MetadataAddress = $"{authServer.Host}/realms/{authServer.Realm}/.well-known/openid-configuration";
+                    o.Authority = $"{authServer.Host}/realms/{authServer.Realm}";
+                    o.Audience = "account";
+                    o.RequireHttpsMetadata = false;
+                });
 
-		private static async Task InitializeDatabase(WebApplication app)
-		{
-			using var scope = app.Services.CreateScope();
-			var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-			context.Database.EnsureDeleted();
-			context.Database.EnsureCreated();
+            builder.Services.AddAuthorization(opt =>
+            {
+                opt.AddPolicy("admin", p => p.RequireRole("POWER-USER"));
+            });
+        }
 
-			await DbInitializer.SeedData(app);
-		}
+        private static async Task InitializeDatabase(WebApplication app)
+        {
+            using var scope = app.Services.CreateScope();
+            var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
 
-		private static void ConfigureMiddleware(WebApplication app)
-		{
-			if (app.Environment.IsDevelopment())
-			{
-				app.UseSwagger();
-				app.UseSwaggerUI();
-			}
+            await DbInitializer.SeedData(app);
+        }
 
-			app.UseCors(opt => opt
-			.AllowAnyOrigin()
-			.AllowAnyMethod());
+        private static void ConfigureMiddleware(WebApplication app)
+        {
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
-			app.UseResponseLoggingMiddleware();
-			app.UseHttpsRedirection();
-			app.UseAuthentication();
-			app.UseAuthorization();
-		}
+            app.UseCors("AllowBlazorOrigin");
+            app.UseHttpsRedirection();
+            app.UseAuthentication();
+            app.UseAuthorization();
+        }
 
-		private static void ConfigureEndpoints(WebApplication app)
-		{
-			app.MapControllers();
-		}
+        private static void ConfigureEndpoints(WebApplication app)
+        {
+            app.MapControllers();
+        }
 
-		private static void ConfigureLogger()
-		{
-			var configuration = new ConfigurationBuilder()
-				.AddJsonFile("appsettings.json")
-				.Build();
+        private static void ConfigureLogger()
+        {
+            var configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
 
-			Log.Logger = new LoggerConfiguration()
-				.ReadFrom.Configuration(configuration)
-				.CreateLogger();
-		}
-	}
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(configuration)
+                .CreateLogger();
+        }
+    }
 }

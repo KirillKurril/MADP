@@ -1,48 +1,70 @@
-﻿@if(Products != null)
+@if(Products != null)
 {
-    <div class="card" style="width: 60%;">
-        <ul class="list-group list-group-flush">
-            @foreach (var product in Products)
-            {
-                <li class="list-group-item mb-3" style="display:flex; flex-direction:row; justify-content:space-between;">
-                    <div style="display:block">
-                        <p>@product.Name</p>
-                        <p>@product.Price</p>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    @foreach (var product in Products)
+                    {
+                        <li class="list-group-item mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="mb-1"><strong>@product.Name</strong></p>
+                                    <p class="mb-0">@product.Price.ToString()</p>
+                                </div>
+                                <button type="button" 
+                                    class="btn @(DetailedProduct?.Id == product.Id ? "btn-secondary" : "btn-primary")"  
+                                    @onclick="() => OnProductDetailsSelected(product)">
+                                    @(DetailedProduct?.Id == product.Id ? "Скрыть" : "Подробнее")
+                                </button>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        
+        @if(DetailedProduct != null)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    @if (!string.IsNullOrEmpty(DetailedProduct.Image?.URL))
+                    {
+                        <img src="@DetailedProduct.Image.URL" 
+                             class="card-img-top" 
+                             style="height: 18rem; object-fit: contain;" 
+                             alt="@DetailedProduct.Name">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@DetailedProduct.Name</h5>
+                        <p class="card-text">@DetailedProduct.Description</p>
+                        <p class="card-text">
+                            <strong>Цена:</strong> @DetailedProduct.Price.ToString()
+                        </p>
+                        <p class="card-text">
+                            <strong>В наличии:</strong> @DetailedProduct.Quantity шт.
+                        </p>
+                        <button class="btn btn-primary">Заказать</button>
                     </div>
-                    <button type="button" class="btn btn-primary" @onclick="() => OnProductDetailsSelected(product)">
-                        Подробнее
-                    </button>
-                </li>
-            }
-        </ul>
+                </div>
+            </div>
+        }
     </div>
 }
 else
 {
-    <p>Извините, но сегодня детали не завезли</p>
-}
-
-@if(DetailedProduct != null)
-{
-    <div class="card" style="width: 20rem;">
-      <img src="@DetailedProduct.Image!.URL" class="card-img-top" style="height: 18rem; object-fit: contain;" alt="@DetailedProduct.Name">
-      <div class="card-body">
-            <h5 class="card-title">@DetailedProduct.Name</h5>
-            <p><strong>Description:</strong>@DetailedProduct.Description</p>
-            <p><strong>Price:</strong>@DetailedProduct.Price</p>
-            <p><strong>Quantity:</strong>@DetailedProduct.Quantity</p>
-        <a href="#" class="btn btn-primary">Order</a>
-      </div>
+    <div class="alert alert-info">
+        Загрузка товаров...
     </div>
 }
 
-@code{
-
+@code {
     public Product? DetailedProduct { get; set; }
     [Parameter] public IReadOnlyList<Product> Products { get; set; }
 
     private void OnProductDetailsSelected(Product product)
     {
-        DetailedProduct = DetailedProduct != null && DetailedProduct.Id == product.Id ? null : DetailedProduct;
+        DetailedProduct = DetailedProduct?.Id == product.Id ? null : product;
+        StateHasChanged();
     }
 }

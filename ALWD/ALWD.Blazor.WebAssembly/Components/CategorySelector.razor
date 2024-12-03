@@ -1,31 +1,24 @@
-﻿@inject ALWD.Blazor.WebAssembly.Services.CategoryService.ICategoryService _categoryService
+@inject ALWD.Blazor.WebAssembly.Services.CategoryService.ICategoryService _categoryService
+@inject ILogger<CategorySelector> _logger
 
-<p>
-    @if(Categories.Count == 0)
-    {
-        <div class="nav">
-            Извините, но сегодня без категорий
-        </div>
-    }
-    <div class="col-2 border-2">
-        <ul class="nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"
-                   data-bs-toggle="dropdown"
-                   href="#"
-                   role="button"
-                   aria-expanded="false">
-                    @(CurrentCategory != null ? CurrentCategory.Name : "Все")
-                </a>
-                <ul class="dropdown-menu">
-                    @if (CurrentCategory != null)
-                    {
-                        <li>
-                            <a class="dropdown-item" @onclick="() => OnCategoryChanged(null)">
-                                Все
-                            </a>
-                        </li>
-                    }
+<div class="col-2 border-2">
+    <ul class="nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               data-bs-toggle="dropdown"
+               href="javascript:void(0)"
+               role="button"
+               aria-expanded="false">
+                @(CurrentCategory?.Name ?? "Все")
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" @onclick="() => OnCategoryChanged(null)">
+                        Все
+                    </a>
+                </li>
+                @if (Categories?.Any() == true)
+                {
                     @foreach (var category in Categories)
                     {
                         <li>
@@ -34,31 +27,63 @@
                             </a>
                         </li>
                     }
-                </ul>
-            </li>
-        </ul>
-    </div>
-</p>
+                }
+                else
+                {
+                    <li>
+                        <span class="dropdown-item">Загрузка категорий...</span>
+                    </li>
+                }
+            </ul>
+        </li>
+    </ul>
+</div>
 
 @code {
-    public IReadOnlyList<Category> Categories { get; set; } = new List<Category>();
-    [Parameter] public Category CurrentCategory { get; set; } = null;
-    [Parameter] public EventCallback OnCategoryChangedCallback { get; set; }
+    private IReadOnlyList<Category>? Categories { get; set; }
+    
+    [Parameter]
+    public Category? CurrentCategory { get; set; }
 
-    private async Task OnCategoryChanged(Category? newCurrentCategory)
-    {
-        CurrentCategory = newCurrentCategory;
+    [Parameter]
+    public EventCallback<Category?> CurrentCategoryChanged { get; set; }
 
-        if (newCurrentCategory == null)
-            await OnCategoryChangedCallback.InvokeAsync("");  
-
-        await OnCategoryChangedCallback.InvokeAsync();
-    }
+    [Parameter] 
+    public EventCallback OnCategoryChangedCallback { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        var categoriesResponse = await _categoryService.GetCategoryListAsync();
-        if (categoriesResponse.Successfull)
-            Categories = categoriesResponse.Data;
+        _logger.LogInformation("CategorySelector: OnInitializedAsync started");
+        await LoadCategories();
+    }
+
+    private async Task LoadCategories()
+    {
+        try 
+        {
+            var categoriesResponse = await _categoryService.GetCategoryListAsync();
+            _logger.LogInformation($"CategorySelector: Got response, success: {categoriesResponse.Successfull}");
+            
+            if (categoriesResponse.Successfull)
+            {
+                Categories = categoriesResponse.Data;
+                _logger.LogInformation($"CategorySelector: Categories count: {Categories.Count}");
+                StateHasChanged();
+            }
+            else
+            {
+                _logger.LogError($"CategorySelector: Error getting categories: {categoriesResponse.ErrorMessage}");
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"CategorySelector: Exception in LoadCategories: {ex.Message}");
+        }
+    }
+
+    private async Task OnCategoryChanged(Category? newCurrentCategory)
+    {
+        await CurrentCategoryChanged.InvokeAsync(newCurrentCategory);
+        await OnCategoryChangedCallback.InvokeAsync();
     }
 }
