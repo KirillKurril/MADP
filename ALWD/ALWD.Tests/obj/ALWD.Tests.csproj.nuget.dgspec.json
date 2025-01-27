@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj": {}
+    "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
+    "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
+        "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
         "projectName": "ALWD.API",
-        "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\obj\\",
+        "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj",
+        "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+        "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
-                "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
+              "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+                "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
               }
             }
           }
@@ -121,20 +120,20 @@
         }
       }
     },
-    "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+    "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj",
+        "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj",
         "projectName": "ALWD.Domain",
-        "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\obj\\",
+        "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj",
+        "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+        "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -143,7 +142,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -205,20 +203,20 @@
         }
       }
     },
-    "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj": {
+    "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
+        "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
         "projectName": "ALWD.Tests",
-        "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\obj\\",
+        "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
+        "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+        "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -227,21 +225,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
-                "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
+              "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
+                "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
               },
-              "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
-                "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
+              "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+                "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
               },
-              "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj": {
-                "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj"
+              "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj": {
+                "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj"
               }
             }
           }
@@ -315,20 +312,20 @@
         }
       }
     },
-    "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj": {
+    "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
+        "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
         "projectName": "ALWD.UI",
-        "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\obj\\",
+        "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj",
+        "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+        "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -337,18 +334,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
-                "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
+              "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
+                "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
               },
-              "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
-                "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
+              "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+                "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
               }
             }
           }

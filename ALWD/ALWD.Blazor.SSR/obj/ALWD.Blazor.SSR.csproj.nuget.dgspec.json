@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj": {}
+    "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj": {}
   },
   "projects": {
-    "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj": {
+    "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj",
+        "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj",
         "projectName": "ALWD.Blazor.SSR",
-        "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\obj\\",
+        "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\ALWD.Blazor.SSR.csproj",
+        "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+        "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.SSR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -15973,23 +15973,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\kamid\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
+      "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
       "projectName": "ALWD.Tests",
-      "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Tests\\obj\\",
+      "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\ALWD.Tests.csproj",
+      "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+      "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -15998,21 +15998,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
-              "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
+            "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj": {
+              "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.API\\ALWD.API.csproj"
             },
-            "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
-              "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
+            "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+              "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
             },
-            "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj": {
-              "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj"
+            "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj": {
+              "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.UI\\ALWD.UI.csproj"
             }
           }
         }
@@ -16091,7 +16090,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"Azure.Identity\" 1.10.3 есть известная уязвимость https://github.com/advisories/GHSA-m5vv-6r4h-3vj9 (уровень серьезности: средний)",
+      "message": "Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
         "net8.0"
@@ -16101,7 +16100,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"Azure.Identity\" 1.10.3 есть известная уязвимость https://github.com/advisories/GHSA-wvxc-855f-jvrv (уровень серьезности: средний)",
+      "message": "Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
         "net8.0"
@@ -16111,7 +16110,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"Microsoft.Identity.Client\" 4.56.0 есть известная уязвимость https://github.com/advisories/GHSA-m5vv-6r4h-3vj9 (уровень серьезности: средний)",
+      "message": "Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Microsoft.Identity.Client",
       "targetGraphs": [
         "net8.0"
@@ -16121,7 +16120,7 @@
       "code": "NU1901",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"Microsoft.Identity.Client\" 4.56.0 есть известная уязвимость https://github.com/advisories/GHSA-x674-v45j-fwxw (уровень серьезности: низкий)",
+      "message": "Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw",
       "libraryId": "Microsoft.Identity.Client",
       "targetGraphs": [
         "net8.0"
@@ -16131,7 +16130,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Net.Http\" 4.3.0 есть известная уязвимость https://github.com/advisories/GHSA-7jgj-8wvc-jh57 (уровень серьезности: высокий)",
+      "message": "Package 'System.Net.Http' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7jgj-8wvc-jh57",
       "libraryId": "System.Net.Http",
       "targetGraphs": [
         "net8.0"
@@ -16141,7 +16140,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Security.Cryptography.Xml\" 4.5.0 есть известная уязвимость https://github.com/advisories/GHSA-vh55-786g-wjwj (уровень серьезности: средний)",
+      "message": "Package 'System.Security.Cryptography.Xml' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh55-786g-wjwj",
       "libraryId": "System.Security.Cryptography.Xml",
       "targetGraphs": [
         "net8.0"
@@ -16151,7 +16150,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Text.Json\" 7.0.3 есть известная уязвимость https://github.com/advisories/GHSA-hh2w-p6rv-4g7w (уровень серьезности: высокий)",
+      "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net8.0"
@@ -16161,7 +16160,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Text.RegularExpressions\" 4.3.0 есть известная уязвимость https://github.com/advisories/GHSA-cmhx-cq75-c4mj (уровень серьезности: высокий)",
+      "message": "Package 'System.Text.RegularExpressions' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cmhx-cq75-c4mj",
       "libraryId": "System.Text.RegularExpressions",
       "targetGraphs": [
         "net8.0"

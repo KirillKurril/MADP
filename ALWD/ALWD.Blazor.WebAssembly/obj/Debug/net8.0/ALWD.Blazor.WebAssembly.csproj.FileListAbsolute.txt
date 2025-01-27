@@ -1177,8 +1177,8 @@ D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\ALWD.Blazor.WebAssembl
 D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\refint\ALWD.Blazor.WebAssembly.dll
 D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\ALWD.Blazor.WebAssembly.pdb
 D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\ref\ALWD.Blazor.WebAssembly.dll
-D:\Uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\ldldi0o6x7-jxlgtzo2e7.gz
-D:\Uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\duydyqnd83-l306fbrtkc.gz
-D:\Uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\ti8he4v8m8-sx4v6zrz7l.gz
-D:\Uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\vbvhelhnik-hqin3o9ctz.gz
-D:\Uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\kly9frh8iu-9qi9kr61i0.gz
+D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\ldldi0o6x7-95ncstte5z.gz
+D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\duydyqnd83-9pl3tsov9g.gz
+D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\ti8he4v8m8-mynrwamigm.gz
+D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\vbvhelhnik-kdco6rhep7.gz
+D:\uni\MADP\ALWD\ALWD.Blazor.WebAssembly\obj\Debug\net8.0\compressed\kly9frh8iu-26hml70lb7.gz

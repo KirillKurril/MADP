@@ -3990,23 +3990,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\kamid\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj",
+      "projectUniqueName": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj",
       "projectName": "ALWD.Blazor.WebAssembly",
-      "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\obj\\",
+      "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\ALWD.Blazor.WebAssembly.csproj",
+      "packagesPath": "C:\\Users\\kamid\\.nuget\\packages\\",
+      "outputPath": "D:\\uni\\MADP\\ALWD\\ALWD.Blazor.WebAssembly\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4015,15 +4015,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
-              "projectPath": "D:\\Uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
+            "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj": {
+              "projectPath": "D:\\uni\\MADP\\ALWD\\ALWD.Domain\\ALWD.Domain.csproj"
             }
           }
         }
@@ -4110,7 +4109,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Security.Cryptography.Xml\" 4.5.0 есть известная уязвимость https://github.com/advisories/GHSA-vh55-786g-wjwj (уровень серьезности: средний)",
+      "message": "Package 'System.Security.Cryptography.Xml' 4.5.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-vh55-786g-wjwj",
       "libraryId": "System.Security.Cryptography.Xml",
       "targetGraphs": [
         "net8.0",
@@ -4121,7 +4120,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Text.Json\" 8.0.0 есть известная уязвимость https://github.com/advisories/GHSA-8g4q-xg66-9fp4 (уровень серьезности: высокий)",
+      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net8.0",
@@ -4132,7 +4131,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"System.Text.Json\" 8.0.0 есть известная уязвимость https://github.com/advisories/GHSA-hh2w-p6rv-4g7w (уровень серьезности: высокий)",
+      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
       "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net8.0",
